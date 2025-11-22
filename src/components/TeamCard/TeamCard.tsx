@@ -2,7 +2,6 @@ import Link from 'next/link';
 import styles from './TeamCard.module.scss';
 import { TeamCardProps } from '@/src/types/types';
 
-
 const TeamCard = ({
   title,
   description,
@@ -18,12 +17,12 @@ const TeamCard = ({
 
         <div className={`${styles.cardFront} ${styles.front}`}>
           <div
-            className={`${styles.bg} ${styles.mobile}`}
+            className={`${styles.background} ${styles.mobile}`}
             style={{ backgroundImage: `url(${imageMobile})` }}
           />
 
           <div
-            className={`${styles.bg} ${styles.desktop}`}
+            className={`${styles.background} ${styles.desktop}`}
             style={{ backgroundImage: `url(${imageDesktop})` }}
           />
           <div className={styles.overlay}></div>
