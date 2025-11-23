@@ -1,6 +1,9 @@
-export interface NavItemProps {
-  children: React.ReactNode;
+export interface HeaderMenuItem {
+  id: number;
+  item: string;
+  link: string;
 }
+
 
 export type teamData = {
   id: string;
