@@ -4,8 +4,8 @@
     "title": "Lending page for the game",
     "role": "Frontend Developer",
     "description": " Technical stack: HTML, CSS, JavaScript, Fixed layout. ",
-    "imageMobile": "?",
-    "imageDesktop": "?",
+    "imageMobile": "/img/evo.jpg",
+    "imageDesktop": "/img/evo.jpg",
     "href": "https://volodymyrshkimba.github.io/mfl-ms_team04/"
   },
   {
@@ -13,26 +13,26 @@
     "title": "Aqua Track",
     "role": "Frontend Developer and Scrum Master",
     "description": " Technical stack: HTML, CSS, JavaScript, React,Node.js, Mongodb, Redux, Cloud Services, Adaptive layout.",
-    "imageMobile": "?",
-    "imageDesktop": "?",
-    "href": "https://github.com/wordisstuff/aqua-front.git"
+    "imageMobile": "/img/water.jpg",
+    "imageDesktop": "/img/water.jpg",
+    "href": "https://aqua-front-nine.vercel.app/"
   },
   {
     "id": "3",
     "title": "Portfolio Website",
     "role": "Frontend Developer",
     "description": "Technical stack: HTML, CSS, JavaScript, Rest API Git, Adaptive layout.",
-    "imageMobile": "?",
-    "imageDesktop": "?",
-    "href": "https://github.com/MaksymMykhailets/portfolio.git"
+    "imageMobile": "/img/port.jpg",
+    "imageDesktop": "/img/port.jpg",
+    "href": "https://maksymmykhailets.github.io/portfolio/"
   },
   {
     "id": "4",
     "title": "Focusframe",
     "role": "Frontend Developer and Scrum Master",
     "description": " Technical stack: HTML, CSS, JavaScript, Git.",
-    "imageMobile": "?",
-    "imageDesktop": "?",
-    "href": "https://github.com/wordisstuff/aqua-front.git"
+    "imageMobile": "/img/photo.jpg",
+    "imageDesktop": "/img/photo.jpg",
+    "href": "https://maksymmykhailets.github.io/focusframe-valid/"
   }
 ]

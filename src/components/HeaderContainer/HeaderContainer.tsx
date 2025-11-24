@@ -1,10 +1,9 @@
-
- "use client"
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
 // my logo
 import HeaderMenu from '@/src/components/HeaderMenu/HeaderMenu';
-import burgerIcon from '../../assets/icons/burgerIcon.svg';
+import burgerIcon from '../../assets/icon/burgerIcon.svg';
 import styles from './HeaderContainer.module.scss';
 
 const HeaderComponent: React.FC = () => {
@@ -21,7 +20,9 @@ const HeaderComponent: React.FC = () => {
           <HeaderMenu isOpen={isMenuOpen} onClick={handleMenuClick} />
           <button className={styles.burger} onClick={handleMenuClick}>
             <Image
-              src={burgerIcon} alt="burger" className={styles.imageBurger}
+              src={burgerIcon}
+              alt="burger"
+              className={styles.imageBurger}
             />
           </button>
         </div>

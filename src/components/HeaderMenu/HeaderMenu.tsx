@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import clsx from 'clsx';
 import { headerItems } from '../HeaderMenu/headerItems';
-import crossIcon from '@/src/assets/icons/crossIcon.svg';
+import crossIcon from '../../assets/icon/crossIcon.svg';
 import styles from './HeaderMenu.module.scss';
 
 interface NavItemProps {

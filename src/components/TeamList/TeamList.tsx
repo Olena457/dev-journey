@@ -7,7 +7,7 @@ const projects: TeamCardProps[] = teamData;
 
 const TeamList = () => {
   return (
-    <section className={styles.container}>
+    <section >
       <div className={styles.category}>
         <div className={styles.header}>
           <h2 className={styles.title}>

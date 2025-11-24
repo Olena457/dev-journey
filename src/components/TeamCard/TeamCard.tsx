@@ -27,7 +27,7 @@ const TeamCard = ({
           />
           <div className={styles.overlay}></div>
           <div className={styles.title}>
-            <Link href={href}>{title}</Link>
+            <Link className={styles.link} href={href}>{title}</Link>
           </div>
         </div>
         {/* {back} */}
