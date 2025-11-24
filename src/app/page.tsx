@@ -1,11 +1,12 @@
 // import Image from "next/image";
 import HeaderContainer from "@/src/components/HeaderContainer/HeaderContainer";
+// import { clsx } from 'clsx';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-green-500 dark:bg-black sm:items-start">
-        <HeaderContainer/>
+    <div className=" mycontainer flex  items-center justify-center  dark:bg-black">
+      <main className="bg-amber-800 ">
+        
         
       </main>
     </div>
