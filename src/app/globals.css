@@ -90,21 +90,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.mycontainer {
   width: 375px;
   padding-inline: 20px;
   margin-inline: auto;
 }
 
 @media screen and (min-width: 744px) {
-  .container {
+  .mycontainer {
     width: 744px;
     padding-inline: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .mycontainer {
     width: 1440px;
     padding-inline: 72px;
   }
