@@ -19,16 +19,16 @@ border : 1px solid green;
   }
 
   @media (min-width: 1440px) {
-    width: 757px;
+    // width: 757px;
     font-weight: 400;
     font-size: 42px;
     line-height: 140%;
   }
 }
 
-.header {
+.headerList {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;

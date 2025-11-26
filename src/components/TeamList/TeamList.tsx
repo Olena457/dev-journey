@@ -7,20 +7,22 @@ const projects: TeamCardProps[] = teamData;
 
 const TeamList = () => {
   return (
-    <section className={styles.wrapper} >
-      <div className={styles.category}>
-        <div className={styles.header}>
-          <h2 className={styles.title}>
-            Experience working in a team projects
-          </h2>
+    <div className={styles.mycontainer}>
+      <section className={styles.wrapper}>
+        <div className={styles.category}>
+          <div className={styles.headerList}>
+            <h2 className={styles.title}>
+              Experience working in a team projects
+            </h2>
+          </div>
         </div>
-      </div>
-      <div className={styles.cardsWrapper}>
-        {projects.map(item => (
-          <TeamCard key={item.id} {...item} />
-        ))}
-      </div>
-    </section>
+        <div className={styles.cardsWrapper}>
+          {projects.map(item => (
+            <TeamCard key={item.id} {...item} />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 export default TeamList;

@@ -2,19 +2,21 @@
 
 :root {
   /* white color */
+  --color-main-white: #f9f9f9;
   --color-white: rgba(255, 255, 255, 0.8);
   --gray-light: rgba(238, 239, 243, 1);
   --gray-dark: rgba(214, 222, 233, 1);
 
   /* black color */
+  --dark-black-color:#000000;
   --my-color-black: rgba(23, 23, 23, 1);
   --border-color-dark: rgba(45, 45, 45, 0.32);
   --hover-dark: rgba(45, 45, 45, 0.8);
   --shadow-color: rgba(45, 45, 45, 0.24);
 
   /* blue color */
-  --main-color-light: rgba(10, 152, 198, 1);
-  --main-color-dark: rgb(31, 111, 160);
+  --main-color-light: rgb(83, 195, 232, 1);
+  --main-color-dark: rgba(10, 152, 198, 1);
   --main-light-hover: #00bed6;
   --main-dark-hover: #00a3b6;
 
@@ -27,7 +29,7 @@
   /* breakpoints */
   --breakpoints-xs: 320px;
   --breakpoints-sm: 375px;
-  --breakpoints-md: 744px;
+  --breakpoints-md: 768px;
   --breakpoints-lg: 1440px;
   --breakpoints-xl: 1540px;
 }
@@ -82,8 +84,8 @@ h4 {
 
 body {
   font-family: 'Montserrat','Inter',  sans-serif;
-  /* background: var(--color-white);
-  color: var(--color-black); */
+   background: var(--my-color-black); 
+  /* color: var(--color-black);  */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -91,7 +93,7 @@ body {
 
 .mycontainer {
   width:  100%;
-  min-width: 375px;
+  /* min-width: 375px; */
   padding-inline: 20px;
   margin-inline: auto;
 }
@@ -103,7 +105,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .mycontainer {
     max-width: 1440px;
     padding-inline: 72px;

@@ -1,10 +1,12 @@
 .flipCard {
   perspective: 1000px;
+  // border: 2px solid var(--main-color-light);
   max-width: 335px;
   height: 280px;
   display: block;
   flex-shrink: 0;
   text-decoration: none;
+  border-radius: 10px;
 
   @media (min-width: 744px) {
     max-width: 320px;
@@ -15,7 +17,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  // text-align: center;
+  text-align: center;
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
   border-radius: 8px;
@@ -24,6 +26,7 @@
 .flipCard:hover .flipInner {
   transform: rotateY(180deg);
 }
+
 .cardFront {
   position: absolute;
   width: 100%;
@@ -63,41 +66,77 @@
   background-color: transparent;
   transition: background-color 0.3s ease;
   pointer-events: none;
+  opacity: 0.6;
 
   .flipCard:hover & {
-    background-color: var(--color-white);
-    border: 2px solid var(--border-color-dark);
+    background-color: var(--gray-color-light);
+    border: 2px solid var(--main-color-light);
     box-shadow: 0 4px 6px 0 var(--shadow-color);
   }
 }
-.title {
+.wrapperRole {
   position: absolute;
-  left: 50px;
-  transform: translateX(-50%);
+  left: 12px;
+  top: 20px;
+  // transform: translateX(-50%);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 295px;
   height: 50px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 120%;
   text-align: center;
-  background-color: var(--border-color-dark);
+  background-color: var(--gray-color-dark);
+  opacity: 0.3;
   border-radius: 8px;
   transition: all 0.4s ease;
-  bottom: 20px;
 }
-.link{
-  color: var(--color-white);
+
+.role {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--hover-dark);
+  font-weight: 500;
+}
+
+.title {
+  position: absolute;
+  left: 12px;
+  bottom: 20px;
+  // transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 295px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  background-color: var(--gray-color-dark);
+  opacity: 0.7;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.link {
+  color: var(--hover-dark);
   text-decoration: none;
+  align-self: center;
   width: 100%;
   height: 100%;
   display: flex;
+  padding-right: 5px;
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: var(--hover-dark);
+    background-color: var(--main-color-light);
   }
   @media (min-width: 744px) {
     top: 232px;
@@ -118,30 +157,48 @@
     bottom: auto;
   }
 }
-.role {
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 500;
-}
-.description {
-  position: absolute;
+.wrapperDescription {
+  // position: absolute;
+  // left: 12px;
+  margin-left: 12px;
+  margin-top: 60%;
+  // transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 295px;
+  // height: auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
   text-align: center;
+  background-color: var(--gray-color-dark);
+  opacity: 0.7;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.description {
+  position: relative;
+  text-align: center;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   width: 295px;
   padding: 0 20px;
-  font-weight: 300;
+  font-weight: 800;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: var(--my-color-black);
+  color: var(--dark-black-color);
   pointer-events: none;
   opacity: 1;
-  top: calc(90px + 40px + 26px);
+  // top: calc(90px + 40px + 26px);
 
-  @media (min-width: 744px) {
+  @media (min-width: 768px) {
     width: 272px;
     padding: 0;
-    top: calc(232px + 50px + 46px);
+    // top: calc(232px + 50px + 46px);
   }
 }

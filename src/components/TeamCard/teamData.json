@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Lending page for the game",
+    "title": "Lending page",
     "role": "Frontend Developer",
     "description": " Technical stack: HTML, CSS, JavaScript, Fixed layout. ",
     "imageMobile": "/img/evo.jpg",
@@ -11,7 +11,7 @@
   {
     "id": "2",
     "title": "Aqua Track",
-    "role": "Frontend Developer and Scrum Master",
+    "role": "Frontend Developer,Scrum Master",
     "description": " Technical stack: HTML, CSS, JavaScript, React,Node.js, Mongodb, Redux, Cloud Services, Adaptive layout.",
     "imageMobile": "/img/water.jpg",
     "imageDesktop": "/img/water.jpg",
@@ -29,7 +29,7 @@
   {
     "id": "4",
     "title": "Focusframe",
-    "role": "Frontend Developer and Scrum Master",
+    "role": "Frontend Developer, Scrum Master",
     "description": " Technical stack: HTML, CSS, JavaScript, Git.",
     "imageMobile": "/img/photo.jpg",
     "imageDesktop": "/img/photo.jpg",

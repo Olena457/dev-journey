@@ -27,27 +27,34 @@ const TeamCard = ({
           />
           <div className={styles.overlay}></div>
           <div className={styles.title}>
-            <Link className={styles.link} href={href}>{title}</Link>
+            <Link className={styles.link} href={href}>
+              {title}
+            </Link>
           </div>
         </div>
         {/* {back} */}
         <div className={`${styles.cardFront} ${styles.back}`}>
           <div
-            className={`${styles.bg} ${styles.mobile}`}
+            className={`${styles.background} ${styles.mobile}`}
             style={{ backgroundImage: `url(${imageMobile})` }}
           />
 
           <div
-            className={`${styles.bg} ${styles.desktop}`}
+            className={`${styles.background} ${styles.desktop}`}
             style={{ backgroundImage: `url(${imageDesktop})` }}
           />
           <div className={styles.overlay}></div>
-          <div className={styles.title}>
-            <Link href={href}>{title}</Link>
+          <div className={styles.wrapperRole}>
+            <div className={styles.role}>{role}</div>
           </div>
-          <div className={styles.role}>{role}</div>
-
-          <div className={styles.description}>{description}</div>
+          <div className={styles.title}>
+            <Link className={styles.link} href={href}>
+              {title}
+            </Link>
+          </div>
+          <div className={styles.wrapperDescription}>
+            <div className={styles.description}>{description}</div>
+          </div>
         </div>
       </div>
     </div>
