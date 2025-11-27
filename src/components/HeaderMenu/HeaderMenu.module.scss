@@ -1,111 +1,62 @@
 
+.navMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color:white;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-100%);
+  visibility: hidden;
+}
 
+.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
 
-.linkBurger {
-  position: relative;
- font-size: clamp(16px, 2vw, 20px);
-  font-weight: 500;
-  line-height: 1.5;
-  transition: color 0.3s ease;
-  cursor: pointer;
-  color:var(--color-main-white);
-
-  &:hover,
-  &:active {
-    color: var(--main-light-hover, blue);
-
-    &::after {
-      width: 100%;
-    }
+@media (max-width: 767.99px) {
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--my-color-black);
   }
 
-  &::after {
-    content: '';
+  .wrapperIcon {
     position: absolute;
-    bottom: -4px;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background-color: currentColor;
-    transition: all 0.3s ease;
+    top: 20px;
+    right: 20px;
+    display: block;
   }
 }
 
-@media (max-width: 744px) {
-  .burger {
-  position:static;
-  top:0px;
-  left:0px;
-    width: 100%;
-    height: 100vh;
-    // background-color: var(--gray-color-hover);
-    z-index: 1000;
-    transition: all 0.3s ease-in;
-
-    & > ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color:white;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      gap: 20px;
-    }
-
-    .linkBurger {
-      font-size: 28px;
-      color: white;
-    }
-  }
-
-  .none {
-    display: none;
-    
-  }
-.wrapperIcon {
-  padding: 30px 25px  25px  25px;
-  // display: flex;
-  // justify-content: flex-start;
-}
-  .close {
-    cursor: pointer;
-   
+@media (min-width: 768px) {
+  .navMenu {
+    right: auto;
+    margin: 0 auto;
+    position: static;
+    height: auto;
+    transform: none;
+    visibility: visible;
     display: block;
   }
 
-}
-@media (min-width: 744px) {
-  .burger {
-    display: flex;
-    // position: absolute;
-    // width: auto;
-    // height: auto;
-    background-color: transparent;
-    display: block !important;
-    transform: none;
-
-    & > ul {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      height: auto;
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  .none {
-    display: none;
-  }
-.wrapperIcon {
-      display: none;
-
-}
+  .wrapperIcon,
   .close {
     display: none;
   }
-}
-.menuList{
-  color:var(--gray-color-hover);
+  .menuList {
+    display: flex;
+    flex-direction: row; 
+     color: white;
+     padding-left: auto;
+    gap: 30px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
 }

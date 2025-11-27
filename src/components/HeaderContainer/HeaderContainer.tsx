@@ -14,25 +14,24 @@ const HeaderComponent: React.FC = () => {
 
   return (
     <div className={styles.header}>
-      <div className="mylogo">
+      <HeaderMenu isOpen={isMenuOpen} onClick={handleMenuClick} />
+      <button
+        className={clsx(styles.burger, { [styles.hidden]: isMenuOpen })}
+        onClick={handleMenuClick}
+      >
+        <IconComponent
+          id="burger"
+          width={30}
+          height={30}
+          className="imageBurger"
+        />
+      </button>
+      <div className={clsx(styles.mylogo, { [styles.hidden]: isMenuOpen })}>
+        <div className="mylogo">
         <IconComponent id="logo" width={32} height={32} className="logoIcon" />
       </div>
-      <div className={styles.wrapper}>
-        <HeaderMenu isOpen={isMenuOpen} onClick={handleMenuClick} />
-        {/* <button className={styles.burger} onClick={handleMenuClick}> */}
-        <button
-          className={clsx(styles.burger, { [styles.hidden]: isMenuOpen })}
-          onClick={handleMenuClick}
-        >
-          <IconComponent
-            id="burger"
-            width={30}
-            height={30}
-            className="imageBurger"
-          />
-        </button>
-      </div>
     </div>
+     </div>
   );
 };
 

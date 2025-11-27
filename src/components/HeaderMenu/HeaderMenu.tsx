@@ -34,14 +34,15 @@ const HeaderMenu: React.FC<NavItemProps> = ({ isOpen, onClick }) => {
   ));
 
   return (
-    <nav className={clsx(styles.burger, { [styles.none]: !isOpen })}>
+   
+    <nav className={clsx(styles.navMenu, { [styles['is-open']]: isOpen })}>
       <div className={styles.wrapperIcon}>
         <IconComponent
           id="cross"
           width={30}
           height={30}
-          onClick={onClick}
-          className="close"
+          onClick={onClick} 
+          className={styles.close}
         />
       </div>
       <ul className={styles.menuList}>{showItemsMenu}</ul>
