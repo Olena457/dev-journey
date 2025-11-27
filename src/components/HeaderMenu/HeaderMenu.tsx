@@ -1,12 +1,11 @@
 
 'use client';
 import { useEffect } from 'react';
-import Image from 'next/image';
 
 import clsx from 'clsx';
 import { headerItems } from '../HeaderMenu/headerItems';
-import crossIcon from '../../assets/icon/crossIcon.svg';
 import styles from './HeaderMenu.module.scss';
+import { IconComponent } from '../ui/IconComponent';
 
 interface NavItemProps {
   isOpen: boolean;
@@ -27,21 +26,24 @@ const HeaderMenu: React.FC<NavItemProps> = ({ isOpen, onClick }) => {
   }, [isOpen]);
 
   const showItemsMenu = headerItems.map(item => (
-    <li key={item.id}>
+    <ul key={item.id}>
       <a href={`#${item.link}`} onClick={onClick} className={styles.linkBurger}>
         {item.item}
       </a>
-    </li>
+    </ul>
   ));
 
   return (
     <nav className={clsx(styles.burger, { [styles.none]: !isOpen })}>
-      <Image
-        className={styles.close}
-        src={crossIcon}
-        onClick={onClick}
-        alt="close menu"
-      />
+      <div className={styles.wrapperIcon}>
+        <IconComponent
+          id="cross"
+          width={30}
+          height={30}
+          onClick={onClick}
+          className="close"
+        />
+      </div>
       <ul className={styles.menuList}>{showItemsMenu}</ul>
     </nav>
   );

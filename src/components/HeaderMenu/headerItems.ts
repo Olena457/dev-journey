@@ -1,4 +1,3 @@
-// '../HeaderMenu/headerItems.ts'
 
 import { HeaderMenuItem } from '@/src/types/types';
 
@@ -25,12 +24,12 @@ export const headerItems: HeaderMenuItem[] = [
   },
   {
     "id": 15,
-    "item": "My Projects",
+    "item": "Projects",
     "link": "my-projects"
   },
   {
     "id": 16,
-    "item": " Team Projects",
+    "item": "Team",
     "link": "projects"
   },
   {

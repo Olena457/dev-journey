@@ -26,6 +26,24 @@
   --gray-color-border: rgba(252, 253, 255, 1);
   --gray-color-hover: #bcc4d4;
 
+  /* gradients */
+ 
+  --gradient-1: linear-gradient(135deg, #CC9300 0%, #EA433A 48%, #B327BF 100%);
+  --gradient-2:linear-gradient(
+  135deg,
+  #CC9300 0%,
+  #EA433A 26%,
+  #B327BF 48%,
+  #6666FF 76%,
+  #00BF9A 100%
+);
+--gradient-3: linear-gradient(
+  to right,
+  #B327BF 0%,
+  #6666FF 48%,
+  #00C09A 100%
+);
+
   /* breakpoints */
   --breakpoints-xs: 320px;
   --breakpoints-sm: 375px;
@@ -33,9 +51,6 @@
   --breakpoints-lg: 1440px;
   --breakpoints-xl: 1540px;
 }
-
-/*      background: linear-gradient(180deg, #7e3b01 0%, #eacc93 54.29%, #1e0e00 100%);
- */
 
 /* @media (prefers-color-scheme: dark) {
   :root {

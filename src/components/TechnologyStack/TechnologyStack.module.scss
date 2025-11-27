@@ -1,0 +1,112 @@
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.gradient {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8rem;
+  z-index: 20;
+
+
+.gradientLeft {
+  left: 0;
+  background: transparent;
+}
+
+.gradientRight {
+  right: 0;
+  background: transparent;
+}
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.gradient {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8rem;
+  z-index: 20;
+}
+
+&.gradientLeft {
+  left: 0;
+  // background: linear-gradient(to right, var(--background), transparent);
+  background:  transparent;
+}
+
+&.gradientRight {
+  right: 0;
+  background:  transparent;
+}
+
+}
+
+
+.scroller {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+  animation: scroll 60s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  @media (min-width: 768px) {
+    gap: 5rem;
+    animation-duration: 50s;
+  }
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+ 
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.icon {
+  height: 1.75rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.techName {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-main-white);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

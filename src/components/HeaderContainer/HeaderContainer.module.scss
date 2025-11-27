@@ -1,29 +1,148 @@
+// .header {
+//   width: 100%;
+//   position: relative;
+//   max-width: 1560px;
+//   margin: 0 auto;
+//   padding-block: 28px;
+  
+// }
+
+//   @media(min-width:768px){
+//   .header{
+//     padding: 48px;
+
+//     .mylogo {
+   
+//     width: auto; 
+//     justify-content: flex-start; 
+//     margin-left: 20px;
+//   }
+
+//   .logoIcon {
+//     width: 64px; 
+//     height: 64px;
+//   }
+//   }
+// }
+// .wrapper {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .burger {
+//   display: none;
+//   & > .imageBurger {
+//     width: 40px;
+//   }
+// }
+// .mylogo {
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   padding-block: 10px;
+// }
+
+// .logoIcon {
+//   width: 32px;
+//   height: 32px;
+// }
+
+// @media (min-width: 320px) and (max-width: calc(768px - 1px)) {
+//   .burger {
+//     display: block;
+//     margin-right: 20px;
+//     & > .imageBurger {
+//       width: 50px;
+//     }
+//   }
+// .wrapper{
+//   width: auto;
+// }
+//   .hidden {
+//   display: none !important; 
+// }
+// }
 .header {
   width: 100%;
   position: relative;
   max-width: 1560px;
   margin: 0 auto;
   padding-block: 28px;
-  background-color: var(--gray-color-hover);
 }
+
+
+
 .wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+ justify-content: flex-end;
+  width: 100%;
+  padding-inline: 20px;
 }
 
 .burger {
   display: none;
+
   & > .imageBurger {
     width: 40px;
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media (min-width: 320px) and (max-width: calc(768px - 1px)) {
   .burger {
     display: block;
+    margin-right: 20px;
+
     & > .imageBurger {
       width: 50px;
     }
+  }
+.mylogo {
+  display: block;
+  margin-left:;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+}
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+  }
+
+  .mylogo {
+    width: auto;
+    justify-content: flex-start;
+    margin-left: 50px;
+    padding-block: 0;
+  }
+
+  .logoIcon {
+    width: 64px;
+    height: 64px;
+  }
+
+  // .wrapper {
+  //   width: auto;
+  // }
+
+  .burger {
+    display: none;
   }
 }

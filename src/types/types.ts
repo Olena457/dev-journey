@@ -3,6 +3,21 @@ export interface HeaderMenuItem {
   item: string;
   link: string;
 }
+export type TechnologyItem = {
+  id: number;
+  name: string;
+  src: string;
+};
+
+type ClickHandler = (event: React.MouseEvent<SVGSVGElement>) => void;
+
+export interface IconProps {
+  id: string;
+  width?: number;
+  height?: number;
+  className?: string;
+  onClick?: ClickHandler;
+}
 
 
 export type teamData = {
