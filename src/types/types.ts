@@ -6,15 +6,15 @@ export interface HeaderMenuItem {
 export type TechnologyItem = {
   id: number;
   name: string;
-  src: string;
+  iconId: string;
 };
 
 type ClickHandler = (event: React.MouseEvent<SVGSVGElement>) => void;
 
 export interface IconProps {
   id: string;
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
   className?: string;
   onClick?: ClickHandler;
 }

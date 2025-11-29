@@ -1,10 +1,25 @@
-.wrapper {
-  position: relative;
-  overflow-x: hidden;
-  padding: 2rem 0;
-  width: 100%;
-}
 
+// ______________________________________________________
+
+// .bg-animation {
+//     background: linear-gradient(135deg, #a476ff 25%, #eee5ff 50%, #a476ff 75%);
+//     background-size: 400% 100%;
+//     -webkit-background-clip: text;
+//     background-clip: text;
+//     color: transparent;
+//     animation: shine 3s linear infinite;
+//   }
+
+//   @keyframes shine {
+//     0% {
+//       background-position: 100% 50%;
+//     }
+//     30%,
+//     70% {
+//       background-position: 0% 50%;
+//     }
+//   }
+// ____________________________________
 .wrapper {
   position: relative;
   overflow-x: hidden;
@@ -19,46 +34,17 @@
   bottom: 0;
   width: 8rem;
   z-index: 20;
-
+}
 
 .gradientLeft {
   left: 0;
-  background: transparent;
+  background: linear-gradient(to right, var(--my-color-black) 0%, transparent 100%);
 }
 
 .gradientRight {
   right: 0;
-  background: transparent;
+  background: linear-gradient(to left, var(--my-color-black) 0%, transparent 100%);
 }
-.wrapper {
-  position: relative;
-  overflow-x: hidden;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.gradient {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 8rem;
-  z-index: 20;
-}
-
-&.gradientLeft {
-  left: 0;
-  // background: linear-gradient(to right, var(--background), transparent);
-  background:  transparent;
-}
-
-&.gradientRight {
-  right: 0;
-  background:  transparent;
-}
-
-}
-
 
 .scroller {
   display: flex;
@@ -79,10 +65,9 @@
 .techItem {
   display: flex;
   align-items: center;
- 
   gap: 0.5rem;
   transition: all 0.3s ease;
-  opacity: 0.6;
+  opacity: 0.9;
 
   &:hover {
     transform: scale(1.1);
@@ -91,9 +76,8 @@
 }
 
 .icon {
-  height: 1.75rem;
-  width: auto;
-  object-fit: contain;
+  height: 32px;
+  width: 32px;
 }
 
 .techName {
