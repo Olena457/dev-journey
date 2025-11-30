@@ -20,7 +20,7 @@ export interface IconProps {
 }
 
 
-export type teamData = {
+export type teamsCardsData = {
   id: number;
   title: string;
   description: string;
@@ -29,6 +29,18 @@ export type teamData = {
   imageDesktop: string;
   href: string;
 };
+export type TeamCardProps = teamsCardsData;
 
-export type TeamCardProps = teamData;
+
+export type PetProgectsData = {
+  id: number;
+  title: string;
+  role: string;
+  skills: string;
+  imageProgect: string;
+  description: string;
+  liveHref: string;
+  repoHref: string;
+};
+export type PetProgectsProps = PetProgectsData;
 

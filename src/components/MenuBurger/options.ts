@@ -1,7 +1,7 @@
 
 import { HeaderMenuItem } from '@/src/types/types';
 
-export const headerItems: HeaderMenuItem[] = [
+export const optionsItems: HeaderMenuItem[] = [
   {
     id: 11,
     item: 'Home',

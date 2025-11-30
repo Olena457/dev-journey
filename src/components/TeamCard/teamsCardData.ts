@@ -1,6 +1,6 @@
-import { teamData } from '@/src/types/types';
+import { teamsCardsData } from '@/src/types/types';
 
-export const projectsData: teamData[] = [
+export const projectsData: teamsCardsData[] = [
   {
     id: 1,
     title: 'Lending page',

@@ -3,7 +3,7 @@
 
 import { useEffect } from 'react';
 import clsx from 'clsx';
-import { headerItems } from '../HeaderMenu/headerItems';
+import { optionsItems } from '../MenuBurger/options';
 import styles from './HeaderMenu.module.scss';
 import { IconComponent } from '../ui/IconComponent';
 
@@ -25,7 +25,7 @@ const HeaderMenu: React.FC<NavItemProps> = ({ isOpen, onClick }) => {
     };
   }, [isOpen]);
 
-  const showItemsMenu = headerItems.map(item => (
+  const showItemsMenu = optionsItems.map(item => (
     <ul key={item.id}>
       <a href={`#${item.link}`} onClick={onClick} className={styles.linkBurger}>
         {item.item}
