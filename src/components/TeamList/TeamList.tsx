@@ -1,9 +1,9 @@
 import styles from './TeamList.module.scss';
 import TeamCard from '../TeamCard/TeamCard';
-import teamData from '@/src/components/TeamCard/teamData.json';
+import { projectsData } from '../TeamCard/teamData';
 import { TeamCardProps } from '@/src/types/types';
 
-const projects: TeamCardProps[] = teamData;
+const projects: TeamCardProps[] = projectsData;
 
 const TeamList = () => {
   return (

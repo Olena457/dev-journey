@@ -1,10 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import HeaderMenu from '@/src/components/HeaderMenu/HeaderMenu';
+import clsx from 'clsx';
 import styles from './HeaderContainer.module.scss';
 import { IconComponent } from '../ui/IconComponent';
-import clsx from 'clsx';
+import HeaderMenu from '@/src/components/HeaderMenu/HeaderMenu';
+
 const HeaderComponent: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,17 +22,22 @@ const HeaderComponent: React.FC = () => {
       >
         <IconComponent
           id="burger"
-          width={30}
-          height={30}
+          width="30"
+          height="30"
           className="imageBurger"
         />
       </button>
       <div className={clsx(styles.mylogo, { [styles.hidden]: isMenuOpen })}>
         <div className="mylogo">
-        <IconComponent id="logo" width={32} height={32} className="logoIcon" />
+          <IconComponent
+            id="logo"
+            // width="30"
+            // height="30"
+            className="logoIcon"
+          />
+        </div>
       </div>
     </div>
-     </div>
   );
 };
 

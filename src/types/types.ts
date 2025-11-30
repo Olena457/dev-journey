@@ -21,7 +21,7 @@ export interface IconProps {
 
 
 export type teamData = {
-  id: string;
+  id: number;
   title: string;
   description: string;
   role: string;
@@ -31,3 +31,4 @@ export type teamData = {
 };
 
 export type TeamCardProps = teamData;
+

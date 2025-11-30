@@ -17,7 +17,8 @@
 }
 
 .hidden {
-  display: none !important;
+  display: none;
+  // display: none !important;
 }
 @media (min-width: 320px) and (max-width: calc(768px - 1px)) {
   .burger {
@@ -30,8 +31,8 @@
   }
 
   .logoIcon {
-    width: 32px;
-    height: 32px;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -40,12 +41,12 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
-    padding: 35px 35px;
+    padding: 35px;
   }
 
   .mylogo {
-    width: auto;
+    display: block;
+    // width: auto;
   }
 
   .logoIcon {
@@ -55,5 +56,16 @@
 
   .burger {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 35px 60px;
+    gap: 45px;
+  }
+
+  .logoIcon {
+    width: 80px;
+    height: 80px;
   }
 }

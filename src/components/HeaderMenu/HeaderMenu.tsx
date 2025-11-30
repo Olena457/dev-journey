@@ -1,7 +1,7 @@
 
 'use client';
-import { useEffect } from 'react';
 
+import { useEffect } from 'react';
 import clsx from 'clsx';
 import { headerItems } from '../HeaderMenu/headerItems';
 import styles from './HeaderMenu.module.scss';
@@ -34,14 +34,13 @@ const HeaderMenu: React.FC<NavItemProps> = ({ isOpen, onClick }) => {
   ));
 
   return (
-   
     <nav className={clsx(styles.navMenu, { [styles['is-open']]: isOpen })}>
       <div className={styles.wrapperIcon}>
         <IconComponent
           id="cross"
-          width={30}
-          height={30}
-          onClick={onClick} 
+          width="30"
+          height="30"
+          onClick={onClick}
           className={styles.close}
         />
       </div>
