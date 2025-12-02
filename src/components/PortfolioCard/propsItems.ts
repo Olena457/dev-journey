@@ -2,7 +2,71 @@ import { PetProgectsData } from '../../types/types';
 
 export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
-    id: 7,
+    id: 1,
+    title: 'Weather Forecast',
+    skills:
+      'Next.js 16, TypeScript, Jotai, React Query, Tailwind CSS 4, Axios, Geolocation, Responsive Design',
+    role: 'Frontend Developer',
+    imageProgect: '/img/projects/weather-forecast.jpg',
+    description:
+      'An application designed for easy checking of the weather forecast. It provides a detailed forecast for the current day and an approximate forecast for the next 7 days. Key features include flexible location search, real-time updates, **Geolocation Support**, and friendly error handling. Built with **Next.js 16** and **TypeScript** using **Jotai** and **React Query** for state management and **Axios** for data fetching. Fully optimized for mobile, tablet, and desktop screens.',
+    liveHref: 'https://next-weather-amber.vercel.app/',
+    repoHref: 'https://github.com/Olena457/next-weather.git',
+  },
+
+  {
+    id: 2,
+    title: 'AI Smart Chat',
+    skills:
+      'React, TypeScript, Mistral-tiny, Material UI, GSAP, Netlify Functions,Responsive Design',
+    role: 'Frontend Developer',
+    imageProgect: '/img/projects/ai-smart-chat.jpg',
+    description:
+      'A fully responsive web application for delivering a seamless and engaging chat experience. It integrates a lightweight AI search model, **Mistral-tiny**, and features thoughtful UI/UX elements, including an **animated greeting using GSAP**. The application is built with **React + TypeScript** for scalability, uses **Material UI** for styling (with Light and Dark theme support), and leverages **Netlify Functions** for lightweight serverless operations (proxy requests).',
+    liveHref: 'https://ai-smart-chat.netlify.app/',
+    repoHref: 'https://github.com/Olena457/smart-chat.git',
+  },
+
+  {
+    id: 3,
+    title: 'AI Photo Interpreter',
+    skills:
+      'React, Material UI, TensorFlow.js, Text-to-Speech API, AI/Machine Learning, Responsive Design',
+    role: 'Frontend Developer',
+    imageProgect: '/img/projects/ai-photo-interpreter.jpg',
+    description:
+      'A React-based application that analyzes images using a pre-trained **AI model** (@tensorflow-models/mobilenet). It generates a textual description, which is then converted to speech using the **Text-to-Speech API**. The app provides fast response time, a simple UI styled with **Material UI**, and supports interface language switching (Ukrainian and English). It is fully responsive and optimized for all devices.',
+    liveHref: 'https://ai-clasification.netlify.app/',
+    repoHref: 'https://github.com/Olena457/image-reader.git',
+  },
+
+  {
+    id: 4,
+    title: 'Wacanda Flow',
+    skills:
+      'React, GSAP, ScrollTrigger, HTML, CSS/Tailwind, JavaScript, Animations',
+    role: 'Frontend Developer',
+    imageProgect: '/img/projects/wacanda-flow.jpg',
+    description:
+      'A web application that immerses users in a dynamic, animated atmosphere where every scroll becomes part of the story. The app uses the **GSAP** animation library and its **ScrollTrigger** plugin to synchronize scroll behavior with smooth, high-performance animations, including distortion and deformation effects. It features a fully responsive, immersive design where the video container dynamically scales up or down.',
+    liveHref: 'https://gsap-scroll-wacanda.netlify.app/',
+    repoHref: 'https://github.com/Olena457/wacanda-flow.git',
+  },
+
+  {
+    id: 5,
+    title: 'IT Traveler',
+    skills: 'Vuejs 3, Tailwind CSS, Mapbox, JavaScript, HTML, CSS, Routing',
+    role: 'Frontend Developer',
+    imageProgect: '/img/projects/it-traveler.jpg',
+    description:
+      'A personal travel companion web app designed to capture memories and favorite places. The app uses **Mapbox integration** to allow users to place custom markers on an interactive map and visualize their personal locations. Features include full registration/login, routing (public, private, protected routes), and forms to add, edit, or delete favorite spots and upload photos. The application is built with **Vuejs 3** and **Tailwind CSS**.',
+    liveHref: 'https://my-it-travel.netlify.app/',
+    repoHref: 'https://github.com/Olena457/vue-project.git',
+  },
+
+  {
+    id: 6,
     title: 'Food & Drinks — Personal Cookbook',
     skills:
       'React + Vite, Redux Toolkit, TypeScript, Tailwind CSS, Axios, React Router, LocalStorage',
@@ -15,7 +79,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: 'AIDE',
     skills:
       'React + Vite, Redux Toolkit, Material UI, Framer Motion, React Slick, TypeScript, 3D Animation',
@@ -27,7 +91,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     repoHref: 'https://github.com/Olena457/slider-test.git',
   },
   {
-    id: 5,
+    id: 8,
     title: 'Interspace — Design Agency Landing Page',
     skills:
       'React + Vite, TypeScript, SCSS, AOS, HTML, CSS, JavaScript, Responsive Design',
@@ -39,7 +103,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     repoHref: 'https://github.com/Olena457/ts-react-lending.git',
   },
   {
-    id: 4,
+    id: 9,
     title: 'Quizlet Game',
     skills:
       'React, Redux, Firebase, HTML, CSS, JavaScript, API Integration, Responsive Design',
@@ -52,7 +116,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   },
 
   {
-    id: 1,
+    id: 10,
     title: 'PetLove',
     skills:
       'redux, axios, react-router, redux-persist, yup, React, JavaScript, HTML, CSS',
@@ -64,7 +128,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     repoHref: 'https://github.com/Olena457/love-pets.git',
   },
   {
-    id: 2,
+    id: 11,
     title: 'Events Board',
     skills: 'HTML, CSS, JavaScript, React-router, Redux, Firebase, Monorepo',
     role: 'Frontend Developer & UI/UX Design',
@@ -75,7 +139,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     repoHref: 'https://github.com/Olena457/events-registration.git',
   },
   {
-    id: 3,
+    id: 12,
     title: 'Learn-easy',
     skills:
       'HTML, CSS, JavaScript, React, Redux, React-router, React-modal, Firebase',
