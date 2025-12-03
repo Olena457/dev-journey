@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 8px 20px;
+  background-color: var(--color-main-white);
+  border-radius: 100px;
+  font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 28px;
+  }
+}
+
+.accent {
+  color: var(--main-color-dark);
+}
+
+.portfolio {
+  background-color: var(--gray-light);
+}

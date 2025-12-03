@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import styles from './HeaderContainer.module.scss';
 import { IconComponent } from '../ui/IconComponent';
-import HeaderMenu from '@/src/components/HeaderMenu/HeaderMenu';
+import MenuBurger from '@/src/components/MenuBurger/MenuBurger';
 
 const HeaderComponent: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const HeaderComponent: React.FC = () => {
 
   return (
     <div className={styles.header}>
-      <HeaderMenu isOpen={isMenuOpen} onClick={handleMenuClick} />
+      <MenuBurger isOpen={isMenuOpen} onClick={handleMenuClick} />
       <button
         className={clsx(styles.burger, { [styles.hidden]: isMenuOpen })}
         onClick={handleMenuClick}

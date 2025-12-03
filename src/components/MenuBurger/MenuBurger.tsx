@@ -4,7 +4,7 @@
 import { useEffect } from 'react';
 import clsx from 'clsx';
 import { optionsItems } from '../MenuBurger/options';
-import styles from './HeaderMenu.module.scss';
+import styles from './MenuBurger.module.scss';
 import { IconComponent } from '../ui/IconComponent';
 
 interface NavItemProps {

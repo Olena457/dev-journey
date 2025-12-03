@@ -1,12 +1,14 @@
 import TeamList from '../components/TeamList/TeamList';
-import TechnologyStack from '../components/TechnologyStack/TechnologyStack';
+import TeachList from '../components/TeachList/TeachList';
+import PortfolioCard from '../components/PortfolioCard/PortfolioCard';
 
 export default function Home() {
   return (
     <div>
       <main >
-        <TechnologyStack/>
+        <TeachList/>
         <TeamList />
+        <PortfolioCard/>
       </main>
     </div>
   );

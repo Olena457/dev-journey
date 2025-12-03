@@ -1,4 +1,4 @@
-import styles from './TechnologyStack.module.scss';
+import styles from './TeachList.module.scss';
 import { technologiesData } from './technologiesData';
 import { TechnologyItem } from '@/src/types/types';
 import {IconComponent} from '@/src/components/ui/IconComponent'
