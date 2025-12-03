@@ -30,8 +30,8 @@
   border-radius: 20px;
   background-color: var(--hover-dark);
   background-color: #1d1d1d;
+  // background: linear-gradient(90deg, #7debf2, #60a4ff);
   // border: solid 1px var(--main-light-hover);
-  //  background-color: rgba(0, 0, 0, 0.4);
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -110,7 +110,8 @@
   // color: var(--color-main-white);
   font-size: 24px;
   font-weight: 600;
-
+  color: #51b9fd;
+ 
 
 }
 // background: linear-gradient(135deg,  #00a3b6 25%, #eee5ff 50%, rgb(83, 195, 232, 1) 75%);
