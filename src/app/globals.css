@@ -99,7 +99,8 @@ h4 {
 
 body {
   font-family: 'Montserrat','Inter',  sans-serif;
-   background: var(--my-color-black); 
+   /* background: var(--my-color-black);  */
+   background: #0b1018; 
   /* color: var(--color-black);  */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

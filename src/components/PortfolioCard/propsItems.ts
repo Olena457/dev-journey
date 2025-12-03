@@ -9,7 +9,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     role: 'Frontend Developer',
     imageProgect: '/img/weather.jpg',
     description:
-      'An application designed for easy checking of the weather forecast. It provides a detailed forecast for the current day and an approximate forecast for the next 7 days. Key features include flexible location search, real-time updates, **Geolocation Support**, and friendly error handling. Built with **Next.js 16** and **TypeScript** using **Jotai** and **React Query** for state management and **Axios** for data fetching. Fully optimized for mobile, tablet, and desktop screens.',
+      'An application designed for easy checking of the weather forecast. It provides a detailed forecast for the current day and an approximate forecast for the next 7 days. Key features include flexible location search, real-time updates, <strong>Geolocation Support<strong/>, and friendly error handling. Built with Next.js 16 and TypeScript using Jotai and React Query for state management and Axios for data fetching. Fully optimized for mobile, tablet, and desktop screens.',
     liveHref: 'https://next-weather-amber.vercel.app/',
     repoHref: 'https://github.com/Olena457/next-weather.git',
   },
@@ -22,7 +22,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     role: 'Frontend Developer',
     imageProgect: '/img/smart.jpg',
     description:
-      'A fully responsive web application for delivering a seamless and engaging chat experience. It integrates a lightweight AI search model, **Mistral-tiny**, and features thoughtful UI/UX elements, including an **animated greeting using GSAP**. The application is built with **React + TypeScript** for scalability, uses **Material UI** for styling (with Light and Dark theme support), and leverages **Netlify Functions** for lightweight serverless operations (proxy requests).',
+      'A fully responsive web application for delivering a seamless and engaging chat experience. It integrates a lightweight AI search model, Mistral-tiny, and features thoughtful UI/UX elements, including an animated greeting using GSAP. The application is built with React + TypeScript for scalability, uses Material UI for styling (with Light and Dark theme support), and leverages Netlify Functions for lightweight serverless operations (proxy requests).',
     liveHref: 'https://ai-smart-chat.netlify.app/',
     repoHref: 'https://github.com/Olena457/smart-chat.git',
   },
@@ -35,7 +35,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     role: 'Frontend Developer',
     imageProgect: '/img/reader.jpg',
     description:
-      'A React-based application that analyzes images using a pre-trained **AI model** (@tensorflow-models/mobilenet). It generates a textual description, which is then converted to speech using the **Text-to-Speech API**. The app provides fast response time, a simple UI styled with **Material UI**, and supports interface language switching (Ukrainian and English). It is fully responsive and optimized for all devices.',
+      'A React-based application that analyzes images using a pre-trained AI model (@tensorflow-models/mobilenet). It generates a textual description, which is then converted to speech using the Text-to-Speech API. The app provides fast response time, a simple UI styled with Material UI, and supports interface language switching (Ukrainian and English). It is fully responsive and optimized for all devices.',
     liveHref: 'https://ai-clasification.netlify.app/',
     repoHref: 'https://github.com/Olena457/image-reader.git',
   },
@@ -48,7 +48,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     role: 'Frontend Developer',
     imageProgect: '/img/wacanda.jpg',
     description:
-      'A web application that immerses users in a dynamic, animated atmosphere where every scroll becomes part of the story. The app uses the **GSAP** animation library and its **ScrollTrigger** plugin to synchronize scroll behavior with smooth, high-performance animations, including distortion and deformation effects. It features a fully responsive, immersive design where the video container dynamically scales up or down.',
+      'A web application that immerses users in a dynamic, animated atmosphere where every scroll becomes part of the story. The app uses the GSAP animation library and its ScrollTrigger plugin to synchronize scroll behavior with smooth, high-performance animations, including distortion and deformation effects. It features a fully responsive, immersive design where the video container dynamically scales up or down.',
     liveHref: 'https://gsap-scroll-wacanda.netlify.app/',
     repoHref: 'https://github.com/Olena457/wacanda-flow.git',
   },
@@ -60,14 +60,14 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     role: 'Frontend Developer',
     imageProgect: '/img/travel.jpg',
     description:
-      'A personal travel companion web app designed to capture memories and favorite places. The app uses **Mapbox integration** to allow users to place custom markers on an interactive map and visualize their personal locations. Features include full registration/login, routing (public, private, protected routes), and forms to add, edit, or delete favorite spots and upload photos. The application is built with **Vuejs 3** and **Tailwind CSS**.',
+      'A personal travel companion web app designed to capture memories and favorite places. The app uses Mapbox integration to allow users to place custom markers on an interactive map and visualize their personal locations. Features include full registration/login, routing (public, private, protected routes), and forms to add, edit, or delete favorite spots and upload photos. The application is built with Vuejs 3 and Tailwind CSS.',
     liveHref: 'https://my-it-travel.netlify.app/',
     repoHref: 'https://github.com/Olena457/vue-project.git',
   },
 
   {
     id: 6,
-    title: 'Food & Drinks — Personal Cookbook',
+    title: 'Food & Drinks - Cookbook',
     skills:
       'React,Vite, Redux, TypeScript, Tailwind, Axios, React Router, LocalStorage',
     role: 'Frontend Developer',
@@ -92,7 +92,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   },
   {
     id: 8,
-    title: 'Interspace — Design Agency Landing Page',
+    title: 'Interspace - Landing Page',
     skills:
       'React, TypeScript, SCSS, AOS, HTML, JavaScript, Responsive Design',
     role: 'Frontend Developer',

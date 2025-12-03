@@ -7,8 +7,8 @@ export default function Home() {
     <div>
       <main >
         <TeachList/>
-        <TeamList />
         <PortfolioCard/>
+        <TeamList />
       </main>
     </div>
   );

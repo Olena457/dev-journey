@@ -100,8 +100,11 @@
   font-size: 18px;
   line-height: 120%;
   text-align: center;
-  color: var(--hover-dark);
   font-weight: 500;
+  // color: var(--hover-dark);
+  background: linear-gradient(90deg, #7debf2, #60a4ff);
+  background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .title {

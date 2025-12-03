@@ -17,7 +17,7 @@ const PortfolioCard= () => {
             <div className={styles.imageWrapper}>
               <img
                 className={styles.image}
-                alt={`${project.title} project home page photo`}
+                alt={project.title}
                 src={project.imageProgect}
               />
             </div>
@@ -30,7 +30,7 @@ const PortfolioCard= () => {
           </div>
           <div className={styles.linksWrapper}>
             {/* <p className={styles.checkText}>{t('portfolio.check')}</p> */}
-            <p className={styles.checkText}>{'portfolio.check'}</p>
+            {/* <p className={styles.checkText}>{'portfolio.check'}</p> */}
             <a
               className={styles.link}
               href={project.liveHref}
@@ -38,7 +38,7 @@ const PortfolioCard= () => {
               rel="noopener noreferrer"
             >
               <IconComponent id="link" className={styles.icon} />
-              <p>Live page</p>
+              <p>Live</p>
             </a>
             <a
               className={styles.link}
@@ -46,8 +46,8 @@ const PortfolioCard= () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconComponent id="github" className={styles.icon} />
-              <p>GitHub repository</p>
+              <IconComponent id="git" className={styles.icon} />
+              <p>GitHub</p>
             </a>
           </div>
         </li>
