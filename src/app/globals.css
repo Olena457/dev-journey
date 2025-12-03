@@ -15,16 +15,12 @@
   --shadow-color: rgba(45, 45, 45, 0.24);
 
   /* blue color */
-
-  /* --main-color-light:#5ebfff; */
-  --main-color-light:#51b9fd;
-
+  --main-color-light:#00c3ff;
   /* --main-color-light: rgb(83, 195, 232, 1); */
   --main-color-dark: rgba(10, 152, 198, 1);
-  --main-light-hover: #51b9fd;
-  /* --main-light-hover: #00bed6; */
+  --main-light-hover: #00c3ff;
   --main-dark-hover: #00a3b6;
-  --yellow-acsent: #fec423;
+  /* --yellow-acsent: #fec423; */
 
   /* gray color */
   --gray-color-light: rgba(238, 239, 243, 1);
@@ -33,16 +29,6 @@
   --gray-color-hover: #bcc4d4;
 
   /* gradients */
- 
-  --gradient-1: linear-gradient(135deg, #CC9300 0%, #EA433A 48%, #B327BF 100%);
-  --gradient-2:linear-gradient(
-  135deg,
-  #CC9300 0%,
-  #EA433A 26%,
-  #B327BF 48%,
-  #6666FF 76%,
-  #00BF9A 100%
-);
 --gradient-3: linear-gradient(
   to right,
   #B327BF 0%,

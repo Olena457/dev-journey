@@ -1,14 +1,14 @@
 .navMenu {
-  position: fixed;
+  position:absolute;
   top: 0;
   left: 0;
-  color: white;
+  color: var(--color-main-white);
   width: 100%;
   height: 100vh;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
   transform: translateX(-100%);
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 .is-open {
@@ -49,6 +49,7 @@
     display: none;
   }
   .menuList {
+   
     display: flex;
     font-size: clamp(14px, 2vw, 18px);
     flex-direction: row;
