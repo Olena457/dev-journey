@@ -16,7 +16,7 @@
 
   /* blue color */
   --main-color-light:#00c3ff;
-  /* --main-color-light: rgb(83, 195, 232, 1); */
+  --second-color-light: rgb(103, 207, 242);
   --main-color-dark: rgba(10, 152, 198, 1);
   --main-light-hover: #00c3ff;
   --main-dark-hover: #00a3b6;
@@ -50,6 +50,9 @@
     --foreground: #ededed;
   }
 } */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   outline: 0;
@@ -113,10 +116,10 @@ body {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .mycontainer {
     max-width: 1440px;
-    padding-inline: 72px;
+    padding-inline: 70px;
   }
 }
 

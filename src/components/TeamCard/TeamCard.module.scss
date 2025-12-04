@@ -1,16 +1,16 @@
 .flipCard {
   perspective: 1000px;
-  // border: 2px solid var(--main-color-light);
   max-width: 335px;
-  height: 280px;
+  height: 380px;
   display: block;
   flex-shrink: 0;
   text-decoration: none;
   border-radius: 10px;
 
+
   @media (min-width: 744px) {
     max-width: 320px;
-    height: 514px;
+    height: 515px;
   }
 }
 .flipInner {

@@ -1,19 +1,16 @@
 .header {
   z-index: 10;
-   position: fixed;
-  //  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
-    left: 0;
+  left: 0;
   max-width: 1560px;
   display: flex;
-  background-color: #ffffff10; 
+  background-color: #ffffff10;
   backdrop-filter: blur(10px);
-  // filter: blur(10px); 
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 28px 28px;
- 
 }
 
 .burger {
@@ -54,12 +51,13 @@
 
   .mylogo {
     display: block;
-    // width: auto;
+    width: auto;
   }
 
   .logoIcon {
-    width: 64px;
-    height: 64px;
+    width: 45px;
+    height: 45px;
+    padding:10px
   }
 
   .burger {

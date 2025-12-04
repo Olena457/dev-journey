@@ -1,40 +1,43 @@
-
 import { HeaderMenuItem } from '@/src/types/types';
 
 export const optionsItems: HeaderMenuItem[] = [
   {
-    id: 11,
+    id: 'home',
     item: 'Home',
     link: 'home',
   },
   {
-    id: 12,
+    id: 'about',
     item: 'About',
     link: 'about',
   },
   {
-    id: 13,
+    id: 'skills',
     item: 'Skills',
     link: 'skills',
   },
   {
-    id: 16,
-    item: 'Team',
+    id: 'projects',
+    item: 'Projects',
     link: 'projects',
   },
   {
-    id: 15,
-    item: 'Projects',
-    link: 'my-projects',
+    id: 'team',
+    item: 'Team',
+    link: 'team',
   },
   {
-    id: 14,
+    id: 'sertificates',
     item: 'Sertificates',
     link: 'sertificates',
   },
-
   {
-    id: 17,
+    id: 'services',
+    item: 'Services',
+    link: 'services',
+  },
+  {
+    id: 'contacts',
     item: 'Contacts',
     link: 'contacts',
   },

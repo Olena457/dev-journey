@@ -31,7 +31,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 3,
     title: 'AI Photo Interpreter',
     skills:
-      'React, Material UI, TensorFlow.js, Text-to-Speech API, AI/Machine Learning, Responsive Design',
+      'React, Material UI, TensorFlow.js, Text-to-Speech API, AI integration, Responsive Design',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/reader.jpg',
     description:
@@ -106,7 +106,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     title: 'Quizlet Game',
     skills:
       'React, Redux, Firebase, HTML, CSS, JavaScript, API Integration, Responsive Design',
-    role: 'Frontend Developer & UI/UX Design',
+    role: 'Frontend and Backend Developer & UI/UX Design',
     imageProgect: '/img/quizlet.jpg',
     description:
       'An interactive and educational game where users can participate in quizzes and create their own quiz questions. Core features include: full user authentication via Firebase, state management with Redux, category selection, result tracking, and API integration for random bonus facts. The application is fully responsive and covers main pages, game flow pages, and user profile management.',
@@ -130,7 +130,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 11,
     title: 'Events Board',
     skills: 'HTML, CSS, JavaScript, React-router, Redux, Firebase',
-    role: 'Frontend Developer & UI/UX Design',
+    role: 'Frontend and Backend Developer & UI/UX Design',
     imageProgect: '/img/event.jpg',
     description:
       'Developing a website with routing. Creating own design and data structure. This application was built using HTML, CSS, JavaScript, React-router, Redux, and Firebase. It is a web application for organizers and participants to create own and register for events.',

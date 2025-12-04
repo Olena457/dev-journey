@@ -11,7 +11,7 @@ const TeamCard = ({
   href,
 }: TeamCardProps) => {
   return (
-    <div className={styles.flipCard}>
+    <div id="team" className={styles.flipCard}>
       <div className={styles.flipInner}>
         {/* front */}
 

@@ -10,7 +10,7 @@ const PortfolioCard= () => {
 //   const { t } = useTranslation();
 
   return (
-    <ul className={styles.list}>
+    <ul id="projects" className={styles.list}>
       {PORTFOLIO_PROJECTS.map(project => (
         <li key={project.id} className={styles.item}>
           <div className={styles.itemWrapper}>
@@ -29,8 +29,6 @@ const PortfolioCard= () => {
             </div>
           </div>
           <div className={styles.linksWrapper}>
-            {/* <p className={styles.checkText}>{t('portfolio.check')}</p> */}
-            {/* <p className={styles.checkText}>{'portfolio.check'}</p> */}
             <a
               className={styles.link}
               href={project.liveHref}

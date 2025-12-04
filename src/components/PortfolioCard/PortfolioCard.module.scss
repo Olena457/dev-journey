@@ -28,11 +28,10 @@
 .item {
   padding: 18px;
   border-radius: 20px;
-  background-color: var(--hover-dark);
-  background-color: #1d1d1d;
-  // background: linear-gradient(90deg, #7debf2, #60a4ff);
-  // border: solid 1px var(--main-light-hover);
-
+  // background-color: var(--hover-dark);
+  // background-color: #1d1d1d;
+   background-color: #ffffff10;
+  backdrop-filter: blur(10px);
   &:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -108,23 +107,21 @@
 
 .title {
   margin-bottom: 12px;
-  color:var(--main-color-light);
   font-size: 24px;
   font-weight: 600;
- 
+  color: #60abff;
+//  background: linear-gradient(to left, #ffff1c, #00c3ff);
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   color: transparent;
+
 
 }
-// background: linear-gradient(135deg,  #00a3b6 25%, #eee5ff 50%, rgb(83, 195, 232, 1) 75%);
-// background-size: 400% 100%;
-// -webkit-background-clip: text;
-// background-clip: text;
-// color: transparent;
-// animation: shine 3s linear infinite;
 
 .role {
   font-size: 16px;
   font-weight: 500;
-  color: var(--main-light-hover);
+  color: var(--main-color-light);
   margin-top: 8px;
 }
 
@@ -156,7 +153,6 @@
   justify-content: center;
   color: var(--color-main-white);
   gap: 4px;
-  // text-decoration: underline;
   cursor: pointer;
   transition: color 0.3s ease;
 
@@ -203,3 +199,9 @@
   color: var(--main-color-dark);
   font-weight: bold;
 }
+// background: linear-gradient(135deg,  #00a3b6 25%, #eee5ff 50%, rgb(83, 195, 232, 1) 75%);
+// background-size: 400% 100%;
+// -webkit-background-clip: text;
+// background-clip: text;
+// color: transparent;
+// animation: shine 3s linear infinite;

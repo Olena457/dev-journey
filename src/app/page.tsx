@@ -1,6 +1,7 @@
 import TeamList from '../components/TeamList/TeamList';
 import TeachList from '../components/TeachList/TeachList';
 import PortfolioCard from '../components/PortfolioCard/PortfolioCard';
+import { ServicesList } from '../components/ServiceList/ServiceList';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <TeachList/>
         <PortfolioCard/>
         <TeamList />
+        <ServicesList/>
       </main>
     </div>
   );

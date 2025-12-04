@@ -1,5 +1,5 @@
 export interface HeaderMenuItem {
-  id: number;
+  id: string;
   item: string;
   link: string;
 }

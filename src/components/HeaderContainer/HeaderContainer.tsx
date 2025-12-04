@@ -31,8 +31,8 @@ const HeaderComponent: React.FC = () => {
         <div className="mylogo">
           <IconComponent
             id="logo"
-            // width="30"
-            // height="30"
+            width="45"
+            height="45"
             className="logoIcon"
           />
         </div>
