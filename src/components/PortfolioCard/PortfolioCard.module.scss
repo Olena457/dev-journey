@@ -51,14 +51,40 @@
     align-items: flex-start;
   }
 }
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.mainTitle {
+  font-weight: 500;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+   padding: 0px 20px 40px 20px;
+   color:white;
 
+   @media (min-width: 768px) {
+    padding: 0px 20px 70px 20px;
+  }
+  @media (min-width: 1024px) {
+    padding:0px 40px 70px 40px;
+  }
+  
+  
+}
 .imageWrapper {
+  @media (min-width: 744px) {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 140%;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4px;
   border-radius: 20px;
-  border: solid 1px var(--main-light-hover);
+  border: solid 2px var(--main-color-light);
 
 
   @media screen and (min-width: 768px) {
@@ -121,7 +147,7 @@
 .role {
   font-size: 16px;
   font-weight: 500;
-  color: var(--main-color-light);
+  color: #60abff;
   margin-top: 8px;
 }
 

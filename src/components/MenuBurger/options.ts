@@ -7,11 +7,6 @@ export const optionsItems: HeaderMenuItem[] = [
     link: 'home',
   },
   {
-    id: 'about',
-    item: 'About',
-    link: 'about',
-  },
-  {
     id: 'skills',
     item: 'Skills',
     link: 'skills',

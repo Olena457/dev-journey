@@ -1,0 +1,43 @@
+
+
+.wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+// ___________________________
+// .wrapper {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   background: #101010;
+//   overflow: hidden;
+// }
+
+// .canvas {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.outerVignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(16,16,16,0) 60%, rgba(16,16,16,1) 100%);
+}
+
+.centerVignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+}

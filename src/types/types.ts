@@ -1,3 +1,12 @@
+
+export interface LetterAnimationProps {
+  glitchColors?: string[];
+  glitchSpeed?: number;
+  centerVignette?: boolean;
+  outerVignette?: boolean;
+  smooth?: boolean;
+}
+
 export interface HeaderMenuItem {
   id: string;
   item: string;

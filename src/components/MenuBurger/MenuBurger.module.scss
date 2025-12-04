@@ -86,15 +86,26 @@
     display: none;
   }
   .menuList {
+    font-size: 14px;
+  }
+  .menuList {
     display: flex;
-    font-size: clamp(14px, 1vw, 16px);
     flex-direction: row;
+    font-size: 14px;
+
     justify-content: flex-end;
     color: white;
     padding-left: auto;
-    gap: 20px;
+    gap: 10px;
     height: auto;
     padding: 0;
     margin: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .menuList {
+    font-size: 16px;
+
+    gap: 20px;
   }
 }

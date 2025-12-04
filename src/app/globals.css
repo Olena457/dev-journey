@@ -96,6 +96,11 @@ body {
   font-family: 'Montserrat','Inter',  sans-serif;
    /* background: var(--my-color-black);  */
    background: #0b1018; 
+   color:#6666FF;
+   color:#A476FF;
+   color:#241a38;
+   color:#5e4491;
+
   /* color: var(--color-black);  */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
