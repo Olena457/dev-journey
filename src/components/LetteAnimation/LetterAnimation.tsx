@@ -5,7 +5,6 @@ import styles from './LetterAnimation.module.scss';
 import type {LetterAnimationProps} from '../../types/types'
 
 const LetterAnimation: React.FC<LetterAnimationProps> = ({
-//   glitchColors = ['#5e4491', '#A476FF', '#241a38'],
   glitchColors = ['#76C8FF', '#2A6F91', '#18384A'],
   glitchSpeed = 33,
   centerVignette = false,

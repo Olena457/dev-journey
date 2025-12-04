@@ -10,16 +10,15 @@
   transform: translateX(-100%);
   background-color: var(--my-color-black);
 }
-// visibility: hidden;
 
 // ______________________________________
 
 .linkBurger {
   position: relative;
   color: var(--color-main-white);
-  font-size: 28px;
-  line-height: 30px;
-  letter-spacing: 1.4;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 1.2;
   transition: color 0.3s ease;
 
   &:hover,
@@ -94,7 +93,7 @@
     font-size: 14px;
 
     justify-content: flex-end;
-    color: white;
+    // color: white;
     padding-left: auto;
     gap: 10px;
     height: auto;

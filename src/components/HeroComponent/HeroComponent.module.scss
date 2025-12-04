@@ -1,28 +1,30 @@
 .animationBlock {
   position: relative;
-  width: 100%;
-  height: 300px; 
-  z-index: 0;
+  width: 95%;
+  height: 300px;
+
+  @media (min-width: 1024px) {
+    height: 350px;
+    width: 50%;
+  }
+ 
 }
 
-.title {
-  position: relative;
-  z-index: 1;
-}
 
 .hero {
   display: flex;
   flex-direction: column;
   gap: 54px;
   width: 100%;
-  padding: 100px 30px 40px 30px;
-  //  background: linear-gradient(90deg, #7debf2, #60a4ff);;
+  padding: 100px 20px 40px 20px;
 
   @media (min-width: 768px) {
-    padding: 100px 20px 30px 20px;
+
+    padding: 120px 25px 30px 25px;
   }
   @media (min-width: 1024px) {
-    padding: 140px 40px 40px 40px;
+
+    padding: 140px 60px 40px 60px;
   }
 }
 
@@ -33,13 +35,12 @@
 }
 
 .title {
-  font-size: clamp(2rem, 3vw, 4rem);
+  font-size: clamp(1rem, 2.5vw, 3.5rem);
   font-weight: bold;
   text-align: left;
   line-height: 1.2;
   text-transform: uppercase;
   color: white;
-  
 }
 
 .content {
@@ -58,8 +59,11 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 540px;
   width: 100%;
+
+   @media (min-width: 1024px) {
+    width: 50%;
+  }
 }
 
 .stack {
@@ -70,6 +74,9 @@
 }
 
 .description {
+  width: 100%;
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   line-height: 1.6;
   color: white;
 }
 
@@ -77,19 +84,19 @@
   display: flex;
 }
 
-.gitBlock {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+// .gitBlock {
+//   display: flex;
+//   justify-content: flex-end;
+//   width: 100%;
 
-  @media (min-width: 1024px) {
-    width: 50%;
-  }
-}
+//   @media (min-width: 1024px) {
+//     width: 50%;
+//   }
+// }
 
-.gitLink {
-  display: flex;
-  align-items: flex-end;
-  width: 100%;
-  max-width: 540px;
-}
+// .gitLink {
+//   display: flex;
+//   align-items: flex-end;
+//   width: 100%;
+//   max-width: 540px;
+// }

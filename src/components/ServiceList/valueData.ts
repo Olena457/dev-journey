@@ -6,16 +6,16 @@ export const services = [
       'Building responsive and intuitive user interfaces using modern frameworks and libraries.',
   },
   {
-    iconId: 'code',
-    service: 'Backend Development',
-    description:
-      'Building application with backend integration with Fairbase and database settings.',
-  },
-  {
     iconId: 'optim',
     service: 'Optimization',
     description:
       'Optimizing performance, secure user experience, improve speed and maintainability.',
+  },
+  {
+    iconId: 'code',
+    service: 'Backend Development',
+    description:
+      'Building application with backend integration with Fairbase and database settings.',
   },
   {
     iconId: 'ai',

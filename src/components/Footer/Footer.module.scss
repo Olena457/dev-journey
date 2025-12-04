@@ -1,0 +1,87 @@
+.footer {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  width: 100%;
+  padding: 20px 40px;
+
+  @media (min-width: 768px) {
+
+    padding: 25px 50px ;
+  }
+  @media (min-width: 1024px) {
+
+    padding: 40px 60px ;
+  }
+  @media (min-width: 1440px) {
+
+    padding: 40px 200px ;
+  }
+}
+
+.footerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
+  align-items: center;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;
+  align-items: center;
+}
+
+.footerLink {
+  color: inherit;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  line-height: 1;
+  min-height: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+}
+
+.footerQuote {
+  font-size: 1rem;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: clamp(1.4rem, 3vw, 2.6rem);
+//   font-weight: bold;
+  color: #ffffff;
+//   max-width: 400px;
+}
+
+/* --- Від 768px --- */
+@media (min-width: 768px) {
+  .footerContainer {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footerNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 12px 120px;
+    text-align: left;
+  }
+
+  .footerQuote {
+    text-align: left;
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+}
+@media (min-width: 1440px) {
+.footerQuote {
+     max-width: 650px;
+  }
+}

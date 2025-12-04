@@ -15,11 +15,8 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  color: #60abff;
-//   background: linear-gradient(to left, #ffff1c, #00c3ff);
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   color: transparent;
+  color: #76C8FF;
+
 }
 
 .list {
@@ -41,6 +38,7 @@
   flex-direction: column;
   gap: 1.5rem;
   background-color: var(--gray-light);
+
   border-radius: 20px;
   padding: 1.5rem;
 }
@@ -51,7 +49,7 @@
   align-items: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--second-color-light);
+  background-color: #76C8FF;
   padding: 0.25rem;
   border-radius: 50%;
 }

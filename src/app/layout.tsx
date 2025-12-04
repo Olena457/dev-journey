@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google"; 
 import HeaderContainer from '@/src/components/HeaderContainer/HeaderContainer'
 import "./globals.css";
+import { Footer } from "../components/Footer/Footer";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
         <HeaderContainer />
         {children}
+        <Footer/>
       </body>
     </html>
   );
