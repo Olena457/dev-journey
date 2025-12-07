@@ -5,7 +5,7 @@
   display: block;
   flex-shrink: 0;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 20px;
 
 
   @media (min-width: 744px) {
@@ -20,7 +20,7 @@
   text-align: center;
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .flipCard:hover .flipInner {
@@ -32,7 +32,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 8px;
+  border-radius: 20px;
   overflow: hidden;
 }
 .front {
@@ -47,7 +47,7 @@
   inset: 0;
   background-size: cover;
   background-position: center top;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 .mobile {
   @media (min-width: 744px) {
@@ -92,7 +92,7 @@
   background-color: var(--gray-color-dark);
   opacity: 0.8;
 
-  border-radius: 8px;
+  border-radius: 20px;
   transition: all 0.4s ease;
 }
 
@@ -125,7 +125,7 @@
   text-align: center;
   background-color: var(--gray-color-dark);
   opacity: 0.7;
-  border-radius: 8px;
+  border-radius: 20px;
   transition: all 0.4s ease;
 }
 
@@ -179,7 +179,7 @@
   text-align: center;
   background-color: var(--gray-color-dark);
   opacity: 0.6;
-  border-radius: 8px;
+  border-radius: 20px;
   transition: all 0.4s ease;
 }
 

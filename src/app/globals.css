@@ -9,6 +9,7 @@
 
   /* black color */
   --dark-black-color:#000000;
+  --title-black-color: #0c121b;
   --my-color-black: rgba(23, 23, 23, 1);
   --border-color-dark: rgba(45, 45, 45, 0.32);
   --hover-dark: rgba(45, 45, 45, 0.8);
@@ -16,26 +17,70 @@
 
   /* blue color */
   --main-color-light:#00c3ff;
-  --second-color-light: rgb(103, 207, 242);
-  --main-color-dark: rgba(10, 152, 198, 1);
-  --main-light-hover: #00c3ff;
-  --main-dark-hover: #00a3b6;
+  /* --second-color-light: rgb(103, 207, 242); */
+  /* --main-color-dark: rgba(10, 152, 198, 1); */
+  /* --main-light-hover: #00c3ff; */
+  --main-dark-hover: #a54be1;
   /* --yellow-acsent: #fec423; */
 
   /* gray color */
-  --gray-color-light: rgba(238, 239, 243, 1);
-  --gray-color-dark: rgba(214, 222, 233, 1);
+  /* --gray-color-light: rgba(238, 239, 243, 1); */
+  /* --gray-color-dark: rgba(214, 222, 233, 1); */
   --gray-color-border: rgba(252, 253, 255, 1);
   --gray-color-hover: #bcc4d4;
 
   /* gradients */
---gradient-3: linear-gradient(
+
+
+
+  /* background: linear-gradient(
+    135deg, 
+    #1A237E 0%,     
+    #673AB7 50%,    
+    #FF4081 100%    
+  ); */
+/* background: radial-gradient(
+    circle at center, 
+    #303F9F 0%,     
+    #1A237E 50%,    
+    #0C0D12 100%    
+  ); */
+ 
+ 
+/* background: linear-gradient(
+    145deg, 
+    #56CCF2 0%, 
+    #A3A7F4 50%, 
+    #D0BFF7 100% 
+); */
+background: linear-gradient(
+    135deg, 
+    #C048FF 0%, 
+    #6930C3 50%, 
+    #3D1D70 100% 
+);
+/* background: linear-gradient(
+    135deg, 
+    #6930C3 0%, 
+    #a54be1 50%, 
+    #A3A7F4 100%, 
+); */
+/* --gradient-0: linear-gradient(
   to right,
   #B327BF 0%,
   #6666FF 48%,
   #00C09A 100%
-);
+); */
 
+
+ /* --gradient-dark-circle: radial-gradient(
+   circle at center, 
+    #D0BFF7 0%, 
+    #A3A7F4 25%, 
+    #56CCF2 55%, 
+    #0C0D12 90% 
+  
+  ); */
   /* breakpoints */
   --breakpoints-xs: 320px;
   --breakpoints-sm: 375px;
@@ -96,11 +141,8 @@ body {
   font-family: 'Montserrat','Inter',  sans-serif;
    /* background: var(--my-color-black);  */
    background: #0b1018; 
-   /* color:#6666FF;
-   color:#A476FF;
-   color:#241a38;
-   color:#5e4491; */
-
+   /* /* color:#6666FF; */
+   
   /* color: var(--color-black);  */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

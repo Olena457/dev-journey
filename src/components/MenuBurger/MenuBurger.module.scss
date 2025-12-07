@@ -11,7 +11,6 @@
   background-color: var(--my-color-black);
 }
 
-// ______________________________________
 
 .linkBurger {
   position: relative;
@@ -23,7 +22,7 @@
 
   &:hover,
   &:active {
-    color: #60abff;
+    color:var(--main-dark-hover);
 
     &::after {
       content: '';
@@ -32,7 +31,7 @@
   }
 
   &:focus {
-    color: #60abff;
+    color:var(--main-dark-hover);
   }
 
   &::after {
@@ -42,7 +41,7 @@
     left: 0;
     height: 2px;
     width: 0;
-    background-color: #60abff;
+    background-color: var(--main-dark-hover);
     transition: all 0.3s ease;
   }
 }

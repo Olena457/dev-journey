@@ -1,7 +1,29 @@
 .wrapTeam {
   padding: 40px 30px;
- background: linear-gradient(90deg, #7debf2, #60a4ff);;
-
+  // background: radial-gradient(
+  //  circle at center, 
+  //   #6930C3 5%, 
+  //   #a54be1 60%, 
+  //   #6de8f5 100%, 
+  // );
+  background: radial-gradient(
+   circle at center, 
+     #6de8f5 5%, 
+    #a54be1 60%, 
+    #08080D 100% 
+  );
+  background: radial-gradient(
+    circle at center, 
+    #A341F2 0%, 
+    #7e04cf  30%, 
+    #08080D 70%  
+  );
+//  background: radial-gradient(
+//     circle at center, 
+//     #A341F2 0%, 
+//     #451D85 30%, 
+//     #08080D 70% 
+//   );
   @media (min-width: 768px) {
     padding: 70px 20px;
   }
@@ -23,7 +45,7 @@
   align-items: center;
 
   @media (min-width: 768px) {
-    padding:0 40px 70px 40px;
+    padding: 0 40px 70px 40px;
   }
 
   @media (min-width: 1440px) {
@@ -45,18 +67,16 @@
   font-size: 28px;
   line-height: 140%;
   letter-spacing: 0.01em;
-  color:#0c121b;
-  // background: linear-gradient(to left, #ffff1c, #00c3ff);
-  // -webkit-background-clip: text;
-  // background-clip: text;
-  // color: transparent;
-
+  color:var(--title-black-color);
+  background:linear-gradient(360deg, #ca84f8 0%, #8cfaf5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   //  background: linear-gradient(135deg,  #00a3b6 25%, #eee5ff 50%, rgb(83, 195, 232, 1) 75%);
   // background-size: 400% 100%;
   // animation: shine 3s linear infinite;
 
   @media (min-width: 744px) {
-    // width: 320px;
     font-weight: 600;
     font-size: 42px;
     line-height: 140%;

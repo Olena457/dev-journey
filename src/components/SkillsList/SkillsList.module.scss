@@ -2,20 +2,18 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
- 
-
 }
- 
+
 .item {
   padding: 8px 18px;
-  color:var(--dark-black-color);
-  background-color:transparent;
-  
-background: linear-gradient(90deg, #7debf2, #60a4ff);
+  color: var(--color-main-white);
+  background-color: transparent;
+
+  // background: linear-gradient(90deg, #7debf2, #60a4ff);
   // background-color:transparent;
   border-radius: 100px;
   font-weight: 600;
-  // border: 1px solid var(--main-color-light) ;
+  border: 1px solid var(--main-color-light);
   @media screen and (min-width: 768px) {
     padding: 12px 28px;
   }
@@ -24,9 +22,3 @@ background: linear-gradient(90deg, #7debf2, #60a4ff);
 .accent {
   color: var(--main-color-dark);
 }
-
-// .portfolio {
-//   background-color: var(--gray-light);
-// }
-
-

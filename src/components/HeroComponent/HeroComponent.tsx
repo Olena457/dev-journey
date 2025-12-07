@@ -1,6 +1,6 @@
 // 'use client';
 
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import styles from './HeroComponent.module.scss';
 import LetterAnimation from '../LetteAnimation/LetterAnimation';
 
@@ -12,16 +12,17 @@ export const HeroComponet: React.FC = () => {
           <div className={styles.textBlock}>
             <h1 className={styles.title}>Frontend Developer</h1>
             <p className={styles.description}>
-              I am a frontend developer focused on building scalable, efficient
-              solutions through a structured approach. I am adept at driving
-              both collaborative and independent projects, turning ideas into
-              interactive, seamless digital experiences powered by modern
-              frontend technologies.<br/> I am committed to continuous learning and
-              applying diverse development approaches.
+              Transforming ideas into interactive and seamless digital
+              experiences through modern frontend development. Driven by
+              curiosity, continuous learning, and effective development
+              methodologies.
             </p>
           </div>
+
           <div className={styles.animationBlock}>
-            <LetterAnimation />
+            <div className={styles.codeContent}>
+              <LetterAnimation />
+            </div>
           </div>
         </div>
       </div>
