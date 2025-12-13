@@ -28,24 +28,31 @@
 .item {
   padding: 18px;
   border-radius: 20px;
+  // background: radial-gradient(
+  //   circle at center,
+  //   #a341f2 0%,
+  //   #7e04cf 30%,
+  //   #08080d 70%
+  // );
+  // background: radial-gradient(
+  //   circle at center,
+  //   #a341f2 0%,
+  //   #6d03b4 30%,
+  //   #181825 70%
+  // );
+  // background: radial-gradient(
+  //   circle at center,
+  //   #7e04cf 0%,
+  //   #2C1048 30%,
+  //   #08080d 70%
+  // );
   background: radial-gradient(
     circle at center,
-    #a341f2 0%,
-    #7e04cf 30%,
-    #08080d 70%
-  );
-  background: radial-gradient(
-    circle at center,
-    #a341f2 0%,
-    #6d03b4 30%,
+    #6d03b4 0%,
+     #2C1048 50%,
     #181825 70%
   );
-  //  background: radial-gradient(
-  //   circle at center,
-  //   #A341F2 0%,
-  //   #451D85 30%,
-  //   #08080D 70%
-  // );
+   
 
   &:not(:last-child) {
     margin-bottom: 24px;
