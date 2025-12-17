@@ -1,6 +1,5 @@
 // 'use client';
 
-// import dynamic from 'next/dynamic';
 import styles from './HeroComponent.module.scss';
 import LetterAnimation from '../LetteAnimation/LetterAnimation';
 

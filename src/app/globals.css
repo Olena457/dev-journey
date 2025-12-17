@@ -24,8 +24,8 @@
   /* --yellow-acsent: #fec423; */
 
   /* gray color */
-  /* --gray-color-light: rgba(238, 239, 243, 1); */
-  /* --gray-color-dark: rgba(214, 222, 233, 1); */
+  --gray-color-light: rgba(238, 239, 243, 1);
+  --gray-color-dark: rgba(214, 222, 233, 1);
   --gray-color-border: rgba(252, 253, 255, 1);
   --gray-color-hover: #bcc4d4;
 
@@ -53,7 +53,9 @@
     #A3A7F4 50%, 
     #D0BFF7 100% 
 ); */
-background: linear-gradient(
+--gradient-color-border:linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+
+--background-gradient-color: linear-gradient(
     135deg, 
     #C048FF 0%, 
     #6930C3 50%, 

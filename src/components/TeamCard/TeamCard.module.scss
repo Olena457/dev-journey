@@ -70,8 +70,6 @@
 
   .flipCard:hover & {
     background-color: var(--gray-color-light);
-    border: 2px solid var(--main-color-light);
-    box-shadow: 0 4px 6px 0 var(--shadow-color);
   }
 }
 .wrapperRole {
@@ -140,7 +138,7 @@
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: var(--main-color-light);
+    background-color: var(--main-dark-hover);
   }
   @media (min-width: 744px) {
     top: 232px;
@@ -178,7 +176,7 @@
   line-height: 120%;
   text-align: center;
   background-color: var(--gray-color-dark);
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 20px;
   transition: all 0.4s ease;
 }

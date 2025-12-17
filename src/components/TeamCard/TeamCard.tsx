@@ -27,7 +27,12 @@ const TeamCard = ({
           />
           <div className={styles.overlay}></div>
           <div className={styles.title}>
-            <Link className={styles.link} href={href}>
+            <Link
+              className={styles.link}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {title}
             </Link>
           </div>
@@ -48,7 +53,12 @@ const TeamCard = ({
             <div className={styles.role}>{role}</div>
           </div>
           <div className={styles.title}>
-            <Link className={styles.link} href={href}>
+            <Link
+              className={styles.link}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {title}
             </Link>
           </div>
