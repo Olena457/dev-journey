@@ -53,3 +53,7 @@ export type PetProgectsData = {
 };
 export type PetProgectsProps = PetProgectsData;
 
+export interface MarqueeItem {
+  id: number;
+  imageProgect: string;
+}

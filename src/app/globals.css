@@ -7,6 +7,14 @@
   --gray-light: rgba(238, 239, 243, 1);
   --gray-dark: rgba(214, 222, 233, 1);
 
+
+  /* gray color */
+  --gray-color-light: rgba(238, 239, 243, 1);
+  --gray-color-dark: rgba(214, 222, 233, 1);
+  --gray-color-border: rgba(252, 253, 255, 1);
+  --gray-color-hover: #bcc4d4;
+
+
   /* black color */
   --dark-black-color:#000000;
   --title-black-color: #0c121b;
@@ -15,23 +23,13 @@
   --hover-dark: rgba(45, 45, 45, 0.8);
   --shadow-color: rgba(45, 45, 45, 0.24);
 
-  /* blue color */
   --main-color-light:#00c3ff;
+  --main-dark-hover: #a54be1;
   /* --second-color-light: rgb(103, 207, 242); */
   /* --main-color-dark: rgba(10, 152, 198, 1); */
   /* --main-light-hover: #00c3ff; */
-  --main-dark-hover: #a54be1;
-  /* --yellow-acsent: #fec423; */
-
-  /* gray color */
-  --gray-color-light: rgba(238, 239, 243, 1);
-  --gray-color-dark: rgba(214, 222, 233, 1);
-  --gray-color-border: rgba(252, 253, 255, 1);
-  --gray-color-hover: #bcc4d4;
-
+  /* --yellow-acsent: #fec423; */ 
   /* gradients */
-
-
 
   /* background: linear-gradient(
     135deg, 
@@ -54,7 +52,6 @@
     #D0BFF7 100% 
 ); */
 --gradient-color-border:linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-
 --background-gradient-color: linear-gradient(
     135deg, 
     #C048FF 0%, 
@@ -141,19 +138,14 @@ h4 {
 
 body {
   font-family: 'Montserrat','Inter',  sans-serif;
-   /* background: var(--my-color-black);  */
-   background: #0b1018; 
-   /* /* color:#6666FF; */
-   
-  /* color: var(--color-black);  */
+   /* background: #0b1018;  */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .mycontainer {
-  width:  100%;
-  /* min-width: 375px; */
+  width:  100%;  /* min-width: 375px; */
   padding-inline: 20px;
   margin-inline: auto;
 }
