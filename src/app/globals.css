@@ -7,13 +7,11 @@
   --gray-light: rgba(238, 239, 243, 1);
   --gray-dark: rgba(214, 222, 233, 1);
 
-
   /* gray color */
   --gray-color-light: rgba(238, 239, 243, 1);
   --gray-color-dark: rgba(214, 222, 233, 1);
   --gray-color-border: rgba(252, 253, 255, 1);
   --gray-color-hover: #bcc4d4;
-
 
   /* black color */
   --dark-black-color:#000000;
@@ -23,6 +21,7 @@
   --hover-dark: rgba(45, 45, 45, 0.8);
   --shadow-color: rgba(45, 45, 45, 0.24);
 
+/* brand colors  */
   --main-color-light:#00c3ff;
   --second-blue-dark:#60abff;
   --main-dark-hover: #a54be1;
@@ -31,7 +30,8 @@
   /* --main-color-dark: rgba(10, 152, 198, 1); */
   /* --main-light-hover: #00c3ff; */
   /* --yellow-acsent: #fec423; */ 
-  /* gradients */
+
+  /* gradients colors */
 --gradient-color-border:linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
 --background-gradient-color: linear-gradient(
     135deg, 
@@ -45,13 +45,13 @@
     #673AB7 50%,    
     #FF4081 100%    
   ); */
+
 /* background: radial-gradient(
     circle at center, 
     #303F9F 0%,     
     #1A237E 50%,    
     #0C0D12 100%    
   ); */
- 
  
 /* background: linear-gradient(
     145deg, 
@@ -66,13 +66,13 @@
     #a54be1 50%, 
     #A3A7F4 100%, 
 ); */
+
 /* --gradient-0: linear-gradient(
   to right,
   #B327BF 0%,
   #6666FF 48%,
   #00C09A 100%
 ); */
-
 
  /* --gradient-dark-circle: radial-gradient(
    circle at center, 
@@ -82,12 +82,14 @@
     #0C0D12 90% 
   
   ); */
-  /* breakpoints */
+
+   /* breakpoints */
   --breakpoints-xs: 320px;
   --breakpoints-sm: 375px;
   --breakpoints-md: 768px;
   --breakpoints-lg: 1440px;
   --breakpoints-xl: 1540px;
+ 
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -96,6 +98,7 @@
     --foreground: #ededed;
   }
 } */
+
 html {
   scroll-behavior: smooth;
 }
@@ -140,21 +143,20 @@ h4 {
 
 body {
   font-family: 'Montserrat','Inter',  sans-serif;
-   /* background: #0b1018;  */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: #0b1018;  */
 }
 
 .mycontainer {
-  width:  100%;  /* min-width: 375px; */
+  width: 100%;  /* min-width: 375px; */
   padding-inline: 20px;
   margin-inline: auto;
 }
 
 @media screen and (min-width: 744px) {
   .mycontainer {
-    /* width: 744px; */
     padding-inline: 40px;
   }
 }

@@ -12,6 +12,7 @@ export interface HeaderMenuItem {
   item: string;
   link: string;
 }
+
 export type TechnologyItem = {
   id: number;
   name: string;
@@ -38,8 +39,8 @@ export type teamsCardsData = {
   imageDesktop: string;
   href: string;
 };
-export type TeamCardProps = teamsCardsData;
 
+export type TeamCardProps = teamsCardsData;
 
 export type PetProgectsData = {
   id: number;
@@ -52,6 +53,7 @@ export type PetProgectsData = {
   repoHref: string;
 };
 export type PetProgectsProps = PetProgectsData;
+
 
 export interface MarqueeItem {
   id: number;

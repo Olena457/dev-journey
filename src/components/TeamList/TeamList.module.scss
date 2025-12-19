@@ -1,23 +1,20 @@
 .wrapTeam {
   padding: 40px 30px;
-  // background: radial-gradient(
-  //  circle at center, 
-  //   #6930C3 5%, 
-  //   #a54be1 60%, 
-  //   #6de8f5 100%, 
-  // );
-  background: radial-gradient(
-   circle at center, 
-     #6de8f5 5%, 
-    #a54be1 60%, 
-    #08080D 100% 
-  );
+
   background: radial-gradient(
     circle at center, 
     #A341F2 0%, 
     #7e04cf  30%, 
     #08080D 70%  
   );
+
+  // background: radial-gradient(
+  //  circle at center, 
+  //   #6930C3 5%, 
+  //   #a54be1 60%, 
+  //   #6de8f5 100%, 
+  // );
+  
 //  background: radial-gradient(
 //     circle at center, 
 //     #A341F2 0%, 
@@ -67,13 +64,11 @@
   font-size: 28px;
   line-height: 140%;
   letter-spacing: 0.01em;
- background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+  background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  //  background: linear-gradient(135deg,  #00a3b6 25%, #eee5ff 50%, rgb(83, 195, 232, 1) 75%);
-  // background-size: 400% 100%;
-  // animation: shine 3s linear infinite;
+  
 
   @media (min-width: 744px) {
     font-weight: 600;
