@@ -1,6 +1,6 @@
 .footer {
-  background-color: #0f0f0f;
-  color: #f0f0f0;
+  background-color:var(--dark-black-color);
+  color: var(--color-main-white);
   width: 100%;
   padding: 20px 40px;
 
@@ -46,7 +46,7 @@
 }
 
 .footerLink:hover {
-  color: #ffffff;
+  color:var(--color-main-white);
 }
 
 .footerQuote {
@@ -54,12 +54,9 @@
   text-align: center;
   font-size: clamp(1rem, 2.5vw, 2rem);
   line-height: clamp(1.4rem, 3vw, 2.6rem);
-//   font-weight: bold;
-  color: #ffffff;
-//   max-width: 400px;
+  color:var(--color-main-white);
 }
 
-/* --- Від 768px --- */
 @media (min-width: 768px) {
   .footerContainer {
     flex-direction: row; 

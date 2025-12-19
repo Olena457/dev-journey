@@ -1,12 +1,10 @@
 
-// ____________________________________
 .wrapper {
   position: relative;
   overflow-x: hidden;
   margin: 40px 0px;
   padding: 2rem 0;
   width: 100%;
-
 
   @media (min-width: 768px) {
     margin: 70px 0px;
@@ -15,6 +13,7 @@
     margin: 80px 0px;
   }
 }
+
 .gradient {
   pointer-events: none;
   position: absolute;

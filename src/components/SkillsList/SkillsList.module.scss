@@ -8,12 +8,11 @@
   padding: 8px 18px;
   color: var(--color-main-white);
   background-color: transparent;
-
-  // background: linear-gradient(90deg, #7debf2, #60a4ff);
-  // background-color:transparent;
   border-radius: 100px;
   font-weight: 600;
   border: 1px solid var(--main-color-light);
+  // background: linear-gradient(90deg, #7debf2, #60a4ff);
+  // background-color:transparent;
   @media screen and (min-width: 768px) {
     padding: 12px 28px;
   }
