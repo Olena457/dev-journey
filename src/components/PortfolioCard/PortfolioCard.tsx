@@ -3,7 +3,8 @@ import { PORTFOLIO_PROJECTS } from './propsItems';
 
 import SkillsList from '../SkillsList/SkillsList';
 import styles from './PortfolioCard.module.scss';
-import { IconComponent } from '../ui/IconComponent';
+import LinkIcon from '@/public/icons/LinkIcon';
+import GitIcon from '@/public/icons/GitIcon';
 // import { useTranslation } from 'react-i18next';
 
 const PortfolioCard= () => {
@@ -39,7 +40,7 @@ const PortfolioCard= () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconComponent id="link" className={styles.icon} />
+                <LinkIcon id="link" className={styles.icon} />
                 <p>Live</p>
               </a>
               <a
@@ -48,7 +49,7 @@ const PortfolioCard= () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconComponent id="git" className={styles.icon} />
+                <GitIcon id="git" className={styles.icon} />
                 <p>GitHub</p>
               </a>
             </div>

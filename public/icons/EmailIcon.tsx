@@ -26,7 +26,7 @@ const EmailIcon: React.FC<IconProps> = ({
         strokeLinejoin="round"
       />
       <g id="SVGRepo_iconCarrier">
-        <circle cx={32} cy={32} r={32} fill="#77B3D4" />
+        <circle cx={32} cy={32} r={32} fill="#60abff" />
         <path
           d="M32,54c-12.1,0-22-9.9-22-22s9.9-22,22-22s22,9.9,22,22c0,4.5-1.4,8.9-3.9,12.6c-0.6,0.8-1.7,1.1-2.6,0.6 
              c-0.3-0.2-8.1-4.2-8.1-13.1v-8.8c0-1.1,0.9-2,2-2c1.1,0,2,0.9,2,2v8.8c0,4.3,2.6,7.1,4.4,8.5C49.2,38,50,35,50,32 

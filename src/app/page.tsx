@@ -1,4 +1,4 @@
-import { HeroComponet } from '../components/HeroComponent/HeroComponent';
+import { HeroComponent } from '../components/HeroComponent/HeroComponent';
 import HeaderComponent from '../components/HeaderContainer/HeaderContainer';
 import PortfolioCard from '../components/PortfolioCard/PortfolioCard';
 import TeachList from '../components/TeachList/TeachList';
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <main >
-        <HeroComponet/>
+        <HeroComponent/>
         <HeaderComponent/>
         <PortfolioCard/>
         <TeachList/>
