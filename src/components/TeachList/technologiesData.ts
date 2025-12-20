@@ -1,89 +1,60 @@
-import { TechnologyItem } from '@/src/types/types';
+// import * as React from 'react';
+// import { IconProps } from '@/src/types/types';
 
-export const technologiesData: TechnologyItem[] = [
-  {
-    id: 13,
-    name: 'HTML5',
-    iconId: 'html',
-  },
-  {
-    id: 23,
-    name: 'CSS3',
-    iconId: 'css',
-  },
-  {
-    id: 33,
-    name: 'SCSS',
-    iconId: 'scss',
-  },
-  {
-    id: 43,
-    name: 'React',
-    iconId: 'react',
-  },
-  {
-    id: 533,
-    name: 'Redux',
-    iconId: 'redux',
-  },
-  {
-    id: 63,
-    name: 'JavaScript',
-    iconId: 'js',
-  },
-  {
-    id: 73,
-    name: 'TypeScript',
-    iconId: 'typescript',
-  },
-  {
-    id: 83,
-    name: 'Next.js',
-    iconId: 'next',
-  },
-  {
-    id: 93,
-    name: 'Vue.js',
-    iconId: 'vue',
-  },
-  {
-    id: 103,
-    name: 'Node.js',
-    iconId: 'node',
-  },
-  {
-    id: 113,
-    name: 'Tailwind CSS',
-    iconId: 'tailwind',
-  },
-  {
-    id: 123,
-    name: 'Material UI',
-    iconId: 'mui',
-  },
-  {
-    id: 143,
-    name: 'Figma',
-    iconId: 'figma',
-  },
-  {
-    id: 153,
-    name: 'Firebase',
-    iconId: 'firebase',
-  },
-  {
-    id: 163,
-    name: 'Git',
-    iconId: 'git',
-  },
-  {
-    id: 173,
-    name: 'MongoDB',
-    iconId: 'mongo',
-  },
-  {
-    id: 183,
-    name: 'MySQL',
-    iconId: 'mysql',
-  },
-];
+// // Імпортуємо всі іконки
+// import HtmlIcon from '@/public/icons/HtmlIcon';
+// import CssIcon from '@/public/icons/CssIcon';
+// import ScssIcon from '@/public/icons/ScssIcon';
+// import ReactIcon from '@/public/icons/ReactIcon';
+// import ReduxIcon from '@/public/icons/ReduxIcon';
+// import JsIcon from '@/public/icons/JsIcon';
+// import TypeScriptIcon from '@/public/icons/TypeScriptIcon';
+// import NextIcon from '@/public/icons/NextIcon';
+// import VueIcon from '@/public/icons/VueIcon';
+// import NodeIcon from '@/public/icons/NodeIcon';
+// import TailwindIcon from '@/public/icons/TailwindIcon';
+// import MuiIcon from '@/public/icons/MuiIcon';
+// import FigmaIcon from '@/public/icons/FigmaIcon';
+// import FirebaseIcon from '@/public/icons/FirebaseIcon';
+// import GitIcon from '@/public/icons/GitIcon';
+// import MongoIcon from '@/public/icons/MongoIcon';
+// import MysqlIcon from '@/public/icons/MysqlIcon';
+// import OptimIcon from '@/public/icons/OptimIcon';
+
+//  export const iconsMap: Record<string, React.FC<IconProps>> = {
+//   html: HtmlIcon,
+//   css: CssIcon,
+//   scss: ScssIcon,
+//   react: ReactIcon,
+//   redux: ReduxIcon,
+//   js: JsIcon,
+//   typescript: TypeScriptIcon,
+//   next: NextIcon,
+//   vue: VueIcon,
+//   node: NodeIcon,
+//   tailwind: TailwindIcon,
+//   mui: MuiIcon,
+//   figma: FigmaIcon,
+//   firebase: FirebaseIcon,
+//   git: GitIcon,
+//   mongo: MongoIcon,
+//   mysql: MysqlIcon,
+//   optim: OptimIcon,
+// };
+
+// interface Props extends IconProps {
+//   id: string;
+// }
+
+// export const IconComponent: React.FC<Props> = ({
+//   id,
+//   width = '32',
+//   height = '32',
+//   className,
+//   ...rest
+// }) => {
+//   const Icon = iconsMap[id];
+//   if (!Icon) return null;
+
+//   return <Icon width={width} height={height} className={className} {...rest} />;
+// };

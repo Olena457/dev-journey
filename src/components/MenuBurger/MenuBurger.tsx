@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import clsx from 'clsx';
 import { optionsItems } from '../MenuBurger/options';
 import styles from './MenuBurger.module.scss';
-import { IconComponent } from '../ui/IconComponent';
+import CrossIcon from '@/public/icons/CrossIcon';
 
 interface NavItemProps {
   isOpen: boolean;
@@ -36,7 +36,7 @@ const HeaderMenu: React.FC<NavItemProps> = ({ isOpen, onClick }) => {
   return (
     <nav className={clsx(styles.navMenu, { [styles['is-open']]: isOpen })}>
       <div className={styles.wrapperIcon}>
-        <IconComponent
+        <CrossIcon
           id="cross"
           width="30"
           height="30"

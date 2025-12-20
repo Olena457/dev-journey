@@ -59,3 +59,12 @@ export interface MarqueeItem {
   id: number;
   imageProgect: string;
 }
+// icons types
+export interface IconProps extends React.SVGProps<SVGSVGElement> {
+  id: string;
+  width?: string;
+  height?: string;
+  className?: string;
+  icon?: React.FC<IconProps>;
+  onClick?: (event: React.MouseEvent<SVGSVGElement>) => void;
+}
