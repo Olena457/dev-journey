@@ -15,6 +15,7 @@
 
   /* black color */
   --dark-black-color:#000000;
+  --main-body-black:#0b1018;
   --title-black-color: #0c121b;
   --my-color-black: rgba(23, 23, 23, 1);
   --border-color-dark: rgba(45, 45, 45, 0.32);
@@ -146,7 +147,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: #0b1018;  */
+  /* background:var(--main-body-black);  */
+  background:var(--dark-black-color); 
 }
 
 .mycontainer {

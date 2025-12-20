@@ -13,13 +13,17 @@
 
 .linkBurger {
   position: relative;
-  color: var(--color-main-white);
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 1.2;
   transition: color 0.3s ease;
-  color:var(--main-dark-hover);
-  
+  // color: var(--color-main-white);
+  // color:var(--second-blue-dark);
+   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
   &:hover,
   &:active {
     color:var(--second-blue-dark);
