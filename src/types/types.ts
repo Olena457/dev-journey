@@ -1,4 +1,3 @@
-
 export interface LetterAnimationProps {
   glitchColors?: string[];
   glitchSpeed?: number;
@@ -29,7 +28,6 @@ export interface IconProps {
   onClick?: ClickHandler;
 }
 
-
 export type teamsCardsData = {
   id: number;
   title: string;
@@ -54,7 +52,6 @@ export type PetProgectsData = {
 };
 export type PetProgectsProps = PetProgectsData;
 
-
 export interface MarqueeItem {
   id: number;
   imageProgect: string;
@@ -67,4 +64,9 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
   icon?: React.FC<IconProps>;
   onClick?: (event: React.MouseEvent<SVGSVGElement>) => void;
+}
+export interface Diploma {
+  id: number;
+  title: string;
+  image: string;
 }
