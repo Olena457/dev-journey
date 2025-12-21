@@ -5,6 +5,7 @@ import TeachList from '../components/TeachList/TeachList';
 import TeamList from '../components/TeamList/TeamList';
 import { ServicesList } from '../components/ServiceList/ServiceList';
 import PhotoMarquee from '../components/PhotoMarquee/PhotoMarquee';
+import { DiplomaGallery } from '../components/DiplomaGallery/DiplomaGallery';
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
         <TeachList/>
         <TeamList />
         <ServicesList />
-        <PhotoMarquee/>
+        <PhotoMarquee />
+        <DiplomaGallery/>
       </main>
     </div>
   );
