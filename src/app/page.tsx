@@ -17,8 +17,8 @@ export default function Home() {
         <TeachList/>
         <TeamList />
         <ServicesList />
-        <PhotoMarquee />
-        <DiplomaGallery/>
+        {/* <PhotoMarquee />
+        <DiplomaGallery/> */}
       </main>
     </div>
   );

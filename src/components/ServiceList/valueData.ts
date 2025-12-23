@@ -1,3 +1,21 @@
+
+import CodeIcon from '@/public/icons/CodeIcon';
+import OptimIcon from '@/public/icons/OptimIcon';
+import ApiIcon from '@/public/icons/ApiIcon';
+import DesingIcon from '@/public/icons/DesingIcon'; 
+import AiIcon from '@/public/icons/AiIcon';
+import { IconProps } from '@/src/types/types';
+
+export const iconMap: Record<string, React.FC<IconProps>> = {
+  code: CodeIcon,
+  optim: OptimIcon,
+  api: ApiIcon,
+  design: DesingIcon,
+  ai: AiIcon,
+};
+
+
+
 export const services = [
   {
     iconId: 'code',

@@ -3,7 +3,7 @@ import { IconProps } from '@/src/types/types';
 
 const OptimIcon: React.FC<IconProps> = ({
   id = 'optim',
-  width = '24px',
+  width = '20px',
   height = '20px',
   className,
   ...rest

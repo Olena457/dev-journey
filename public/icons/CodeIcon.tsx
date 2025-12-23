@@ -3,8 +3,8 @@ import { IconProps } from '@/src/types/types';
 
 const CodeIcon: React.FC<IconProps> = ({
   id = 'code',
-  width = '22px',
-  height = '14px',
+  width = '20px',
+  height = '20px',
   className,
   ...rest
 }) => {

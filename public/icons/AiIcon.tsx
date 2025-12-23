@@ -3,7 +3,7 @@ import { IconProps } from '@/src/types/types';
 
 const AiIcon: React.FC<IconProps> = ({
   id = 'ai',
-  width = '22px',
+  width = '20px',
   height = '20px',
   className,
   ...rest
