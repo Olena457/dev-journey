@@ -1,5 +1,157 @@
-.sertificates{ 
-  padding: 40px 30px;
+// .sertificates {
+//   padding: 40px 30px;
+
+//   @media (min-width: 768px) {
+//     padding: 70px;
+//   }
+// }
+
+// .title {
+//   font-size: 2rem;
+//   font-weight: bold;
+//   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   color: transparent;
+// }
+
+// .container {
+//   display: grid;
+//   justify-content: center;
+//   --hex-w: 160px;
+//   --hex-h: calc(var(--hex-w) * 1.1547);
+//   --gap: 5px;
+//   grid-template-columns: repeat(8, calc(var(--hex-w) / 2));
+//   @media (min-width: 768px) {
+//     --hex-w: 320px;
+//   }
+// }
+// .hexagon {
+//   position: relative;
+//   width: calc(var(--hex-w) - var(--gap));
+//   height: var(--hex-h);
+//   grid-column: span 2;
+//   margin-top: calc(var(--hex-h) * -0.25 + (var(--gap) / 2));
+//   margin-left: calc(var(--gap) / 2);
+//   transition:
+//   transform 0.3s ease,
+//   filter 0.3s ease;
+  
+//   cursor: pointer;
+//   z-index: 1;
+  
+//   &:nth-child(1),
+//   &:nth-child(2),
+//   &:nth-child(3) {
+//     margin-top: 0;
+//   }
+//   &:nth-child(1),
+//   &:nth-child(8) {
+//     grid-column: 2 / span 2;
+//   }
+//   &:nth-child(2),
+//   &:nth-child(9) {
+//     grid-column: 4 / span 2;
+//   }
+//   &:nth-child(3),
+//   &:nth-child(10) {
+//     grid-column: 6 / span 2;
+//   }
+  
+//   &:nth-child(4),
+//   &:nth-child(11) {
+//     grid-column: 1 / span 2;
+//   }
+//   &:nth-child(5),
+//   &:nth-child(12) {
+//     grid-column: 3 / span 2;
+//   }
+//   &:nth-child(6),
+//   &:nth-child(13) {
+//     grid-column: 5 / span 2;
+//   }
+//   &:nth-child(7),
+//   &:nth-child(14) {
+//     grid-column: 7 / span 2;
+//   }
+  
+//   &:hover {
+//     z-index: 10;
+//     transform: scale(1.08);
+//     filter: drop-shadow(0 0 8px rgba(138, 43, 226, 0.6))
+//     drop-shadow(0 0 15px rgba(138, 43, 226, 0.4));
+
+//     .label {
+//       opacity: 1;
+//     }
+//   }
+  
+//   .img {
+//     filter: grayscale(0);
+//   }
+// }
+
+// .hexInner {
+//   width: 100%;
+//   height: 100%;
+//   position: relative;
+//   overflow: hidden;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 20px;
+// }
+
+// .img {
+//   width: 100%;
+//   height: 100%;
+//   filter: grayscale(0.2);
+//   transition: all 0.4s ease;
+//   object-position: revert;
+//   display: block;
+// }
+
+// .label {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background: rgba(255, 255, 255, 0.95);
+//   padding: 8px 12px;
+//   font-size: 14px;
+//   font-weight: 600;
+//   border-radius: 4px;
+//   opacity: 0;
+//   transition: opacity 0.3s ease;
+//   text-align: center;
+//   color: #1a1a1a;
+//   width: 85%;
+// }
+
+
+// _________________________________________________________________________
+// .hexagon
+// if you want to exchange form
+// clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+// .container {
+//   display: grid;
+//   grid-template-columns: repeat(8, calc(var(--hex-w) / 2));
+//   column-gap: 0;
+//   justify-content: center;
+//   --hex-w: 320px;
+//   --hex-h: calc(var(--hex-w) * 1.1547);
+//   --gap: 5px;
+// }
+// ____________________________________________________
+
+.section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sertificates {
+  padding: 40px 20px;
 
   @media (min-width: 768px) {
     padding: 70px;
@@ -13,66 +165,61 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-bottom: 30px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(8, calc(var(--hex-w) / 2));
-  column-gap: 0;
   justify-content: center;
-  --hex-w: 320px;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px;
+  --hex-w: 160px;
   --hex-h: calc(var(--hex-w) * 1.1547);
   --gap: 5px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: repeat(3, 1fr);
+    --hex-w: 220px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(8, calc(var(--hex-w) / 2));
+    column-gap: 0;
+    gap: 0;
+    --hex-w: 320px;
+  }
 }
 
 .hexagon {
   position: relative;
   width: calc(var(--hex-w) - var(--gap));
   height: var(--hex-h);
-  grid-column: span 2;
-  margin-top: calc(var(--hex-h) * -0.25 + (var(--gap) / 2));
-  margin-left: calc(var(--gap) / 2);
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease;
-
-  // transition: all 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
   z-index: 1;
+  justify-self: center;
+  margin-top: 0;
+  margin-left: 0;
+  grid-column: auto;
 
-  &:nth-child(1),
-  &:nth-child(2),
-  &:nth-child(3) {
-    margin-top: 0;
-  }
-  &:nth-child(1),
-  &:nth-child(8) {
-    grid-column: 2 / span 2;
-  }
-  &:nth-child(2),
-  &:nth-child(9) {
-    grid-column: 4 / span 2;
-  }
-  &:nth-child(3),
-  &:nth-child(10) {
-    grid-column: 6 / span 2;
-  }
+  @media (min-width: 1024px) {
+    grid-column: span 2;
+    margin-top: calc(var(--hex-h) * -0.25 + (var(--gap) / 2));
+    margin-left: calc(var(--gap) / 2);
 
-  &:nth-child(4),
-  &:nth-child(11) {
-    grid-column: 1 / span 2;
-  }
-  &:nth-child(5),
-  &:nth-child(12) {
-    grid-column: 3 / span 2;
-  }
-  &:nth-child(6),
-  &:nth-child(13) {
-    grid-column: 5 / span 2;
-  }
-  &:nth-child(7),
-  &:nth-child(14) {
-    grid-column: 7 / span 2;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+    
+    &:nth-child(1), &:nth-child(8) { grid-column: 2 / span 2; }
+    &:nth-child(2), &:nth-child(9) { grid-column: 4 / span 2; }
+    &:nth-child(3), &:nth-child(10) { grid-column: 6 / span 2; }
+    &:nth-child(4), &:nth-child(11) { grid-column: 1 / span 2; }
+    &:nth-child(5), &:nth-child(12) { grid-column: 3 / span 2; }
+    &:nth-child(6), &:nth-child(13) { grid-column: 5 / span 2; }
+    &:nth-child(7), &:nth-child(14) { grid-column: 7 / span 2; }
   }
 
   &:hover {
@@ -84,18 +231,15 @@
     .label {
       opacity: 1;
     }
-  }
-
-  .img {
-    filter: grayscale(0);
+    .img {
+      filter: grayscale(0);
+    }
   }
 }
 
 .hexInner {
   width: 100%;
   height: 100%;
-  // if you want to exchange form 
-  // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -105,13 +249,12 @@
 }
 
 .img {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   filter: grayscale(0.2);
   transition: all 0.4s ease;
-  // object-fit: cover;
+  object-fit: cover;
   object-position: revert;
-
   display: block;
 }
 
@@ -130,5 +273,5 @@
   text-align: center;
   color: #1a1a1a;
   width: 85%;
-  // pointer-events: none;
+  pointer-events: none;
 }
