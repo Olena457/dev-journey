@@ -5,11 +5,11 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 1,
     title: 'Weather Forecast',
     skills:
-      'Next.js 16, TypeScript, Jotai, React Query, Tailwind CSS 4, Axios, Geolocation, Responsive Design',
+      'Next.js 16, TypeScript, Jotai, React Query, Tailwind,Geolocation',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/weather.jpg',
     description:
-      'An application designed for easy checking of the weather forecast. It provides a detailed forecast for the current day and an approximate forecast for the next 7 days. Key features include flexible location search, real-time updates, <strong>Geolocation Support<strong/>, and friendly error handling. Built with Next.js 16 and TypeScript using Jotai and React Query for state management and Axios for data fetching. Fully optimized for mobile, tablet, and desktop screens.',
+      'An application designed for easy checking of the weather forecast. It provides a detailed forecast for the current day and an approximate forecast for the next 7 days. Key features include flexible location search, real-time updates, Geolocation Support, and friendly error handling. Built with Next.js 16 and TypeScript using Jotai and React Query for state management and Axios for data fetching. Fully optimized for mobile, tablet, and desktop screens.',
     liveHref: 'https://next-weather-amber.vercel.app/',
     repoHref: 'https://github.com/Olena457/next-weather.git',
   },
@@ -18,7 +18,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 2,
     title: 'AI Smart Chat',
     skills:
-      'React, TypeScript, Mistral-tiny, Material UI, GSAP, Netlify Functions,Responsive Design',
+      'React, TypeScript, Mistral-tiny, Material UI, GSAP, Netlify Functions',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/smart.jpg',
     description:
@@ -31,7 +31,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 3,
     title: 'AI Photo Interpreter',
     skills:
-      'React, Material UI, TensorFlow.js, Text-to-Speech API, AI integration, Responsive Design',
+      'React, Material UI, TensorFlow.js, Text-to-Speech API, AI integration,',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/reader.jpg',
     description:
@@ -69,7 +69,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 6,
     title: 'Food & Drinks - Cookbook',
     skills:
-      'React,Vite, Redux, TypeScript, Tailwind, Axios, React Router, LocalStorage',
+      'React, Redux, TypeScript, Tailwind, Axios, React Router, LocalStorage',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/food.jpg',
     description:
@@ -82,7 +82,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 7,
     title: 'AIDE',
     skills:
-      'React + Vite, Redux Toolkit, Material UI, Framer Motion, React Slick, TypeScript, 3D Animation',
+      'Redux Toolkit, Material UI, Framer Motion, React Slick, TypeScript, 3D Animation',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/aide.jpg',
     description:
@@ -105,7 +105,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 9,
     title: 'Quizlet Game',
     skills:
-      'React, Redux, Firebase, HTML, CSS, JavaScript, API Integration, Responsive Design',
+      'React, Redux, Firebase, JavaScript, API Integration, Responsive Design',
     role: 'Full-Stack Developer & UI/UX Design',
     imageProgect: '/img/quizlet.jpg',
     description:
@@ -118,7 +118,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 10,
     title: 'PetLove',
     skills:
-      'redux, axios, react-router, redux-persist, yup, React, JavaScript, HTML, CSS',
+      'redux, axios, react-router, redux-persist, React, JavaScript',
     role: 'Frontend Developer',
     imageProgect: '/img/pet.jpg',
     description:
@@ -141,7 +141,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 12,
     title: 'Learn-easy',
     skills:
-      'HTML, CSS, JavaScript, React, Redux, React-router, React-modal, Firebase',
+      'JavaScript, React, Redux, React-router, React-modal, Firebase',
     role: 'Frontend Developer',
     imageProgect: '/img/learn.jpg',
     description:

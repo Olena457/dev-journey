@@ -1,76 +1,4 @@
-// .WrapperService {
-//   padding: 40px 30px;
 
-//   @media (min-width: 768px) {
-//     padding: 70px;
-//   }
-// }
-
-// .services {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2.5rem;
-// }
-
-// .title {
-//   font-size: 2rem;
-//   font-weight: bold;
-//   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   color: transparent;
-// }
-
-// .list {
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   gap: 1.25rem;
-
-//   @media (min-width: 768px) {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-
-//   @media (min-width: 1024px) {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
-
-// .item {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1.5rem;
-//   // background: linear-gradient(135deg, #6930c3 0%, #a54be1 50%, #6de8f5 100%);
-//   background: linear-gradient(135deg, #a341f2 0%, #7e04cf 30%, #08080d 70%);
-//   border-radius: 20px;
-//   padding: 1.5rem;
-// }
-
-// .iconWrapper {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 2.5rem;
-//   height: 2.5rem;
-//   background-color: var(--second-blue-dark);
-//   padding: 0.25rem;
-//   border-radius: 20px;
-// }
-
-// .icon {
-//   color:var( --main-dark-hover);
-// }
-
-// .name {
-//   font-size: 1.25rem;
-//   font-weight: 600;
-//   color: var(--color-main-white);
-// }
-
-// .description {
-//   font-size: 1rem;
-//   color: var(--color-main-white);
-// }
-// __________________________2nd version_____________________
 
 .WrapperService {
   padding: 40px 20px;
@@ -78,6 +6,10 @@
 
   @media (min-width: 768px) {
     padding: 100px 70px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 70px 90px ;
   }
 }
 
@@ -114,9 +46,9 @@
 }
 
 .subtitle {
-  color: #888;
-  font-size: 1.1rem;
-  max-width: 400px;
+  color: var(--color-main-white);
+ font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 550px;
 }
 
 .list {
@@ -194,7 +126,7 @@
   }
 
   @media (min-width: 768px) {
-    width: 450px;
+    width: 550px;
     margin-left: auto;
     margin-right: auto;
   }

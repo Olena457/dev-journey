@@ -1,10 +1,10 @@
 
 import { PORTFOLIO_PROJECTS } from './propsItems';
-
 import SkillsList from '../SkillsList/SkillsList';
 import styles from './PortfolioCard.module.scss';
 import LinkIcon from '@/public/icons/LinkIcon';
 import GitIcon from '@/public/icons/GitIcon';
+import ExpandDescription from '../ExpandDescription/EpandDescription';
 // import { useTranslation } from 'react-i18next';
 
 const PortfolioCard= () => {
@@ -13,9 +13,9 @@ const PortfolioCard= () => {
   return (
     <>
       <ul id="projects" className={styles.list}>
-      <div className={styles.wraper}>
-        <h2 className={styles.mainTitle}>My projects</h2>
-      </div>
+        <div className={styles.wraper}>
+          <h2 className={styles.mainTitle}>My projects</h2>
+        </div>
         {PORTFOLIO_PROJECTS.map(project => (
           <li key={project.id} className={styles.item}>
             <div className={styles.itemWrapper}>
@@ -30,7 +30,7 @@ const PortfolioCard= () => {
                 <h2 className={styles.title}>{project.title}</h2>
                 <SkillsList portfolio={true} list={project.skills} />
                 <p className={styles.role}>{project.role}</p>
-                <p className={styles.description}>{project.description}</p>
+                <ExpandDescription text={project.description} />
               </div>
             </div>
             <div className={styles.linksWrapper}>

@@ -47,8 +47,11 @@ export const ServicesList: React.FC = () => {
         <div className={styles.leftContent}>
           <h2 className={styles.title}>Services</h2>
           <p className={styles.subtitle}>
-            Ми створюємо сучасні цифрові рішення, фокусуючись на якості та
-            інноваціях.
+            Develop digital interfaces with a focus on quality, adaptability,
+            and stability. I have experience in both frontend and backend,
+            working with modern frameworks. I confidently
+            implement functionality, optimize code, and maintain clear
+            structure.
           </p>
         </div>
 
