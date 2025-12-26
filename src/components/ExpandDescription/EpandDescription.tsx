@@ -16,7 +16,7 @@ const ExpandDescription = ({ text }: ExpandDescriptionProps) => {
     <div className="mt-3">
       <p
         className={`text-base leading-normal text-white transition-all duration-300 ${
-          isExpanded ? 'block' : 'line-clamp-4 overflow-hidden'
+          isExpanded ? 'block' : 'line-clamp-3 overflow-hidden'
         }`}
       >
         {text}
