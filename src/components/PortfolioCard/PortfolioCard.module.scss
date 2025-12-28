@@ -87,7 +87,7 @@
    font-size: 2rem;
   font-weight: bold;
   padding-bottom: 20px;
-   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+   background: linear-gradient(90deg, #a54be1 0%, #6de8f5 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -103,7 +103,6 @@
   @media (min-width: 744px) {
     font-weight: 600;
     font-size: 42px;
-   
     line-height: 140%;
   }
 
@@ -282,26 +281,29 @@
 }
 
 
-.title {
-  margin-bottom: 12px;
-  font-size: 24px;
-  font-weight: 600;
-  color:var(--second-blue-dark);
+// .title {
+//   margin-bottom: 12px;
+//   font-size: 24px;
+//   font-weight: 600;
+//   color:var(--second-blue-dark);
+//   text-transform: uppercase;
   //  background: linear-gradient(to left, #ffff1c, #00c3ff);
   //   -webkit-background-clip: text;
   //   background-clip: text;
   //   color: transparent;
-}
 
-.role {
-  font-size: 16px;
-  font-weight: 500;
-  color:var(--second-blue-dark);
-  margin-top: 8px;
-}
+
+// .role {
+//   font-size: 16px;
+//   font-weight: 500;
+//    text-transform: uppercase;
+//   color:var(--second-blue-dark);
+//   margin-top: 8px;
+// }
 
 .description {
-  color: var(--color-main-white);
+  // color: var(--color-main-white);
+  color: #a1a1aa;
   margin-top: 12px;
 }
 
@@ -477,7 +479,16 @@
   margin-bottom: 12px;
   font-size: 24px;
   font-weight: 600;
-  color:var(--second-blue-dark);
+  text-transform: uppercase;
+   color:#76C8FF;
+   color:#a53aed;;
+  //  background: linear-gradient(90deg, #a54be1 0%, #81ecf8 100%);
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent;
+
+
+  // color:var(--second-blue-dark);
   //  background: linear-gradient(to left, #ffff1c, #00c3ff);
   //   -webkit-background-clip: text;
   //   background-clip: text;
@@ -487,8 +498,13 @@
 .role {
   font-size: 16px;
   font-weight: 500;
-  color:var(--second-blue-dark);
   margin-top: 8px;
+  // color:var(--second-blue-dark);
+  color:#76C8FF;
+  color:#a53aed;
+  // color:#9919ee;
+
+  
 }
 
 .description {
