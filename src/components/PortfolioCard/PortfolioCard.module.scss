@@ -22,7 +22,8 @@
 .mainTitle {
   font-size: 2rem;
   font-weight: bold;
-
+  text-transform: uppercase;
+  margin: 0 auto;
   padding-bottom: 20px;
   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
   -webkit-background-clip: text;
@@ -74,7 +75,7 @@
   }
 }
 
-.imageWrapper, 
+.imageWrapper,
 .contentWrapper {
   @media screen and (min-width: 1024px) {
     flex-basis: 50%;
@@ -93,7 +94,7 @@
   @media screen and (min-width: 768px) {
     padding: 10px;
   }
-  
+
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
   }
@@ -120,8 +121,7 @@
 
 .title {
   margin-bottom: 12px;
-      text-transform: uppercase;
-
+  text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
   color: #a53aed;
@@ -163,7 +163,9 @@
   cursor: pointer;
   transition: color 0.3s ease;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: var(--main-color-light);
     .icon {
       fill: var(--main-color-light);
@@ -177,8 +179,6 @@
   flex-shrink: 0;
   transition: fill 0.3s ease;
 }
-
-
 
 .wraper {
   display: flex;

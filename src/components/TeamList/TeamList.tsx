@@ -12,7 +12,7 @@ const TeamList = () => {
         <div className={styles.category}>
           <div className={styles.headerList}>
             <h2 className={styles.title}>
-              Experience working in a team projects
+              Team projects experience
             </h2>
           </div>
         </div>
