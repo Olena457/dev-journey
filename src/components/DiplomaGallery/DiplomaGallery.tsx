@@ -19,7 +19,7 @@ export const DiplomaGallery: React.FC = () => {
   });
 
   return (
-    <div id="certificates" className={styles.section}>
+    <div id="sertificates" className={styles.section}>
       <h2 className={styles.title}>Certificates</h2>
 
       <div className={styles.gridContainer}>

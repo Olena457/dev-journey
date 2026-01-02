@@ -1,4 +1,4 @@
-/* Основний список */
+
 .list {
   padding: 30px 10px;
 
@@ -45,6 +45,14 @@
 
   &:not(:last-child) {
     margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 100px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -52,8 +60,10 @@
       .itemWrapper {
         flex-direction: row-reverse;
       }
+
       .linksWrapper {
         justify-content: flex-start;
+
         @media screen and (min-width: 1400px) {
           margin-right: 0;
           margin-left: 30px;
@@ -65,13 +75,18 @@
 
 .itemWrapper {
   display: flex;
-  gap: 24px;
+  gap: 35px;
   flex-direction: column;
 
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    gap: 60px;
+  }
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    column-gap: 35px;
+   
   }
 }
 
@@ -88,12 +103,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
+  // padding: 4px;
   border-radius: 20px;
+  border: 12px solid var(--color-purple);
+  // box-shadow: 0 20px 30px -12px var(--color-purple);
+  // box-shadow: 0 15px 45px rgba(186, 12, 230, 0.4);
 
-  @media screen and (min-width: 768px) {
-    padding: 10px;
-  }
+
+ 
 
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
@@ -115,8 +132,7 @@
 .image {
   width: 100%;
   height: auto;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(186, 12, 230, 0.372);
+  // border-radius: 20px;
 }
 
 .title {
@@ -124,14 +140,14 @@
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
-  color: #a53aed;
+  color: var(--color-purple);
 }
 
 .role {
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
-  color: #a53aed;
+  color:var(--light-purple);
 }
 
 .description {
