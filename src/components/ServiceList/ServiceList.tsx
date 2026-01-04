@@ -10,7 +10,7 @@ export const ServicesList: React.FC = () => {
   return (
     <div className={styles.WrapperService}>
       <section id="services" className={styles.services}>
-        {/* Ліва частина: Заголовок та текст */}
+        
         <div className={styles.leftContent}>
           <h2 className={styles.title}>Services</h2>
           <p className={styles.subtitle}>

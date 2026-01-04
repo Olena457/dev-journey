@@ -13,6 +13,10 @@ const PortfolioCard= () => {
   return (
     <>
       <ul id="projects" className={styles.list}>
+       
+          <div className={`${styles.shadow} ${styles.shadow1}`}></div>
+          <div className={`${styles.shadow} ${styles.shadow2}`}></div>
+       
         <div className={styles.wraper}>
           <h2 className={styles.mainTitle}>My projects</h2>
         </div>
