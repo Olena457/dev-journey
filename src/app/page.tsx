@@ -6,6 +6,8 @@ import TeamList from '../components/TeamList/TeamList';
 import { ServicesList } from '../components/ServiceList/ServiceList';
 import PhotoMarquee from '../components/PhotoMarquee/PhotoMarquee';
 import { DiplomaGallery } from '../components/DiplomaGallery/DiplomaGallery';
+import {CarouselCard}from '../components/CarouselCard/CarouselCard'
+import { AccordionText } from '../components/AccordionText/AccordionText';
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
         <TeamList />
         <ServicesList />
         <PhotoMarquee />
-        <DiplomaGallery/>
+        <AccordionText/>
+        <DiplomaGallery />
+        <CarouselCard/>
       </main>
     </div>
   );

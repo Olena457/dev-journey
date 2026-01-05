@@ -1,0 +1,136 @@
+.section {
+  background-color: #000; // Або ваш колір фону
+  padding: clamp(60px, 10vw, 120px) 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 80px);
+  display: flex;
+  flex-direction: column; // Мобільні: в колонку
+  gap: 60px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row; // Десктоп: в рядок
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.infoSide {
+  flex: 1;
+  max-width: 550px;
+
+  .label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  .title {
+    font-size: clamp(32px, 5vw, 64px); // Плавний розмір шрифту
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    i {
+      font-style: italic;
+      font-family: serif; // Для ефекту як на макеті
+    }
+  }
+
+  .description {
+    font-size: clamp(16px, 1.5vw, 18px);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+  }
+}
+
+.button {
+  background-color: #8a4be1; // Ваш фіолетовий колір
+  color: #fff;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.accordionSide {
+  flex: 1.2;
+  width: 100%;
+}
+
+.item {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
+  &:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(20px, 3vw, 35px) 0;
+  cursor: pointer;
+
+  &::-webkit-details-marker { display: none; }
+
+  .question {
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 400;
+    max-width: 90%;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    
+    &::after {
+      content: '⌵'; // Або ваша іконка стрілки
+      font-size: 24px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+.item[open] .summary .icon::after {
+  transform: rotate(180deg);
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+  overflow: hidden;
+
+  .inner {
+    min-height: 0;
+  }
+}
+
+.item[open] .content {
+  grid-template-rows: 1fr;
+}
+
+.answer {
+  padding-bottom: 30px;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}

@@ -1,0 +1,102 @@
+.wrapper {
+  width: 100%;
+  max-width: 100vw; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+
+ @media (min-width: 768px) {
+   padding: 80px 0;
+   gap:30px;
+  }
+
+  @media (min-width: 1024px) {
+   padding: 120px 0;
+   gap: 40px;
+  }
+
+}
+
+.scrollContainer {
+  width: 100%;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  list-style: none;
+  padding: 0 20px; 
+  margin: 0;
+  width: max-content; 
+}
+
+.card {
+  flex: 0 0 85vw; 
+  scroll-snap-align: center;
+  margin-right: 15px;
+  background: #1a1a1e;
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    flex: 0 0 45vw; 
+      margin-right: 20px;
+
+     
+  }
+
+  @media (min-width: 1024px) {
+    flex: 0 0 460px; 
+   margin-right: 32px;
+     padding: 40px;
+
+
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+
+  span {
+    line-height: 1;
+  }
+
+  &:hover {
+    background: #a54be1;
+    border-color: #a54be1;
+  }
+}
+
+.number { color: #d1a11e; font-weight: bold; margin-bottom: 10px; display: block; }
+.title { color: white; font-size: 24px; margin-bottom: 15px; }
+.description { color: rgba(255, 255, 255, 0.7); line-height: 1.5; }

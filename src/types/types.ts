@@ -70,3 +70,33 @@ export interface Diploma {
   title: string;
   image: string;
 }
+export interface CarouselCardData {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface CarouselProps {
+  data: CarouselCardData[];
+}
+
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface AccordionProps {
+  items?: FAQItem[];
+  className?: string;
+}
+
+export interface AccordionIconProps extends IconProps {
+  isOpen: boolean;
+}
+export interface StartNowContent {
+  label: string; 
+  title: string; 
+  description: string; 
+  buttonText: string; 
+}
