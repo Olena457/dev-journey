@@ -1,11 +1,17 @@
 .wrapTeam {
-  padding: 40px 30px;
+  padding: 40px 20px;
+
+  // background: radial-gradient(
+  //   circle at center, 
+  //   #A341F2 0%, 
+  //   #7e04cf  30%, 
+  //   #08080D 70%  
 
   background: radial-gradient(
-    circle at center, 
-    #A341F2 0%, 
-    #7e04cf  30%, 
-    #08080D 70%  
+    circle at 50% 50%, 
+    #a53aed 0%, 
+    #7530a4  30%, 
+    #080808 80%  
   );
 
   @media (min-width: 768px) {
@@ -46,12 +52,10 @@
   gap: 0;
 }
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-   text-transform: uppercase;
-      margin: 0 auto;
-  // line-height: 140%;
-  // letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin: 0 auto;
   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -60,10 +64,12 @@
 
   @media (min-width: 744px) {
     font-weight: 600;
-    font-size: 42px;
+    margin-bottom: 60px;
+    font-size: 32px;
     line-height: 140%;
   }
 }
+
 .cardsWrapper {
   display: flex;
   flex-direction: column;

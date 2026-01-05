@@ -12,11 +12,14 @@ const PortfolioCard= () => {
 
   return (
     <>
+
       <ul id="projects" className={styles.list}>
-       
-          <div className={`${styles.shadow} ${styles.shadow1}`}></div>
-          <div className={`${styles.shadow} ${styles.shadow2}`}></div>
-       
+      {/* <div className={styles.background}> </div> */}
+        <div className={`${styles.shadow} ${styles.shadow1}`}></div>
+        <div className={`${styles.shadow} ${styles.shadow3}`}></div>
+        <div className={`${styles.shadow} ${styles.shadow4}`}></div>
+        <div className={`${styles.shadow} ${styles.shadow2}`}></div>
+
         <div className={styles.wraper}>
           <h2 className={styles.mainTitle}>My projects</h2>
         </div>
@@ -54,7 +57,7 @@ const PortfolioCard= () => {
                 rel="noopener noreferrer"
               >
                 <GitIcon id="git" className={styles.icon} />
-                <p>GitHub</p>
+                <p>Git</p>
               </a>
             </div>
           </li>

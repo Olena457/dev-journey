@@ -18,12 +18,14 @@
   /* --dark-black-color:#302C42; */
   --dark-black-color: #211e2e;
   --dark-black-color: #000000;
-  --my-color-black: rgba(23, 23, 23, 1);
+  /* --my-color-black: rgba(23, 23, 23, 1); */
+  --my-color-black: rgb(0, 0, 0, 1);
   
   /* brand colors  */
   --color-blue-medium: #433d60;
   --color-blue-light: #8176af;
   --color-purple: #8f6ec5;
+  --color-contrast:#6de8f5;
   --color-text-grey: #343045;
   --light-purple: #c0b7e8;
   --soft-blue: #433d60;

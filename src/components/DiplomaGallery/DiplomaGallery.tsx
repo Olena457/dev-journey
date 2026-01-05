@@ -10,9 +10,18 @@ import { Diploma } from '@/src/types/types';
 
 export const DiplomaGallery: React.FC = () => {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
-
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const closeModal = () => setSelectedImg(null);
-
+  const openDialog = () => {
+    const dialog = document.getElementById('info-dialog') as HTMLDialogElement;
+    dialog?.showModal();
+    setIsDialogOpen(true);
+  };
+  const closeDialog = () => {
+    const dialog = document.getElementById('info-dialog') as HTMLDialogElement;
+    dialog?.close();
+    setIsDialogOpen(false);
+  };
   const columns = [[], [], [], []] as Diploma[][];
   diplomas.forEach((item, index) => {
     columns[index % 4].push(item);
@@ -20,7 +29,17 @@ export const DiplomaGallery: React.FC = () => {
 
   return (
     <div id="sertificates" className={styles.section}>
-      <h2 className={styles.title}>Certificates</h2>
+      <h2 className={styles.title}>
+        Certificates{' '}
+        <span
+          className={styles.infoIcon}
+          onClick={openDialog}
+          role="button"
+          title="Info"
+        >
+          &#8505;
+        </span>
+      </h2>
 
       <div className={styles.gridContainer}>
         {columns.map((column, colIndex) => (
@@ -73,6 +92,20 @@ export const DiplomaGallery: React.FC = () => {
           </div>
         </div>
       )}
+      <div className="dialogBox">
+        <dialog id="info-dialog" closedby="any" className={styles.dialog}>
+          <h3 className={styles.hedline}>Information</h3>
+          <hr className={styles.line} />
+          <p className={styles.text}>
+            “ Zoom function is available - click on any certificate to open it
+            in an enlarged view.”
+          </p>
+          <button onClick={closeDialog} className={styles.closeBtn}>
+            &times;
+          </button>
+        </dialog>
+      </div>
     </div>
   );
 };
+

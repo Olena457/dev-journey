@@ -11,16 +11,14 @@
   font-weight: 600;
   border-radius: 100px;
   color: #e4e4e7;
- 
-  border: 1px solid rgba(166, 59, 238, 0.3);
-  white-space: nowrap;
-  transition: all 0.3s ease;
+     background-color: rgba(166, 59, 238, 0.1);
+     white-space: nowrap;
+     transition: all 0.3s ease;
+     border: 1px solid rgba(166, 59, 238, 0.3);
 
   &:hover {
-    // background-color: var(--main-dark-hover);
-    background-color: rgba(166, 59, 238, 0.1);
     border-color: rgba(166, 59, 238, 0.6);
-     box-shadow: 0 15px 45px rgba(186, 12, 230, 0.4);
+     box-shadow: 0 15px 35px rgba(186, 12, 230, 0.4);
     color: var(--color-main-white);
   }
 }
