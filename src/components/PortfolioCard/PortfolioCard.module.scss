@@ -159,6 +159,7 @@
   border-radius: 12px;
   padding: 4px;
   background: linear-gradient(90deg, #a54be1 0%, #6de8f5 100%);
+  background: linear-gradient(90deg, #9365DB 0%, #74DEED 100%);
   border: 2px solid transparent;
   background-clip: padding-box, border-box;
   background-origin: border-box;
@@ -193,8 +194,11 @@
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
+  // color:#A45FBE;
+  // color:#9153F4;
   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-  -webkit-background-clip: text;
+background: linear-gradient(90deg, #9365DB 0%, #74DEED 100%); 
+ -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
@@ -203,11 +207,11 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
-  color: var(--color-purple);
+  color: var(--light-purple);
 }
 
 .description {
-  color: #a1a1aa;
+  color: #EAE1E1;
   margin-top: 12px;
 }
 

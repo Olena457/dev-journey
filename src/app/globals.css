@@ -27,7 +27,8 @@
   --color-purple: #8f6ec5;
   --color-contrast:#6de8f5;
   --color-text-grey: #343045;
-  --light-purple: #c0b7e8;
+  /* --light-purple: #c0b7e8; */
+  --light-purple:#d6C5f0 ;
   --soft-blue: #433d60;
 
   --main-color-light: #00c3ff;
@@ -121,6 +122,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--dark-black-color);
+  /* background: #252243; */
   background-color: #03051E;
    
 }
