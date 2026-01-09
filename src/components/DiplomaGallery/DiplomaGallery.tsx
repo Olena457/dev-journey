@@ -30,7 +30,7 @@ export const DiplomaGallery: React.FC = () => {
   return (
     <div id="sertificates" className={styles.section}>
       <h2 className={styles.title}>
-        Certificates{' '}
+        Certificates
         <span
           className={styles.infoIcon}
           onClick={openDialog}

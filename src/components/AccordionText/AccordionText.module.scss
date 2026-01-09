@@ -1,5 +1,4 @@
 .section {
-  background-color: #000; // Або ваш колір фону
   padding: clamp(60px, 10vw, 120px) 0;
   color: #fff;
 }
@@ -9,11 +8,11 @@
   margin: 0 auto;
   padding: 0 clamp(20px, 5vw, 80px);
   display: flex;
-  flex-direction: column; // Мобільні: в колонку
+  flex-direction: column; // mobile:column
   gap: 60px;
 
   @media (min-width: 1024px) {
-    flex-direction: row; // Десктоп: в рядок
+    flex-direction: row; // desctop:row
     align-items: flex-start;
     justify-content: space-between;
   }
@@ -32,14 +31,14 @@
   }
 
   .title {
-    font-size: clamp(32px, 5vw, 64px); // Плавний розмір шрифту
+    font-size: clamp(32px, 5vw, 64px); 
     line-height: 1.1;
     font-weight: 500;
     margin-bottom: 30px;
 
     i {
       font-style: italic;
-      font-family: serif; // Для ефекту як на макеті
+      font-family: serif; 
     }
   }
 
@@ -51,20 +50,20 @@
   }
 }
 
-.button {
-  background-color: #8a4be1; // Ваш фіолетовий колір
-  color: #fff;
-  border: none;
-  padding: 18px 36px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+// .button {
+//   background-color: #8a4be1; 
+//   color: #fff;
+//   border: none;
+//   padding: 18px 36px;
+//   border-radius: 8px;
+//   font-weight: 600;
+//   cursor: pointer;
+//   transition: transform 0.2s ease;
 
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
+//   &:hover {
+//     transform: translateY(-2px);
+//   }
+// }
 
 .accordionSide {
   flex: 1.2;
@@ -72,10 +71,12 @@
 }
 
 .item {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  // border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(166, 59, 238, 0.3);
   
   &:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(166, 59, 238, 0.3);
   }
 }
 
@@ -101,7 +102,8 @@
     position: relative;
     
     &::after {
-      content: '⌵'; // Або ваша іконка стрілки
+      content: '⌵';
+      color:#9365db;
       font-size: 24px;
       display: block;
       transition: transform 0.3s ease;

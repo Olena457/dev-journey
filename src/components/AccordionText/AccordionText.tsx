@@ -8,7 +8,7 @@ export const AccordionText: React.FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        {/* Ліва частина: Текст та Кнопка */}
+        {/* Left side : Text  */}
         <div className={styles.infoSide}>
           <span className={styles.label}>- 09 -</span>
           <h2 className={styles.title}>
@@ -18,10 +18,10 @@ export const AccordionText: React.FC = () => {
             We'd love to hear from you to discuss web design, product
             development or to hear your new startup idea.
           </p>
-          <button className={styles.button}>Let's Work Together!</button>
+          {/* <button className={styles.button}>Let's Work Together!</button> */}
         </div>
 
-        {/* Права частина: Акордеон */}
+        {/* Right side: Accordeon */}
         <div className={styles.accordionSide}>
           {faqData.map(item => (
             <details key={item.id} className={styles.item}>

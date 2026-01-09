@@ -158,11 +158,12 @@
   justify-content: center;
   border-radius: 12px;
   padding: 4px;
-  background: linear-gradient(90deg, #a54be1 0%, #6de8f5 100%);
-  background: linear-gradient(90deg, #9365DB 0%, #74DEED 100%);
-  border: 2px solid transparent;
-  background-clip: padding-box, border-box;
-  background-origin: border-box;
+  border: 2px solid rgba(166, 59, 238, 0.3);
+    // box-shadow: 0 15px 35px rgba(186, 12, 230, 0.4);
+  // background: linear-gradient(90deg, #9365db 0%, #74deed 100%);
+  // border: 2px solid transparent;
+  // background-clip: padding-box, border-box;
+  // background-origin: border-box;
 
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
@@ -170,7 +171,7 @@
 }
 
 .contentWrapper {
-      padding: 10px 10px 5px 10px;
+  padding: 10px 10px 5px 10px;
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     padding: 28px 28px 20px 28px;
@@ -197,8 +198,8 @@
   // color:#A45FBE;
   // color:#9153F4;
   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-background: linear-gradient(90deg, #9365DB 0%, #74DEED 100%); 
- -webkit-background-clip: text;
+  background: linear-gradient(90deg, #9365db 0%, #74deed 100%);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
@@ -211,9 +212,10 @@ background: linear-gradient(90deg, #9365DB 0%, #74DEED 100%);
 }
 
 .description {
-  color: #EAE1E1;
+  color: #eae1e1;
   margin-top: 12px;
 }
+
 
 .linksWrapper {
   display: flex;
@@ -242,25 +244,28 @@ background: linear-gradient(90deg, #9365DB 0%, #74DEED 100%);
   &:active,
   &:focus,
   &:hover {
-    color: var(--main-color-light);
+      color: #9365db;
     .icon {
-      fill: var(--main-color-light);
+      fill: #9365db;
+      filter: drop-shadow(0 0 5px rgba(165, 75, 225, 0.8));
+
     }
   }
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
+  fill: currentColor;
   transition: fill 0.3s ease;
 
   @media screen and (min-width: 768px) {
-     width: 35px;
+   width: 35px;
   height: 35px;
   }
   @media screen and (min-width: 1024px) {
-     width: 42px;
+  width: 42px;
   height: 42px;
   }
 }
