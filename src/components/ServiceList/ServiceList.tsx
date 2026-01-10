@@ -35,7 +35,7 @@ export const ServicesList: React.FC = () => {
                     <div className="placeholder-icon" />
                   )}
                 </div>
-                <h4 className={styles.name}>{item.service}</h4>
+                <h3 className={styles.name}>{item.service}</h3>
                 <p className={styles.description}>{item.description}</p>
               </div>
             );

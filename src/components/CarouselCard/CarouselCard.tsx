@@ -9,9 +9,8 @@ export const CarouselCard: React.FC = () => {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      // clientWidth бере ширину видимої частини каруселі
       const { scrollLeft, clientWidth } = scrollRef.current;
-      const moveDistance = clientWidth * 0.8; // Скролимо на 80% ширини для комфорту
+      const moveDistance = clientWidth * 0.8; 
 
       const scrollTo =
         direction === 'left'
@@ -24,7 +23,7 @@ export const CarouselCard: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
-      {/* Контейнер зі скролом */}
+      {/* container with scroll */}
       <div className={styles.scrollContainer} ref={scrollRef}>
         <ul className={styles.content}>
           {carouselData.map(item => (
@@ -37,21 +36,21 @@ export const CarouselCard: React.FC = () => {
         </ul>
       </div>
 
-      {/* Кнопки керування */}
+      {/* arrow */}
       <div className={styles.controls}>
         <button
           className={styles.arrow}
           onClick={() => scroll('left')}
           type="button"
         >
-          <span>&#8592;</span> {/* Надійний код стрілки влево */}
+          <span>&#8592;</span> 
         </button>
         <button
           className={styles.arrow}
           onClick={() => scroll('right')}
           type="button"
         >
-          <span>&#8594;</span> {/* Надійний код стрілки вправо */}
+          <span>&#8594;</span> 
         </button>
       </div>
     </div>

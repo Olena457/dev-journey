@@ -18,11 +18,11 @@ export default function Home() {
         <PortfolioCard/>
         <TeachList/>
         <TeamList />
-        <ServicesList />
-        <PhotoMarquee />
         <AccordionText/>
+        <ServicesList />
         <DiplomaGallery />
         <CarouselCard/>
+        <PhotoMarquee />
       </main>
     </div>
   );

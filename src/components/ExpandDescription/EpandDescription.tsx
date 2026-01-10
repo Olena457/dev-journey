@@ -15,7 +15,7 @@ const ExpandDescription = ({ text }: ExpandDescriptionProps) => {
   return (
     <div className="mt-3">
       <p
-        className={`text-base leading-normal text-white transition-all duration-300 ${
+        className={`text-base leading-normal text-[#a6a6a6] transition-all duration-300 ${
           isExpanded ? 'block' : 'line-clamp-3 overflow-hidden'
         }`}
       >
@@ -24,7 +24,7 @@ const ExpandDescription = ({ text }: ExpandDescriptionProps) => {
 
       <button
         type="button"
-        className="mt-2 text-sm font-semibold  text-white  hover:text-[#00c3ff] cursor-pointer"
+        className="mt-2 text-sm font-semibold  text-[#d200da]  hover:text-[#820f84] cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {isExpanded ? 'Less' : 'More...'}

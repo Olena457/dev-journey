@@ -39,6 +39,7 @@
 .list {
   padding: 30px 10px;
   position: relative;
+  // background-color: #000000;
 
   @media screen and (min-width: 425px) and (max-width: 768.99px) {
     padding: 40px;
@@ -157,11 +158,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  padding: 4px;
+  padding: 5px;
+  // border: 2px solid rgba(202, 59, 238, 0.3);
+  // border-top: 2px solid rgba(199, 19, 249, 0.263);
+  border: 2px solid rgba(130, 15, 132, 0.6);
+  border: 1px solid #560957;
 
-  border: 2px solid rgba(166, 59, 238, 0.3);
-  border: 1px solid rgba(202, 59, 238, 0.3);
-  
   position: relative; 
   overflow: hidden; 
    
@@ -171,7 +173,7 @@
     top: 0;
     left: 0%;
     right: 0;
-    height: 4px; 
+    height: 5px; 
    
       background: linear-gradient(
   90deg,
@@ -180,15 +182,17 @@
   #820f84 50%,             
   rgba(72, 24, 63, 0.4) 80%, 
   transparent 100%        
-);
+   );
+
     }
+
  &::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 4px; 
+    height: 5px; 
        background: linear-gradient(
   90deg,
   transparent 0%,        
@@ -196,10 +200,9 @@
   #820f84 50%,             
   rgba(72, 24, 63, 0.4) 80%, 
   transparent 100%        
-);
-      
-    }
-
+   );
+ }
+ 
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
   }
@@ -227,10 +230,10 @@
 
 .title {
   margin-bottom: 12px;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 600;
   color:var(--color-white);
+  font-size: 24px;
+  // text-transform: uppercase;
+  // font-weight: 600;
   // color:#A45FBE;
   // color:#9153F4;
   // background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
@@ -244,7 +247,8 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
-  color: var(--light-purple);
+  color:#808080;
+  color: var(--fuchsia-accent-color);
 }
 
 .description {
@@ -273,7 +277,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-main-white);
+  color: #ffffff99;
   gap: 4px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -281,18 +285,19 @@
   &:active,
   &:focus,
   &:hover {
-      color: #9365db;
+      color: #820f84;
     .icon {
-      fill: #9365db;
-      filter: drop-shadow(0 0 5px rgba(165, 75, 225, 0.8));
+      fill: #820f84;
+      // filter: drop-shadow(0 0 5px rgba(165, 75, 225, 0.8));
+      filter: drop-shadow(0 0 5px rgba(199, 19, 249, 0.8));
 
     }
   }
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   flex-shrink: 0;
   fill: currentColor;
   transition: fill 0.3s ease;
@@ -301,10 +306,7 @@
    width: 35px;
   height: 35px;
   }
-  @media screen and (min-width: 1024px) {
-  width: 42px;
-  height: 42px;
-  }
+  
 }
 
 .wraper {

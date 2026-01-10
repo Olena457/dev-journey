@@ -13,6 +13,7 @@
   --gray-color-border: rgba(252, 253, 255, 1);
   --gray-color-hover: #bcc4d4;
  --gray-text-color:rgba(255, 255, 255, 0.6) ;
+ --gray-text-color:#ffffff99 ;
   /* black color */
   /* --dark-black-color:#0b1018; */
   /* --dark-black-color:#302C42; */
@@ -37,6 +38,7 @@
   --main-dark-hover: #a54be1;
   --purple-accent-dark: #6d03b4;
   --dark-chocolate-color:#251419;
+  --dark-chocolate-color:rgba(37, 20, 25, 0.3);
   --fuchsia-accent-color:#d200da;
   --fuchsia-dark-color:#820f84;
   /* --second-color-light: rgb(103, 207, 242); */

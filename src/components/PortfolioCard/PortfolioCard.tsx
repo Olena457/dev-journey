@@ -34,7 +34,7 @@ const PortfolioCard= () => {
                 />
               </div>
               <div className={styles.contentWrapper}>
-                <h2 className={styles.title}>{project.title}</h2>
+                <h3 className={styles.title}>{project.title}</h3>
                 <SkillsList portfolio={true} list={project.skills} />
                 <p className={styles.role}>{project.role}</p>
                 <ExpandDescription text={project.description} />

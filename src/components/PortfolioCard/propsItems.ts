@@ -4,8 +4,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 1,
     title: 'Weather Forecast',
-    skills:
-      'Next.js 16, TypeScript, Jotai, React Query, Tailwind,Geolocation',
+    skills: 'Next.js 16, TypeScript, Jotai, React Query, Tailwind,Geolocation',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/weather.jpg',
     description:
@@ -80,7 +79,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
 
   {
     id: 7,
-    title: 'AIDE',
+    title: 'AIDE - Landing Page',
     skills:
       'Redux Toolkit, Material UI, Framer Motion, React Slick, TypeScript, 3D Animation',
     role: 'Frontend Developer & UI/UX Design',
@@ -117,8 +116,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 10,
     title: 'PetLove',
-    skills:
-      'redux, axios, react-router, redux-persist, React, JavaScript',
+    skills: 'redux, axios, react-router, redux-persist, React, JavaScript',
     role: 'Frontend Developer',
     imageProgect: '/img/pet.jpg',
     description:
@@ -140,8 +138,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 12,
     title: 'Learn-easy',
-    skills:
-      'JavaScript, React, Redux, React-router, React-modal, Firebase',
+    skills: 'JavaScript, React, Redux, React-router, React-modal, Firebase',
     role: 'Frontend Developer',
     imageProgect: '/img/learn.jpg',
     description:
