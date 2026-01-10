@@ -71,12 +71,11 @@
 }
 
 .item {
-  // border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(166, 59, 238, 0.3);
+
+  border-top: 1px solid rgba(199, 19, 249, 0.263);
   
   &:last-child {
-    // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(166, 59, 238, 0.3);
+  border-top: 1px solid rgba(199, 19, 249, 0.263);
   }
 }
 
@@ -103,7 +102,8 @@
     
     &::after {
       content: '⌵';
-      color:#9365db;
+      color:#ffffff;
+      font-weight: 500;
       font-size: 24px;
       display: block;
       transition: transform 0.3s ease;
@@ -113,6 +113,7 @@
 
 .item[open] .summary .icon::after {
   transform: rotate(180deg);
+  color:#820f84;
 }
 
 .content {

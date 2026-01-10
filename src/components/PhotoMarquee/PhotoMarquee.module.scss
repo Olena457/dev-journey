@@ -5,15 +5,19 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: radial-gradient(
-    circle at 50% 50%,
-    #a53aed 0%, 
-    #7530a4 20%, 
-    #000000 50% 
-  );
+  background-color: #000;
+  //  background: radial-gradient(
+  //   circle at 20% 20%, 
+  //   #be06c4 0%, 
+  //   #820f84  30%, 
+  //   #000000 80%, 
+  // );
+    //  background: rgba(88, 17, 88, 0.47); 
+
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .marqueeContainer {
@@ -41,6 +45,48 @@
   aspect-ratio: 16 / 10;
   border-radius: 12px;
   overflow: hidden;
+  padding: 4px;
+
+  // border: 2px solid rgba(166, 59, 238, 0.3);
+  border: 1px solid rgba(202, 59, 238, 0.3);
+  
+  position: relative; 
+  overflow: hidden; 
+   
+ &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 0;
+    height: 4px; 
+     background: linear-gradient(
+  90deg,
+  transparent 0%,        
+  rgba(72, 24, 63, 0.4) 20%, 
+  #820f84 50%,             
+  rgba(72, 24, 63, 0.4) 80%, 
+  transparent 100%        
+);
+      
+    }
+ &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px; 
+       background: linear-gradient(
+  90deg,
+  transparent 0%,        
+  rgba(72, 24, 63, 0.4) 20%, 
+  #820f84 50%,             
+  rgba(72, 24, 63, 0.4) 80%, 
+  transparent 100%        
+);
+    }
+
 
   @media (max-width: 1024px) {
     width: 380px;
@@ -52,6 +98,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 12px;
 }
 
 @keyframes scroll {

@@ -12,29 +12,33 @@
   --gray-color-dark: rgba(214, 222, 233, 1);
   --gray-color-border: rgba(252, 253, 255, 1);
   --gray-color-hover: #bcc4d4;
-
+ --gray-text-color:rgba(255, 255, 255, 0.6) ;
   /* black color */
-  /* --dark-black-color:##0b1018; */
+  /* --dark-black-color:#0b1018; */
   /* --dark-black-color:#302C42; */
-  --dark-black-color: #211e2e;
+  --dark-black-second-color: #211e2e;
   --dark-black-color: #000000;
-  /* --my-color-black: rgba(23, 23, 23, 1); */
-  --my-color-black: rgb(0, 0, 0, 1);
+  --my-color-black: #000000;
+  /* --my-color-black: rgb(0, 0, 0, 1); */
+
   
   /* brand colors  */
-  --color-blue-medium: #433d60;
-  --color-blue-light: #8176af;
+  /* --color-blue-medium: #433d60; */
+  /* --color-blue-light: #8176af; */
   --color-purple: #8f6ec5;
   --color-contrast:#6de8f5;
-  --color-text-grey: #343045;
+  /* --color-text-grey: #343045; */
   /* --light-purple: #c0b7e8; */
   --light-purple:#d6C5f0 ;
-  --soft-blue: #433d60;
+  /* --soft-blue: #433d60; */
 
-  --main-color-light: #00c3ff;
+  /* --main-color-light: #00c3ff; */
   --second-blue-dark: #60abff;
   --main-dark-hover: #a54be1;
   --purple-accent-dark: #6d03b4;
+  --dark-chocolate-color:#251419;
+  --fuchsia-accent-color:#d200da;
+  --fuchsia-dark-color:#820f84;
   /* --second-color-light: rgb(103, 207, 242); */
   /* --main-color-dark: rgba(10, 152, 198, 1); */
   /* --main-light-hover: #00c3ff; */
@@ -123,7 +127,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--dark-black-color);
   /* background: #252243; */
-  background-color: #03051E;
+  /* background-color: #03051E; */
+  background-color: #000000;
    
 }
 
