@@ -69,25 +69,46 @@
 // }
 // __________________________________
 
-.mainTitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+// .mainTitle {
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   margin: 0 auto;
+//   padding-bottom: 40px;
+//   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   color: transparent;
 
-  @media (min-width: 768px) {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 140%;
-    padding-bottom: 60px;
+//   @media (min-width: 768px) {
+//     font-weight: 600;
+//     font-size: 32px;
+//     line-height: 140%;
+//     padding-bottom: 60px;
+//   }
+// }
+.mainTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-white);
+  margin-bottom: 30px;
+  text-align: left;
+
+  @media (min-width: 744px) {
+    margin-bottom: 40px;
+  }
+
+  i {
+    font-family: var(--font-cardo), serif;
+    font-style: italic;
+    font-weight: 400;
+    padding: 0 15px 0 15px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
   }
 }
-
 .item {
   padding: 18px;
   // border-radius: 40px;
@@ -162,45 +183,44 @@
   border: 2px solid rgba(130, 15, 132, 0.6);
   border: 1px solid #560957;
 
-  position: relative; 
-  overflow: hidden; 
-   
- &::before {
-    content: "";
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0%;
     right: 0;
-    height: 5px; 
-   
-      background: linear-gradient(
-  90deg,
-  transparent 0%,        
-  rgba(72, 24, 63, 0.4) 20%, 
-  #820f84 50%,             
-  rgba(72, 24, 63, 0.4) 80%, 
-  transparent 100%        
-   );
+    height: 5px;
 
-    }
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(72, 24, 63, 0.4) 20%,
+      #820f84 50%,
+      rgba(72, 24, 63, 0.4) 80%,
+      transparent 100%
+    );
+  }
 
- &::after {
-    content: "";
+  &::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 5px; 
-       background: linear-gradient(
-  90deg,
-  transparent 0%,        
-  rgba(72, 24, 63, 0.4) 20%, 
-  #820f84 50%,             
-  rgba(72, 24, 63, 0.4) 80%, 
-  transparent 100%        
-   );
- }
- 
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(72, 24, 63, 0.4) 20%,
+      #820f84 50%,
+      rgba(72, 24, 63, 0.4) 80%,
+      transparent 100%
+    );
+  }
+
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
   }
@@ -228,7 +248,7 @@
 
 .title {
   margin-bottom: 12px;
-  color:var(--color-white);
+  color: var(--color-white);
   font-size: 24px;
   // text-transform: uppercase;
   // font-weight: 600;
@@ -245,16 +265,15 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
-  color:var(--gray-color-text-dark);
+  color: var(--gray-color-text-dark);
   color: var(--fuchsia-accent-color);
 }
 
 .description {
   // color: #eae1e1;
-  color:var(--transparent-gray-text);
+  color: var(--transparent-gray-text);
   margin-top: 12px;
 }
-
 
 .linksWrapper {
   display: flex;
@@ -275,7 +294,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color:var(--gray-text-color);
+  color: var(--gray-text-color);
   gap: 4px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -283,12 +302,11 @@
   &:active,
   &:focus,
   &:hover {
-      color: #820f84;
+    color: #820f84;
     .icon {
       fill: #820f84;
       // filter: drop-shadow(0 0 5px rgba(165, 75, 225, 0.8));
       filter: drop-shadow(0 0 5px rgba(199, 19, 249, 0.8));
-
     }
   }
 }
@@ -301,10 +319,9 @@
   transition: fill 0.3s ease;
 
   @media screen and (min-width: 768px) {
-   width: 35px;
-  height: 35px;
+    width: 35px;
+    height: 35px;
   }
-  
 }
 
 .wraper {

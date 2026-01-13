@@ -1,4 +1,3 @@
-
 import { PORTFOLIO_PROJECTS } from './propsItems';
 import SkillsList from '../SkillsList/SkillsList';
 import styles from './PortfolioCard.module.scss';
@@ -7,21 +6,22 @@ import GitIcon from '@/public/icons/GitIcon';
 import ExpandDescription from '../ExpandDescription/EpandDescription';
 // import { useTranslation } from 'react-i18next';
 
-const PortfolioCard= () => {
-//   const { t } = useTranslation();
+const PortfolioCard = () => {
+  //   const { t } = useTranslation();
 
   return (
     <>
-
       <ul id="projects" className={styles.list}>
-      {/* <div className={styles.background}> </div> */}
+        {/* <div className={styles.background}> </div> */}
         <div className={`${styles.shadow} ${styles.shadow1}`}></div>
         <div className={`${styles.shadow} ${styles.shadow3}`}></div>
         <div className={`${styles.shadow} ${styles.shadow4}`}></div>
         <div className={`${styles.shadow} ${styles.shadow2}`}></div>
 
         <div className={styles.wraper}>
-          <h2 className={styles.mainTitle}>My projects</h2>
+          <h2 className={styles.mainTitle}>
+            <i>My Pet</i>Projects
+          </h2>
         </div>
         {PORTFOLIO_PROJECTS.map(project => (
           <li key={project.id} className={styles.item}>

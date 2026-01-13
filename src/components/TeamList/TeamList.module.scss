@@ -2,18 +2,17 @@
   padding: 40px 20px;
 
   background: radial-gradient(
-    circle at 50% 50%, 
-    #be06c4 0%, 
-    #820f84  30%, 
-    #000000 80%  
+    circle at 50% 50%,
+    #be06c4 0%,
+    #820f84 30%,
+    #000000 80%
   );
   // background: radial-gradient(
-  //     circle at 50% 50%, 
-  //    rgba(130, 15, 132, 0.6) 0%,   
-  //   rgba(130, 15, 132, 0.2) 40%, 
+  //     circle at 50% 50%,
+  //    rgba(130, 15, 132, 0.6) 0%,
+  //   rgba(130, 15, 132, 0.2) 40%,
   //   transparent 80%
   // );
-
 
   @media (min-width: 768px) {
     padding: 70px 20px;
@@ -52,25 +51,54 @@
   width: 100%;
   gap: 0;
 }
+// .title {
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   margin: 0 auto;
+//   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   color: transparent;
+
+//   @media (min-width: 744px) {
+//     font-weight: 600;
+//     margin-bottom: 60px;
+//     font-size: 32px;
+//     line-height: 140%;
+//   }
+// }
 .title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 auto;
-  background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: clamp(30px, 4.5vw, 62px);
+  line-height: 1.1;
+  font-weight: 500;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
 
   @media (min-width: 744px) {
-    font-weight: 600;
-    margin-bottom: 60px;
-    font-size: 32px;
     line-height: 140%;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 80px;
+  }
+
+  i {
+    font-family: var(--font-cardo), serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-right: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
   }
 }
-
 .cardsWrapper {
   display: flex;
   flex-direction: column;
