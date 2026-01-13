@@ -207,8 +207,8 @@
 //   }
 // }
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--dark-black-color);
+  color: var(--color-white);
   padding: clamp(40px, 8vw, 100px) clamp(20px, 5vw, 60px);
 }
 
@@ -245,7 +245,7 @@
   padding: 20px;
   min-width: 260px;
   text-decoration: none;
-  color: #fff;
+  color:var(--color-white);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -263,7 +263,7 @@
     
     .linkedInIcon {
       background: #0a66c2;
-      color: #fff;
+      color:var(--color-white);
       font-weight: bold;
       padding: 2px 6px;
       border-radius: 4px;

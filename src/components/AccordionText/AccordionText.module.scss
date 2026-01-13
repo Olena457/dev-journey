@@ -36,27 +36,30 @@
 
   .title {
     font-family: var(--font-montserrat), sans-serif;
- font-size: clamp(32px, 5vw, 60px);
+    font-size: clamp(32px, 5vw, 60px);
      line-height: 1.1;
     font-weight: 500;
     margin-bottom: 30px;
+    
+   @media (min-width: 744px) {
+    margin-bottom: 40px;
+  }
 
     i {
-      font-family: var(--font-cormorant), italic;
+      font-family: var(--font-cardo ), serif; 
       font-style: italic;
-      font-weight: 500;
-    display: inline-block; // дозволяє працювати падінгам
-    padding-right: 0.15em; // додає місце для нахилу літери справа
-    
-    // background: linear-gradient(to right, #800080, #c864c8, #ffc0cb);
-    
-    
-    // background: linear-gradient(to right, #6c046c, #b157b3, #ffc0cb);
-    // background: linear-gradient(135deg, #FF9100 0%, #f34658 50%, #820f84 100%);
-    background: linear-gradient(to right, rgb(128, 0, 128), rgb(200, 100, 200), rgb(255, 192, 203));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+      font-weight: 400;
+      
+      
+      
+      
+      // background: linear-gradient(to right, #800080, #c864c8, #ffc0cb);
+      // display: inline-block; 
+      // padding-right: 0.15em; 
+  //   background: linear-gradient(to right, rgb(128, 0, 128), rgb(200, 100, 200), rgb(255, 192, 203));
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent;
     }
   }
 

@@ -22,7 +22,7 @@ export const ServicesList: React.FC = () => {
           </p>
         </div>
 
-        {/* Права частина: Картки */}
+        {/* left side */}
         <div className={styles.list}>
           {services.map((item, index) => {
             const Icon = iconMap[item.iconId];

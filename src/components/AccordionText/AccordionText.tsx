@@ -12,7 +12,7 @@ export const AccordionText: React.FC = () => {
         <div className={styles.infoSide}>
           <span className={styles.label}>- 09 -</span>
           <h2 className={styles.title}>
-            Start <i>Now</i> With Our Website Builder.
+            Start <i>Now</i> With <i>Our</i> Website Builder.
           </h2>
           <p className={styles.description}>
             We'd love to hear from you to discuss web design, product
