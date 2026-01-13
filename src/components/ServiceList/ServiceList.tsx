@@ -10,15 +10,15 @@ export const ServicesList: React.FC = () => {
   return (
     <div className={styles.WrapperService}>
       <section id="services" className={styles.services}>
-        
         <div className={styles.leftContent}>
-          <h2 className={styles.title}>Services</h2>
+          <h2 className={styles.title}>
+            What <i>Services I</i> Provide
+          </h2>
           <p className={styles.subtitle}>
             Develop digital interfaces with a focus on quality, adaptability,
             and stability. I have experience in both frontend and backend,
-            working with modern frameworks. I confidently
-            implement functionality, optimize code, and maintain clear
-            structure.
+            working with modern frameworks. I confidently implement
+            functionality, optimize code, and maintain clear structure.
           </p>
         </div>
 

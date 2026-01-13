@@ -29,7 +29,7 @@ export const DiplomaGallery: React.FC = () => {
 
   return (
     <div id="sertificates" className={styles.section}>
-      <h2 className={styles.title}>
+      {/* <h2 className={styles.title}>
         Certificates
         <span
           className={styles.infoIcon}
@@ -39,8 +39,18 @@ export const DiplomaGallery: React.FC = () => {
         >
           &#8505;
         </span>
+      </h2> */}
+      <h2 className={styles.title}>
+        Skills  & <i>Certificates</i>
+        <span
+          className={styles.infoIcon}
+          onClick={openDialog}
+          role="button"
+          title="Info"
+        >
+          &#8505;
+        </span>
       </h2>
-
       <div className={styles.gridContainer}>
         {columns.map((column, colIndex) => (
           <div key={colIndex} className={styles.column}>

@@ -11,29 +11,78 @@
    }
 }
 
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+// .title {
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   margin-bottom: 40px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   color: transparent;
 
-  @media (min-width: 744px) {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 140%;
-    margin-bottom: 60px;
-  }
+//   @media (min-width: 744px) {
+//     font-weight: 600;
+//     font-size: 32px;
+//     line-height: 140%;
+//     margin-bottom: 60px;
+//   }
   
-  @media (min-width: 1024px) {
-    margin-bottom: 80px;
+//   @media (min-width: 1024px) {
+//     margin-bottom: 80px;
 
+//   }
+// }
+.title {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: clamp(30px, 4.5vw, 62px);
+  line-height: 1.1;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap; 
+  gap: 10px;
+
+  i {
+    font-family: var(--font-cormorant), serif;
+    font-style: italic;
+    font-weight: 500;
+    display: inline-block;
+    padding-right: 0.15em; 
+   
+    background: linear-gradient(to right, rgb(128, 0, 128), rgb(200, 100, 200), rgb(255, 192, 203));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
   }
 }
+
+// .infoIcon {
+//   font-size: 1rem; // робимо іконку меншою відносно тексту
+//   cursor: pointer;
+//   color: rgba(255, 255, 255, 0.4);
+//   margin-left: 10px;
+//   transition: all 0.3s ease;
+//   vertical-align: middle;
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   border: 1px solid rgba(255, 255, 255, 0.2);
+//   border-radius: 50%;
+//   width: 24px;
+//   height: 24px;
+
+//   &:hover {
+//     color: #FF9100;
+//     border-color: #FF9100;
+//     transform: scale(1.1);
+//   }
+// }
 
 .gridContainer {
   max-width: 1440px;
@@ -97,14 +146,15 @@
   align-items: center;
   justify-content: center;
   font-size: 1rem; 
-  border: 2px solid #7530a4;
+  border: 2px solid rgb(200, 100, 200);
   border-radius: 50%;
-  background-color:#60abff;
-  color: #7530a4;
+
+color: rgb(255, 192, 203);
+  background-color:rgb(128, 0, 128);
 
   &:hover {
     transform: scale(1.2); 
-    background-color: #7530a4; 
+    background-color: rgb(200, 100, 200); 
     color: #fff;
   }
 }
