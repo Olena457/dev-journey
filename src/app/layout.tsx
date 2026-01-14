@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import { Inter, Montserrat, Cardo } from 'next/font/google'; 
+import { Inter, Montserrat, Playfair_Display } from 'next/font/google'; 
 import HeaderContainer from '@/src/components/HeaderContainer/HeaderContainer'
 import { Footer } from "../components/Footer/Footer";
 import "./globals.css";
@@ -16,13 +16,14 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
   display: "swap",
 });
-const cardo = Cardo({
-  subsets: ['latin'],
-  style: ['italic'],
-  weight: '700', 
-  variable: '--font-cardo',
-  display: 'swap',
+
+const cardo = Playfair_Display({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "700"],
+  variable: "--font-cardo", display: "swap",
 });
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
