@@ -20,7 +20,7 @@ const PortfolioCard = () => {
 
         <div className={styles.wraper}>
           <h2 className={styles.mainTitle}>
-            <i>My Pet</i>Projects
+           My<span className={styles.accent}> Projects</span>
           </h2>
         </div>
         {PORTFOLIO_PROJECTS.map(project => (

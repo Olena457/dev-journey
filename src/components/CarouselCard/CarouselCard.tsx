@@ -23,6 +23,9 @@ export const CarouselCard: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
+      <h2 className={styles.titleMain}>
+         Development<span className={styles.accent}>& Lifecycle</span>
+      </h2>
       {/* container with scroll */}
       <div className={styles.scrollContainer} ref={scrollRef}>
         <ul className={styles.content}>
@@ -43,14 +46,14 @@ export const CarouselCard: React.FC = () => {
           onClick={() => scroll('left')}
           type="button"
         >
-          <span>&#8592;</span> 
+          <span>&#8592;</span>
         </button>
         <button
           className={styles.arrow}
           onClick={() => scroll('right')}
           type="button"
         >
-          <span>&#8594;</span> 
+          <span>&#8594;</span>
         </button>
       </div>
     </div>

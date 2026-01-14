@@ -10,10 +10,9 @@
 }
 
 .title {
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 4.5vw, 62px);
-  line-height: 1.1;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-white);
   display: flex;
   align-items: center;
@@ -21,6 +20,8 @@
   margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
   @media (min-width: 744px) {
     line-height: 140%;
@@ -31,10 +32,11 @@
     margin-bottom: 80px;
   }
 
-  i {
+  .accent {
     font-family: var(--font-cardo), serif;
     font-style: italic;
     font-weight: 400;
+    letter-spacing: 0.04em;
 
     // display: inline-block;
     // padding-right: 0.15em;

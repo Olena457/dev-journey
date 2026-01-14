@@ -10,7 +10,7 @@ export const ServicesList: React.FC = () => {
       <section id="services" className={styles.services}>
         <div className={styles.leftContent}>
           <h2 className={styles.title}>
-            What <i>Services I</i> Provide
+            What <span className={styles.accent}>Services I</span> Provide
           </h2>
           <p className={styles.subtitle}>
             Develop digital interfaces with a focus on quality, adaptability,

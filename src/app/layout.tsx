@@ -18,9 +18,10 @@ const montserrat = Montserrat({
 });
 
 const cardo = Playfair_Display({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "700"],
-  variable: "--font-cardo", display: "swap",
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '600', '700'],
+  variable: '--font-cardo',
+  display: 'swap',
 });
 
 

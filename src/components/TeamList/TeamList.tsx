@@ -12,7 +12,8 @@ const TeamList = () => {
         <div className={styles.category}>
           <div className={styles.headerList}>
             <h2 className={styles.title}>
-              <i>Team</i> Experiance<i> Projects</i>
+             Team
+              <span className={styles.accent}> Projects</span>
             </h2>
           </div>
         </div>

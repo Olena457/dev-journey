@@ -17,7 +17,37 @@
     gap: 40px;
   }
 }
+.titleMain {
+  font-family: var(--font-cardo), sans-serif;
+  font-size: clamp(30px, 4.5vw, 62px);
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+   line-height: 1.5;
+    letter-spacing: 0.03em;
+  gap: 10px;
 
+  @media (min-width: 744px) {
+    line-height: 140%;
+    margin-bottom: 50px;
+  }
+
+  
+
+  .accent {
+    font-family: var(--font-cardo), serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-right: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+}
 .scrollContainer {
   width: 100%;
   overflow-x: auto;
