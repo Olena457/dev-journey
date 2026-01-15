@@ -30,16 +30,17 @@ export const DiplomaGallery: React.FC = () => {
   return (
     <div id="sertificates" className={styles.section}>
       <h2 className={styles.title}>
-        Skills & <span className={styles.accent}>Certificates</span>
-        <span
-          className={styles.infoIcon}
-          onClick={openDialog}
-          role="button"
-          title="Info"
-        >
-          &#8505;
-        </span>
+        Skills & <span className={styles.accent}>Certificates </span>
+          <span
+            className={styles.infoIcon}
+            onClick={openDialog}
+            role="button"
+            title="Info"
+          >
+            &#8505;
+          </span>
       </h2>
+
       <div className={styles.gridContainer}>
         {columns.map((column, colIndex) => (
           <div key={colIndex} className={styles.column}>
@@ -56,6 +57,7 @@ export const DiplomaGallery: React.FC = () => {
                     fill
                     sizes="(max-width: 1024px) 50vw, 25vw"
                     className={styles.img}
+                    loading="eager"
                   />
                 </div>
                 <div className={styles.overlay}>

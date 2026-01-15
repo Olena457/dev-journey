@@ -158,13 +158,14 @@ letter-spacing: 0.04em;
   gap: 1.5rem;
   color: #a6a6a6;
   // border: 1px solid rgba(130, 15, 132, 0.2);
-  border: 1px solid rgba(166, 59, 238, 0.3);
+  // border: 1px solid rgba(166, 59, 238, 0.3);
+  border: 1px solid #4c0c45;
   border-radius: 24px;
   padding: 3rem 2.5rem 2.5rem 2.5rem;
   height: 330px;
   width: 100%;
   margin-bottom: 60px;
-  // background-color: rgba(37, 20, 25, 0.813);
+  background-color: rgba(53, 9, 48, 0.96);
   background-color: rgba(37, 20, 25, 0.96);
   // box-shadow: 0px 10px 20px rgba(130, 15, 132, 0.2);
 
@@ -221,12 +222,15 @@ letter-spacing: 0.04em;
   z-index: 5;
   width: 35px;
   height: 35px;
-  background: var(--transparent-gray-text);
+  // background: var(--transparent-gray-text);
+    background: rgba(0, 0, 0, 0.2);
+
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  // border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border: 2px solid var(--fuchsia-accent-color);
 
   @media (min-width: 768px) {
     top: 50%;
@@ -237,6 +241,8 @@ letter-spacing: 0.04em;
 
   svg {
     color: var(--color-white);
+      color: var(--fuchsia-accent-color);
+
     width: 20px;
     height: 20px;
     @media (min-width: 768px) {
@@ -251,7 +257,7 @@ letter-spacing: 0.04em;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: var(--color-white);
   margin: 0 0 10px 0;
   position: relative;

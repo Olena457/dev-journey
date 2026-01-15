@@ -48,14 +48,12 @@
   /* --yellow-acsent: #fec423; */
 
   /* gradients colors */
-  --gradient-color-border: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-  --background-gradient-color: linear-gradient(
-    135deg,
-    #c048ff 0%,
-    #6930c3 50%,
-    #3d1d70 100%
-  );
 
+  /* color: rgb(255, 192, 203);
+   border: 2px solid rgb(200, 100, 200);
+   background-color: rgb(128, 0, 128); */
+  --gradient-color-border: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+ 
   /* body {
     background-image: radial-gradient(
       ellipse at center,

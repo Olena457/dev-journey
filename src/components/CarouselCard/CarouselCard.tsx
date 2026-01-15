@@ -10,7 +10,7 @@ export const CarouselCard: React.FC = () => {
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
-      const moveDistance = clientWidth * 0.8; 
+      const moveDistance = clientWidth * 0.8;
 
       const scrollTo =
         direction === 'left'

@@ -1,7 +1,6 @@
-
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import clsx from 'clsx';
 import { optionsItems } from '../MenuBurger/options';
 import styles from './MenuBurger.module.scss';
@@ -25,14 +24,33 @@ const HeaderMenu: React.FC<NavItemProps> = ({ isOpen, onClick }) => {
     };
   }, [isOpen]);
 
-  const showItemsMenu = optionsItems.map(item => (
-    <ul key={item.id}>
-      <a href={`#${item.link}`} onClick={onClick} className={styles.linkBurger}>
-        {item.item}
-      </a>
-    </ul>
-  ));
+  // const showItemsMenu = optionsItems.map(item => (
+  //   <ul key={item.id}>
+  //     <a href={`#${item.link}`} onClick={onClick} className={styles.linkBurger}>
+  //       {item.item}
+  //     </a>
+  //   </ul>
+  // ));
+const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+const showItemsMenu = optionsItems.map((item, index) => (
+  <li key={item.id}>
+    <a
+      href={`#${item.link}`}
+      onClick={() => {
+        setActiveIndex(index); // Запам'ятовуємо, на що натиснули
+        onClick();
+      }}
+      // Якщо індекс збігається — додаємо клас active
+      className={clsx(
+        styles.linkBurger,
+        activeIndex === index && styles.active
+      )}
+    >
+      {item.item}
+    </a>
+  </li>
+));
   return (
     <nav className={clsx(styles.navMenu, { [styles['is-open']]: isOpen })}>
       <div className={styles.wrapperIcon}>

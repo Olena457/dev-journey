@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import styles from './HeaderContainer.module.scss';
 import LogoIcon from '@/public/icons/LogoIcon';
-import { IconComponent } from '../ui/IconComponent';
+// import { IconComponent } from '../ui/IconComponent';
 import MenuBurger from '@/src/components/MenuBurger/MenuBurger';
 import BurgerIcon from '@/public/icons/BurgerIcon';
 

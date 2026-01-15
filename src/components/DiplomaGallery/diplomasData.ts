@@ -15,4 +15,5 @@ export const diplomas: Diploma[] = [
   { id: 10, title: 'Cyber Security Basics', image: '/certifs/cuber.jpg' },
   { id: 3, title: 'TypeScript Programming', image: '/certifs/sckript.jpg' },
   { id: 6, title: 'Git Development', image: '/certifs/git.jpg' },
+  { id: 11, title: 'English IT', image: '/certifs/interview.jpg' },
 ];
