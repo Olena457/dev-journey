@@ -66,7 +66,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
 
   {
     id: 6,
-    title: 'Food & Drinks - Cookbook',
+    title: 'Food & Drinks',
     skills:
       'React, Redux, TypeScript, Tailwind, Axios, React Router, LocalStorage',
     role: 'Frontend Developer & UI/UX Design',
@@ -91,7 +91,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   },
   {
     id: 8,
-    title: 'Interspace - Landing Page',
+    title: 'Interspace',
     skills: 'React, TypeScript, SCSS, AOS, HTML, JavaScript, Responsive Design',
     role: 'Frontend Developer & UI/UX Design',
     imageProgect: '/img/inter.jpg',

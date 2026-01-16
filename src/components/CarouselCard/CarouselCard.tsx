@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import { carouselData } from './valueData';
+import PlayIcon from '@/public/icons/PlayIcon';
 import styles from './CarouselCard.module.scss';
 
 export const CarouselCard: React.FC = () => {
@@ -24,15 +25,22 @@ export const CarouselCard: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.titleMain}>
-         Development<span className={styles.accent}>& Lifecycle</span>
+        Development<span className={styles.accent}>& Lifecycle</span>
       </h2>
       {/* container with scroll */}
       <div className={styles.scrollContainer} ref={scrollRef}>
         <ul className={styles.content}>
           {carouselData.map(item => (
             <li key={item.id} className={styles.card}>
-              <span className={styles.number}>{item.id}.</span>
-              <h3 className={styles.title}>{item.title}</h3>
+              <div className={styles.header}>
+                <PlayIcon
+                  id="play"
+                  width="40px"
+                  height="40px"
+                  className={styles.icon}
+                />
+                <h3 className={styles.title}>{item.title}</h3>
+              </div>
               <p className={styles.description}>{item.description}</p>
             </li>
           ))}

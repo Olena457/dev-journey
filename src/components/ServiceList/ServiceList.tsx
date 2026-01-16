@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
-import { services, iconMap } from './valueData';
+import { services } from './valueData';
 import styles from './ServiceList.module.scss';
+import DonatIcon from '@/public/icons/DonatIcon';
+
 
 export const ServicesList: React.FC = () => {
   return (
@@ -23,15 +25,10 @@ export const ServicesList: React.FC = () => {
         {/* left side */}
         <div className={styles.list}>
           {services.map((item, index) => {
-            const Icon = iconMap[item.iconId];
             return (
               <div key={index} className={styles.item}>
                 <div className={styles.iconWrapper}>
-                  {Icon ? (
-                    <Icon id={item.iconId} width="25px" height="25px" />
-                  ) : (
-                    <div className="placeholder-icon" />
-                  )}
+                  <DonatIcon id="table" width="25px" height="25px" />
                 </div>
                 <h3 className={styles.name}>{item.service}</h3>
                 <p className={styles.description}>{item.description}</p>

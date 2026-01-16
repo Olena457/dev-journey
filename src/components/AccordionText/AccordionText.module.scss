@@ -105,10 +105,11 @@
 
 .item {
 
-  border-top: 1px solid rgba(199, 19, 249, 0.263);
+  // border-top: 1px solid rgba(199, 19, 249, 0.263);
+  border-top: 1px solid #820f84;
   
   &:last-child {
-  border-top: 1px solid rgba(199, 19, 249, 0.263);
+  border-top: 1px solid #820f84;
   }
 }
 
@@ -119,7 +120,9 @@
   align-items: center;
   padding: clamp(20px, 3vw, 35px) 0;
   cursor: pointer;
-  &::-webkit-details-marker { display: none; }
+  &::-webkit-details-marker {
+     display: none; 
+    }
 
   .question {
     font-size: clamp(18px, 2vw, 24px);

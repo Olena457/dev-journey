@@ -4,34 +4,56 @@
   flex-wrap: wrap;
 }
 
+// .item {
+//   padding: 6px 14px;
+//   font-size: 14px;
+//   font-weight: 600;
+//   letter-spacing: 0.03rem;
+//   border-radius: 100px;
+//   color: #bbb9b9;
+//   white-space: nowrap;
+//   transition: all 0.3s ease;
+//   border: 1px solid #560957;
+
+//   &:hover {
+//     border-color: rgba(199, 19, 249, 0.8);
+//     box-shadow: 0 15px 35px rgba(199, 19, 249, 0.4);
+//   }
+
+//   @media screen and (min-width: 425px) {
+//     padding: 8px 18px;
+//     font-size: 15px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     padding: 10px 22px;
+//     font-size: 16px;
+//   }
+// }
 .item {
+
   padding: 6px 14px;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.03rem;
   border-radius: 100px;
   color: #bbb9b9;
   white-space: nowrap;
   transition: all 0.3s ease;
   border: 1px solid #560957;
+
+  position: relative;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#000, #000), 
+                    linear-gradient(90deg, #560957, #820f84);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  
   &:hover {
-    // border-color: rgba(166, 59, 238, 0.6);
-    border-color: rgba(199, 19, 249, 0.8);
-    //  box-shadow: 0 15px 35px rgba(186, 12, 230, 0.4);
-    box-shadow: 0 15px 35px rgba(199, 19, 249, 0.4);
-  }
-}
-
-@media screen and (min-width: 425px) {
-  .item {
-    padding: 8px 18px;
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .item {
-    padding: 10px 22px;
-    font-size: 16px;
+    background-image: linear-gradient(#000, #000), 
+                      linear-gradient(90deg, #c713f9, #74deed); /* Перелив у блакитний як на тайтлі */
+ box-shadow: 0 15px 35px rgba(199, 19, 249, 0.4);
+     color:var(--color-white);
   }
 }
 

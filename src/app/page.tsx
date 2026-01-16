@@ -14,6 +14,7 @@ export default function Home() {
     <div>
       <main >
         <HeroComponent/>
+        <CarouselCard/>
         <HeaderComponent/>
         <PortfolioCard/>
         <TeachList/>
@@ -21,7 +22,6 @@ export default function Home() {
         <AccordionText/>
         <ServicesList />
         <DiplomaGallery />
-        <CarouselCard/>
         <PhotoMarquee />
       </main>
     </div>

@@ -1,8 +1,49 @@
+// import * as React from 'react';
+// import { IconProps } from '@/src/types/types';
+
+// const LogoIcon: React.FC<IconProps> = ({
+//   id = 'custom-icon',
+//   width = '24px',
+//   height = '24px',
+//   className,
+//   ...rest
+// }) => {
+//   return (
+//     <svg
+//       id={id}
+//       width={width}
+//       height={height}
+//       className={className}
+//       viewBox="0 0 108.89 94.31"
+//       xmlns="http://www.w3.org/2000/svg"
+//       fill="none"
+//       {...rest}
+//     >
+//       <path
+//         d="M45.38,62.87l-9.07,15.72-9.08,15.72h18.15l9.07-15.72,9.07-15.72,9.08-15.72h18.14l-9.07-15.72h-18.15l-9.07,15.72-9.07,15.72Z"
+//         fill="#00eb8f"
+//         fillRule="evenodd"
+//       />
+//       <path
+//         d="M81.67,62.87l-9.07,15.72-9.08,15.72h18.15s9.07-15.72,9.07-15.72h18.15l-9.07-15.72h-18.15Z"
+//         fill="#00eb8f"
+//         fillRule="evenodd"
+//       />
+//       <path
+//         d="M18.15,78.58l9.07-15.72,9.08-15.72,9.07-15.72,9.07-15.72h18.15L63.52,0h-18.14L0,78.58l9.08,15.72,9.07-15.72Z"
+//         fill="#00eb8f"
+//         fillRule="evenodd"
+//       />
+//     </svg>
+//   );
+// };
+
+// export default LogoIcon;
 import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
-const LogoIcon: React.FC<IconProps> = ({
-    id= 'logo',
+const CustomIcon: React.FC<IconProps> = ({
+  id = 'custom-icon',
   width = '24px',
   height = '24px',
   className,
@@ -10,38 +51,38 @@ const LogoIcon: React.FC<IconProps> = ({
 }) => {
   return (
     <svg
+      id={id}
       width={width}
       height={height}
       className={className}
-      viewBox="-25.5 0 307 307"
+      viewBox="0 0 108.89 94.31"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      fill="#000000"
       {...rest}
     >
-      <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#820f84" />
+          <stop offset="100%" stopColor="#6de8f5" />
+        </linearGradient>
+      </defs>
+
+      <path
+        d="M45.38,62.87l-9.07,15.72-9.08,15.72h18.15l9.07-15.72,9.07-15.72,9.08-15.72h18.14l-9.07-15.72h-18.15l-9.07,15.72-9.07,15.72Z"
+        fill="url(#gradient)"
+        fillRule="evenodd"
       />
-      <g id="SVGRepo_iconCarrier">
-        <defs />
-        <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
-          <g>
-            <path
-              d="M249.630577,171.957624 L227.034809,150.357602 L155.609203,84.7341299 L124.817682,113.974586 C122.002785,117.804377 122.194275,122.974595 125.392151,126.55545 L153.541116,150.798028 L153.445371,150.836326 L183.700721,179.751249 C187.281576,183.734232 187.185831,189.63211 183.432636,193.461902 L101.858084,270.976875 L138.949611,306.383295 L249.630577,201.217229 C258.113564,193.136369 258.132713,180.038483 249.630577,171.919326 L249.630577,171.957624 Z"
-              fill="#9919ee"
-            />
-            <path
-              d="M6.34309165,134.463968 L28.9388596,156.006544 L100.402763,221.630016 L131.175135,192.38956 C133.970883,188.598067 133.779393,183.389551 130.600667,179.808696 L102.451701,155.52782 L102.547446,155.470373 L72.2729469,126.574599 C68.73039,122.610765 68.8261348,116.693737 72.5601812,112.883095 L154.134733,35.3298237 L117.043206,0 L6.3622406,105.166066 C-2.12074687,113.246925 -2.12074687,126.36396 6.3622406,134.463968 L6.34309165,134.463968 Z"
-              fill="#76C8FF"
-            />
-          </g>
-        </g>
-      </g>
+      <path
+        d="M81.67,62.87l-9.07,15.72-9.08,15.72h18.15s9.07-15.72,9.07-15.72h18.15l-9.07-15.72h-18.15Z"
+        fill="url(#gradient)"
+        fillRule="evenodd"
+      />
+      <path
+        d="M18.15,78.58l9.07-15.72,9.08-15.72,9.07-15.72,9.07-15.72h18.15L63.52,0h-18.14L0,78.58l9.08,15.72,9.07-15.72Z"
+        fill="url(#gradient)"
+        fillRule="evenodd"
+      />
     </svg>
   );
 };
 
-export default LogoIcon;
+export default CustomIcon;
