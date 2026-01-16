@@ -11,12 +11,12 @@ export const AccordionText: React.FC = () => {
       <div className={styles.container}>
         {/* Left side : Text  */}
         <div className={styles.infoSide}>
-          <span className={styles.label}>
-            <DonatIcon id="donat" width="35px" height="35px" />
-          </span>
           <h2 className={styles.title}>
+            <span className={styles.iconWrapper}>
+              <DonatIcon id="donat" width="25px" height="25px" />
+            </span>
             Start <span className={styles.accent}>Now</span> With
-            <span className={styles.accent}>Our</span> Website Builder
+            <span className={styles.accent}>Our</span>Service
           </h2>
           <p className={styles.description}>
             We'd love to hear from you to discuss web design, product

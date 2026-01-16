@@ -3,7 +3,7 @@ import { FAQItem } from '@/src/types/types';
 export const faqData: FAQItem[] = [
   {
     id: '01',
-    question: 'Can I Customize the Design of My Website?',
+    question: 'Customize the Design of your Website?',
     answer:
       'Yes! You can fully customize the design by changing colors, fonts, layouts, and images. Most website builders also allow you to add custom code if you need more advanced options.',
   },
@@ -15,7 +15,7 @@ export const faqData: FAQItem[] = [
   },
   {
     id: '03',
-    question: 'Is the Website Responsive on Mobile Devices?',
+    question: 'Is the Responsive Website on Devices?',
     answer:
       'Absolutely! All templates are designed to be responsive, meaning your website will automatically adjust to look great on any device, including smartphones and tablets.',
   },

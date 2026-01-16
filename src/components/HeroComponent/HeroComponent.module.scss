@@ -194,9 +194,10 @@ margin-top: clamp(5px, 8vw - 10px, 95px);
   width: 45px;
   height: 45px;
   border-radius: 20%;
-  background: rgba(255, 255, 255, 0.05);
+  
+  background: rgba(120, 19, 134, 0.3);
   color: var(--color-main-white);
-  border: 1px solid rgba(165, 75, 225, 0.3); 
+  border: 1px solid rgba(217, 34, 241, 0.3); 
   transition: all 0.3s ease;
 
   svg {
@@ -212,9 +213,10 @@ margin-top: clamp(5px, 8vw - 10px, 95px);
 
   &:hover {
     background: rgba(165, 75, 225, 0.2);
+    // background: #ffe1e10d;
     transform: translateY(-3px);
     border-color: #6de8f5; 
-    box-shadow: 0 0 15px rgba(109, 232, 245, 0.3);
+    // box-shadow: 0 0 15px rgba(109, 232, 245, 0.3);
   }
    @media (min-width: 768px) {
      width: 55px;

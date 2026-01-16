@@ -18,7 +18,8 @@ export const ServicesList: React.FC = () => {
               <DonatIcon id="donat" width="25px" height="25px" />
             </span>
             <h2 className={styles.title}>
-              What <span className={styles.accent}>Services I</span> Provide
+             Which <span className={styles.accent}>Services I</span> Can
+              Provide
             </h2>
           </div>
           <p className={styles.subtitle}>

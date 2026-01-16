@@ -1,47 +1,143 @@
+// .wrapTeam {
+//   padding: 40px 20px;
+//   position:relative;
+
+//   // background: radial-gradient(
+//   //   circle at 50% 50%,
+//   //   #be06c4 0%,
+//   //   #820f84 30%,
+//   //   #000000 80%
+//   // );
+
+//   @media (min-width: 768px) {
+//     padding: 70px 20px;
+//   }
+//   @media (min-width: 1024px) {
+//     padding: 70px 40px;
+//   }
+// }
+
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .background {
+//   position: absolute;
+//    width: 100%;
+//     height: 100%;
+//   inset: 0;
+//   background: url('/background.svg') no-repeat ;
+//   background-size:contain;
+//   z-index: -1;
+//    overflow: hidden;
+// }
+
+// .category {
+//   padding: 40px 30px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 40px;
+//   align-items: center;
+
+//   @media (min-width: 768px) {
+//     padding: 0 40px 70px 40px;
+//   }
+
+//   @media (min-width: 1440px) {
+//     font-weight: 400;
+//     font-size: 42px;
+//     line-height: 140%;
+//   }
+// }
+
+// .headerList {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   gap: 0;
+// }
+// // .title {
+// //   font-size: 1.5rem;
+// //   font-weight: bold;
+// //   text-transform: uppercase;
+// //   margin: 0 auto;
+// //   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
+// //   -webkit-background-clip: text;
+// //   background-clip: text;
+// //   color: transparent;
+
+// //   @media (min-width: 744px) {
+// //     font-weight: 600;
+// //     margin-bottom: 60px;
+// //     font-size: 32px;
+// //     line-height: 140%;
+// //   }
+// // }
+// .title {
+//   font-family: var(--font-cardo), sans-serif;
+//   font-size: clamp(30px, 4.5vw, 60px);
+//   font-weight: 600;
+//   color: var(--color-white);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 40px;
+//   flex-wrap: wrap;
+//    line-height: 1.5;
+//     letter-spacing: 0.04em;
+//   gap: 10px;
+
+//   @media (min-width: 744px) {
+//     line-height: 140%;
+//     margin-bottom: 60px;
+//   }
+
+//   .accent {
+//     font-family: var(--font-cardo), serif;
+//     font-style: italic;
+//     font-weight: 400;
+//     margin-right: 15px;
+//     line-height: 1.5;
+//     letter-spacing: 0.04em;
+//   }
+// }
+// .cardsWrapper {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   gap: 24px;
+
+//   & > * {
+//     width: 100%;
+//   }
+
+//   @media (min-width: 744px) {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     gap: 34px;
+
+//     & > * {
+//       width: calc(50% - 12px);
+//     }
+//   }
+
+//   @media (min-width: 1440px) {
+//     gap: 20px;
+
+//     & > * {
+//       width: calc(25% - 3px);
+//     }
+//   }
+// }
 .wrapTeam {
-  padding: 40px 20px;
-
-  background: radial-gradient(
-    circle at 50% 50%,
-    #be06c4 0%,
-    #820f84 30%,
-    #000000 80%
-  );
-  // background: radial-gradient(
-  //     circle at 50% 50%,
-  //    rgba(130, 15, 132, 0.6) 0%,
-  //   rgba(130, 15, 132, 0.2) 40%,
-  //   transparent 80%
-  // );
-
-  @media (min-width: 768px) {
-    padding: 70px 20px;
-  }
-  @media (min-width: 1024px) {
-    padding: 70px 40px;
-  }
-}
-
-.wrapper {
+  background-color: #000; // Базовий фон для всієї секції
   display: flex;
   flex-direction: column;
-}
-.category {
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    padding: 0 40px 70px 40px;
-  }
-
-  @media (min-width: 1440px) {
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 140%;
-  }
+  width: 100%;
 }
 
 .headerList {
@@ -49,59 +145,71 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 0;
-}
-// .title {
-//   font-size: 1.5rem;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   margin: 0 auto;
-//   background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   color: transparent;
+  padding: 40px 20px;
 
-//   @media (min-width: 744px) {
-//     font-weight: 600;
-//     margin-bottom: 60px;
-//     font-size: 32px;
-//     line-height: 140%;
-//   }
-// }
+  @media (min-width: 768px) {
+    padding: 70px 20px 40px;
+  }
+}
+
 .title {
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 4.5vw, 60px);
   font-weight: 600;
-  color: var(--color-white);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
   flex-wrap: wrap;
-   line-height: 1.5;
-    letter-spacing: 0.04em;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
   gap: 10px;
-
-  @media (min-width: 744px) {
-    line-height: 140%;
-    margin-bottom: 60px;
-  }
+  margin: 0;
 
   .accent {
     font-family: var(--font-cardo), serif;
     font-style: italic;
     font-weight: 400;
-    margin-right: 15px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
   }
 }
+
+.contentSection {
+  position: relative; // Контейнер для абсолютного фону
+  padding: 40px 20px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 60px 20px;
+  }
+  @media (min-width: 1024px) {
+    padding: 70px 40px;
+  }
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none; // Щоб фон не заважав клікати по картках
+
+  // Поєднуємо картинку та радіальний градієнт
+  background: 
+    url('/background.svg') no-repeat center top;
+   
+  background-size: cover;
+  opacity: 0.8; // Можна регулювати яскравість фону
+}
+
 .cardsWrapper {
+  position: relative; // Піднімаємо над фоном
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   gap: 24px;
 
   & > * {
@@ -114,7 +222,7 @@
     gap: 34px;
 
     & > * {
-      width: calc(50% - 12px);
+      width: calc(50% - 17px); // 17px = половина gap
     }
   }
 
@@ -122,7 +230,7 @@
     gap: 20px;
 
     & > * {
-      width: calc(25% - 3px);
+      width: calc(25% - 15px); // Розрахунок для 4 карток в ряд
     }
   }
 }
