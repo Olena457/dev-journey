@@ -39,8 +39,9 @@
 // };
 'use client';
 
-import React from 'react';
 import styles from './Footer.module.scss';
+// import TableIcon from '@/public/icons/TableIcon';
+
 
 export const Footer = () => {
   return (

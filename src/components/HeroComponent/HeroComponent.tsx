@@ -41,7 +41,10 @@ export const HeroComponent: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textBlock}>
-            <h1 className={styles.title}>Frontend Developer</h1>
+            <h2 className={styles.title}>
+             
+              <span className={styles.accent}> Frontend</span>Developer
+            </h2>
             <p className={styles.description}>
               Transforming ideas into interactive and seamless digital
               experiences through modern frontend development.

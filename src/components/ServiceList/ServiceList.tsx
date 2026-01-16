@@ -3,7 +3,9 @@
 import React from 'react';
 import { services } from './valueData';
 import styles from './ServiceList.module.scss';
+import DotIcon from '@/public/icons/DotIcon';
 import DonatIcon from '@/public/icons/DonatIcon';
+
 
 
 export const ServicesList: React.FC = () => {
@@ -11,9 +13,14 @@ export const ServicesList: React.FC = () => {
     <div className={styles.WrapperService}>
       <section id="services" className={styles.services}>
         <div className={styles.leftContent}>
-          <h2 className={styles.title}>
-            What <span className={styles.accent}>Services I</span> Provide
-          </h2>
+          <div className={styles.titleWrapper}>
+            <span className={styles.label}>
+              <DonatIcon id="donat" width="25px" height="25px" />
+            </span>
+            <h2 className={styles.title}>
+              What <span className={styles.accent}>Services I</span> Provide
+            </h2>
+          </div>
           <p className={styles.subtitle}>
             Develop digital interfaces with a focus on quality, adaptability,
             and stability. I have experience in both frontend and backend,
@@ -28,9 +35,11 @@ export const ServicesList: React.FC = () => {
             return (
               <div key={index} className={styles.item}>
                 <div className={styles.iconWrapper}>
-                  <DonatIcon id="table" width="25px" height="25px" />
+                  <DotIcon id="dot" width="25px" height="25px" />
                 </div>
                 <h3 className={styles.name}>{item.service}</h3>
+                <hr className={styles.underline} />
+
                 <p className={styles.description}>{item.description}</p>
               </div>
             );

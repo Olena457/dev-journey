@@ -3,6 +3,7 @@
 import React from 'react';
 import { faqData } from './facData';
 import styles from './AccordionText.module.scss';
+import DonatIcon from '@/public/icons/DonatIcon';
 
 export const AccordionText: React.FC = () => {
   return (
@@ -10,7 +11,9 @@ export const AccordionText: React.FC = () => {
       <div className={styles.container}>
         {/* Left side : Text  */}
         <div className={styles.infoSide}>
-          <span className={styles.label}>- 09 -</span>
+          <span className={styles.label}>
+            <DonatIcon id="donat" width="35px" height="35px" />
+          </span>
           <h2 className={styles.title}>
             Start <span className={styles.accent}>Now</span> With
             <span className={styles.accent}>Our</span> Website Builder

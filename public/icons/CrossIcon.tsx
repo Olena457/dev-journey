@@ -19,7 +19,7 @@ const CrossIcon: React.FC<IconProps> = ({
       {...rest}
     >
       <path
-        stroke="#f7f5f1"
+        stroke="#ffffff99"
         strokeLinejoin="round"
         strokeLinecap="round"
         strokeMiterlimit={4}

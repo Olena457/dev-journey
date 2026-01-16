@@ -63,12 +63,12 @@
   position: relative;
   display: inline-block; 
   transition: color 0.3s ease;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.04;
   transition: all 0.3s ease;
-  color: var(--color-white);
-    color:var(--gray-text-color);
+  // color: var(--color-white);
+  color:var(--gray-text-color);
 
    
 
@@ -120,8 +120,9 @@
 
   }
 
+   
    @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
    @media (min-width:1024px) {
     font-size: 20px;

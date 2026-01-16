@@ -30,7 +30,7 @@
     display: block;
     font-size: 14px;
     margin-bottom: 20px;
-    color:var(--gray-color-text-dark);
+  
     opacity: 0.8;
   }
 
@@ -104,12 +104,10 @@
 }
 
 .item {
-
-  // border-top: 1px solid rgba(199, 19, 249, 0.263);
-  border-top: 1px solid #820f84;
+  border-top: 1px solid rgba(214, 19, 249, 0.358);
   
   &:last-child {
-  border-top: 1px solid #820f84;
+    border-top: 1px solid rgba(214, 19, 249, 0.358);
   }
 }
 

@@ -15,11 +15,16 @@ const PhotoMarquee = () => {
 
   return (
     <div className={styles.wrapTeam}>
-      <div className={styles.marqueeContainer}>
-        {renderRow(MARQUEE_IMAGES.slice(0, 6), styles.fast)}
-        {renderRow(MARQUEE_IMAGES.slice(3, 9), styles.medium)}
-        {renderRow(MARQUEE_IMAGES.slice(6, 22), styles.slow)}
-        {renderRow([...MARQUEE_IMAGES].reverse(), styles.slow)}
+        <h2 className={styles.title}>
+          <span className={styles.accent}> Photo</span>Gallery
+        </h2>
+      <div className={styles.wrapTeam}>
+        <div className={styles.marqueeContainer}>
+          {renderRow(MARQUEE_IMAGES.slice(0, 6), styles.fast)}
+          {renderRow(MARQUEE_IMAGES.slice(3, 9), styles.medium)}
+          {renderRow(MARQUEE_IMAGES.slice(6, 22), styles.slow)}
+          {renderRow([...MARQUEE_IMAGES].reverse(), styles.slow)}
+        </div>
       </div>
     </div>
   );

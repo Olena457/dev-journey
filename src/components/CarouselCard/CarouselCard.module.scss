@@ -17,6 +17,13 @@
     gap: 40px;
   }
 }
+
+
+.label {
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
 .titleMain {
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 4.5vw, 62px);

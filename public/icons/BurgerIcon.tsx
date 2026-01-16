@@ -10,7 +10,7 @@ const BurgerIcon: React.FC<IconProps> = ({
 }) => {
   return (
     <svg
-      id='burger'
+      id="burger"
       width={width}
       height={height}
       className={className}
@@ -21,21 +21,21 @@ const BurgerIcon: React.FC<IconProps> = ({
     >
       <path
         d="M4.5 18H31.5"
-        stroke="#f7f5f1"
+        stroke="#ffffff99"
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M4.5 9H31.5"
-        stroke="#f7f5f1"
+        stroke="#ffffff99"
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M4.5 27H31.5"
-        stroke="#f7f5f1"
+        stroke="#ffffff99"
         strokeWidth={3}
         strokeLinecap="round"
         strokeLinejoin="round"

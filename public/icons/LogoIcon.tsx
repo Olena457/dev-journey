@@ -42,7 +42,7 @@
 import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
-const CustomIcon: React.FC<IconProps> = ({
+const LogoIcon: React.FC<IconProps> = ({
   id = 'custom-icon',
   width = '24px',
   height = '24px',
@@ -85,4 +85,4 @@ const CustomIcon: React.FC<IconProps> = ({
   );
 };
 
-export default CustomIcon;
+export default LogoIcon;
