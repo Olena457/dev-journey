@@ -6,6 +6,7 @@ export const diplomas: Diploma[] = [
     title: ' Full-Stack Certificate',
     image: '/certifs/goit.jpg',
   },
+  { id: 11, title: 'English IT', image: '/certifs/interview.jpg' },
   { id: 2, title: 'React,Redux Certificate', image: '/certifs/react-sert.jpg' },
   { id: 4, title: 'English Intermediate', image: '/certifs/english.jpg' },
   { id: 8, title: 'Netai Course AI', image: '/certifs/netai.jpg' },
@@ -15,5 +16,4 @@ export const diplomas: Diploma[] = [
   { id: 10, title: 'Cyber Security Basics', image: '/certifs/cuber.jpg' },
   { id: 3, title: 'TypeScript Programming', image: '/certifs/sckript.jpg' },
   { id: 6, title: 'Git Development', image: '/certifs/git.jpg' },
-  { id: 11, title: 'English IT', image: '/certifs/interview.jpg' },
 ];

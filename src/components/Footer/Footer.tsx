@@ -45,9 +45,8 @@ import styles from './Footer.module.scss';
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer  id='contacts'   className={styles.footer}>
       <div className={styles.footerContainer}>
-        {/* Навігація */}
         <nav className={styles.footerNav}>
           {[
             'home',
@@ -65,7 +64,6 @@ export const Footer = () => {
         </nav>
 
         <div className={styles.badgesContainer}>
-          {/* Статичний LinkedIn Badge - надійний на 100% */}
           <a
             href="https://www.linkedin.com/in/olena-demianenko0808-383991312/"
             target="_blank"

@@ -22,7 +22,7 @@ const StyleIcon: React.FC<IconProps> = ({
       <title>SCSS</title>
       <path
         d="M16,2A14,14,0,1,1,2,16,14,14,0,0,1,16,2Z"
-        fill="#c69"
+        fill="#d200da"
         fillRule="evenodd"
       />
       <path

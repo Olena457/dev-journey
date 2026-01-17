@@ -98,8 +98,8 @@
 .titleWrapper {
   display: flex;
   align-items: baseline; 
-  justify-content: center; 
-  gap: 15px; 
+  // justify-content: center; 
+  gap: 10px; 
   margin-bottom: 20px;
 
   @media (min-width: 1024px) {
@@ -107,24 +107,42 @@
   }
 }
 
-.label {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0; // Щоб іконка
-}
+// .label {
+//   display: flex;
+//   align-items: center;
+//   flex-shrink: 0; 
+// }
 .title {
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 5vw, 60px);
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: left;
-  letter-spacing: 0.04em;
+  //  gap: 10px;
   list-style: 1.5;
+margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+      flex-wrap: wrap;
+
+  
+  @media (min-width: 744px) {
+    flex-wrap: nowrap;
+      letter-spacing: 0.04em;
+        margin-bottom: 30px;
+
+
+  }
+  @media (min-width: 1024px) {
+    flex-wrap: wrap;
+  }
 
   @media (min-width: 744px) {
     margin-bottom: 40px;
   }
+
+  
 
   .accent {
     font-family: var(--font-cardo), serif;
@@ -132,7 +150,8 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    //   margin-left: 4px;
+      margin-left: 4px;
+      margin-right: 5px;
     //   display: inline-block;
     //    padding-right: 0.15em;
     //      background: linear-gradient(to right, rgb(128, 0, 128), rgb(200, 100, 200), rgb(255, 192, 203));

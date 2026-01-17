@@ -18,7 +18,7 @@ export const ServicesList: React.FC = () => {
               <DonatIcon id="donat" width="25px" height="25px" />
             </span>
             <h2 className={styles.title}>
-             Which <span className={styles.accent}>Services I</span> Can
+             Which <span className={styles.accent}>Services  </span>I Can
               Provide
             </h2>
           </div>

@@ -25,15 +25,27 @@
 .title {
   display: flex;
   align-items: center;
-  gap: 15px;
-    flex-wrap: wrap;
+  gap: 10px;
 
   font-family: var(--font-cardo), sans-serif;
-  font-size: clamp(32px, 5vw, 60px);
+  font-size: clamp(30px, 5vw, 60px);
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+      flex-wrap: wrap;
+
+  
+  @media (min-width: 744px) {
+    flex-wrap: nowrap;
+      letter-spacing: 0.04em;
+        margin-bottom: 30px;
+
+
+  }
+  @media (min-width: 1024px) {
+    flex-wrap: wrap;
+  }
 
   @media (min-width: 744px) {
     margin-bottom: 40px;
