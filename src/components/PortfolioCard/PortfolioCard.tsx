@@ -9,7 +9,9 @@ import ScreenIcon from '@/public/icons/ScreenIcon';
 import SkillsList from '../SkillsList/SkillsList';
 import styles from './PortfolioCard.module.scss';
 import LinkIcon from '@/public/icons/LinkIcon';
-import GitIcon from '@/public/icons/GitIcon';
+// import GitIcon from '@/public/icons/GitIcon';
+// import Image from 'next/image';
+// import CoverImage from '@/public/img/triangle.png';
 import ExpandDescription from '../ExpandDescription/EpandDescription';
 
 const PortfolioCard: React.FC = () => {
@@ -27,8 +29,8 @@ const PortfolioCard: React.FC = () => {
     const x = (e.clientX - left) / width - 0.5;
     const y = (e.clientY - top) / height - 0.5;
 
-    const rotateMultiplier = 25; // Максимальний кут нахилу
-    const moveMultiplier = 10; // Невелике зміщення по осях для об'єму
+    const rotateMultiplier = 25; 
+    const moveMultiplier = 10; 
 
     card.style.transform = `
       perspective(1000px) 
@@ -49,11 +51,12 @@ const PortfolioCard: React.FC = () => {
 
   return (
     <ul id="projects" className={styles.list}>
-      {/* <div className={`${styles.shadow} ${styles.shadow1}`}></div>
+      
+      <div className={`${styles.shadow} ${styles.shadow1}`}></div>
+       <div className={`${styles.shadow} ${styles.shadow2}`}></div>
        <div className={`${styles.shadow} ${styles.shadow3}`}></div>
-       <div className={`${styles.shadow} ${styles.shadow4}`}></div>
-       <div className={`${styles.shadow} ${styles.shadow2}`}></div> */}
-      {/* Фоновий декор */}
+       <div className={`${styles.shadow} ${styles.shadow4}`}></div> 
+       <div className={`${styles.shadow} ${styles.shadow5}`}></div> 
 
       <div className={styles.wraper}>
         <h2 className={styles.mainTitle}>
@@ -102,9 +105,9 @@ const PortfolioCard: React.FC = () => {
               rel="noopener noreferrer"
             >
               <LinkIcon id="link" className={styles.icon} />
-              <p>Live</p>
+              <p>Visit</p>
             </a>
-            <a
+            {/* <a
               className={styles.link}
               href={project.repoHref}
               target="_blank"
@@ -112,7 +115,7 @@ const PortfolioCard: React.FC = () => {
             >
               <GitIcon id="git" className={styles.icon} />
               <p>Git</p>
-            </a>
+            </a> */}
           </div>
         </li>
       ))}

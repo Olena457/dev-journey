@@ -24,7 +24,7 @@ const ExpandDescription = ({ text }: ExpandDescriptionProps) => {
 
       <button
         type="button"
-        className="mt-2 text-sm font-semibold  text-[#d200da]  hover:text-[#820f84] cursor-pointer"
+        className="mt-2 text-sm font-semibold  text-[#a6a6a6]  hover:text-[#820f84] cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {isExpanded ? 'Less' : 'More...'}

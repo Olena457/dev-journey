@@ -1,10 +1,12 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+import backgroundImage from '@/public/img/right.png';
 import { services } from './valueData';
 import styles from './ServiceList.module.scss';
 import DotIcon from '@/public/icons/DotIcon';
-import DonatIcon from '@/public/icons/DonatIcon';
+// import DonatIcon from '@/public/icons/DonatIcon';
 
 
 
@@ -13,12 +15,21 @@ export const ServicesList: React.FC = () => {
     <div className={styles.WrapperService}>
       <section id="services" className={styles.services}>
         <div className={styles.leftContent}>
+          <div className={styles.background}>
+            <Image
+              src={backgroundImage}
+              alt="background"
+              // placeholder="blur"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
           <div className={styles.titleWrapper}>
-            <span className={styles.label}>
+            {/* <span className={styles.label}>
               <DonatIcon id="donat" width="25px" height="25px" />
-            </span>
+            </span> */}
             <h2 className={styles.title}>
-             Which <span className={styles.accent}>Services  </span>I Can
+              Which <span className={styles.accent}>Services </span>I Can
               Provide
             </h2>
           </div>

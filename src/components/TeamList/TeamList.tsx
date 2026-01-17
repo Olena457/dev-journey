@@ -9,15 +9,13 @@ const projects: TeamCardProps[] = projectsData;
 const TeamList = () => {
   return (
     <div className={styles.wrapTeam}>
-        {/* <div className={styles.headerList}> */}
-        <h2 className={styles.title}>
-          Team
-          <span className={styles.accent}> Projects</span>
-        </h2>
+      <h2 className={styles.title}>
+        Team
+        <span className={styles.accent}> Projects</span>
+      </h2>
 
       <section className={styles.contentSection}>
-       
-
+        
         <div className={styles.cardsWrapper}>
           {projects.map(item => (
             <TeamCard key={item.id} {...item} />
