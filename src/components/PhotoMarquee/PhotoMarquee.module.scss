@@ -1,11 +1,12 @@
 .marqueeWrapper {
   position: relative;
   width: 100%;
-  z-index: 1; // Галерея буде під заголовком
-  margin-top: 40px; // Додатковий простір
+  z-index: 1; 
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .wrapTeam {
@@ -51,6 +52,7 @@
   @media (min-width: 744px) {
     line-height: 140%;
     margin-bottom: 60px;
+    
   }
 
   @media (min-width: 1024px) {

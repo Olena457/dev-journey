@@ -55,20 +55,22 @@
 }
 
 .contentSection {
-  padding: 40px 20px;
+  padding: 60px 20px;
   overflow: hidden;
+
   background: radial-gradient(
     circle at 50% 50%,
     #b107b7 0%,
-    #820f84 30%,
-    #000000 80%
+    #820f84 40%,
+    #2a022c 75%,
+    #000000 100%
   );
 
   @media (min-width: 768px) {
-    padding: 60px 20px;
+    padding: 70px 20px;
   }
   @media (min-width: 1024px) {
-    padding: 70px 40px;
+    padding: 120px 40px;
   }
 }
 

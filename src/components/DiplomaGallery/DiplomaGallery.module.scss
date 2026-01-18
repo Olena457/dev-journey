@@ -40,11 +40,6 @@
   }
 }
 
-// background: linear-gradient(to right, rgb(128, 0, 128), rgb(200, 100, 200), rgb(255, 192, 203));
-// -webkit-background-clip: text;
-// background-clip: text;
-// color: transparent;
-
 .gridContainer {
   max-width: 1440px;
   margin: 0 auto;
@@ -321,10 +316,8 @@ dialog::backdrop {
   justify-content: center;
   line-height: 0;
   transition:
-  transform 0.2s ease,
-  background-color 0.2s ease;
-
-
+    transform 0.2s ease,
+    background-color 0.2s ease;
 
   &:hover {
     transform: scale(1.1);

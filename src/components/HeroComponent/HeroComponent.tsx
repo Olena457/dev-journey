@@ -38,6 +38,9 @@ import LinkedinIcon from '@/public/icons/LinkedinIcon';
 export const HeroComponent: React.FC = () => {
   return (
     <div className={styles.hero}>
+      <h2 className={styles.titleMain}>
+        Success<span className={styles.accent}>Quotes</span>
+      </h2>
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textBlock}>

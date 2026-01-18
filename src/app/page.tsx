@@ -1,4 +1,4 @@
-import HomeComponent from '../components/HomeComponent/HomeComponent';
+import {HomeComponent} from '../components/HomeComponent/HomeComponent';
 import { HeroComponent } from '../components/HeroComponent/HeroComponent';
 import {CarouselCard}from '../components/CarouselCard/CarouselCard'
 import HeaderComponent from '../components/HeaderContainer/HeaderContainer';

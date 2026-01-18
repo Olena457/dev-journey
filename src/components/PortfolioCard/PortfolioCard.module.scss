@@ -1,13 +1,14 @@
 .shadow {
   position: absolute;
-  filter: blur(50px);
+  filter: blur(60px);
   // background:  rgba(158, 16, 160, 0.6);
-  background: linear-gradient(
-    to right,
-    rgb(128, 0, 128),
-    rgba(179, 4, 238, 0.8),
-    rgba(37, 20, 25, 0.96)
-  );
+  // background: linear-gradient(
+  //   to right,
+  //   rgb(128, 0, 128),
+  //   rgba(179, 4, 238, 0.8),
+  //   rgba(37, 20, 25, 0.96)
+  // );
+    background: linear-gradient(90deg, #820f84 0%, #6ae9f7 100%);
   box-shadow: rgba(130, 15, 132, 0.5);
 
   z-index: -1;
@@ -384,11 +385,14 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
-  color: #d91adc;
+  // color: #d91adc;
+  background: linear-gradient(360deg, #820f84 0%, #6de8f5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .description {
-  // color: #eae1e1;
   color: var(--transparent-gray-text);
   margin-top: 12px;
 }
