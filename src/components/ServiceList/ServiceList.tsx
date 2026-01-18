@@ -6,9 +6,6 @@ import backgroundImage from '@/public/img/right.png';
 import { services } from './valueData';
 import styles from './ServiceList.module.scss';
 import DotIcon from '@/public/icons/DotIcon';
-// import DonatIcon from '@/public/icons/DonatIcon';
-
-
 
 export const ServicesList: React.FC = () => {
   return (
@@ -19,15 +16,12 @@ export const ServicesList: React.FC = () => {
             <Image
               src={backgroundImage}
               alt="background"
-              // placeholder="blur"
               fill
+              sizes="(min-width: 760px) 250px, 150px"
               style={{ objectFit: 'cover' }}
             />
           </div>
           <div className={styles.titleWrapper}>
-            {/* <span className={styles.label}>
-              <DonatIcon id="donat" width="25px" height="25px" />
-            </span> */}
             <h2 className={styles.title}>
               Which <span className={styles.accent}>Services </span>I Can
               Provide

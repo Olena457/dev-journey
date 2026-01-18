@@ -1,8 +1,6 @@
-
-'use client'
+'use client';
 
 import { useState } from 'react';
-
 interface ExpandDescriptionProps {
   text: string;
 }

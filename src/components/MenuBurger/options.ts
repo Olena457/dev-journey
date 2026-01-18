@@ -21,15 +21,16 @@ export const optionsItems: HeaderMenuItem[] = [
     item: 'Team',
     link: 'team',
   },
-  {
-    id: 'sertificates',
-    item: 'Sertificates',
-    link: 'sertificates',
-  },
+
   {
     id: 'services',
     item: 'Services',
     link: 'services',
+  },
+  {
+    id: 'sertificates',
+    item: 'Sertificates',
+    link: 'sertificates',
   },
   {
     id: 'contacts',

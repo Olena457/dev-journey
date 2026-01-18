@@ -2,7 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import styles from './LetterAnimation.module.scss';
-import type {LetterAnimationProps} from '../../types/types'
+import type { LetterAnimationProps } from '../../types/types';
 
 const LetterAnimation: React.FC<LetterAnimationProps> = ({
   // glitchColors = ['#76C8FF', '#2A6F91', '#18384A'],

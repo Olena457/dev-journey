@@ -7,7 +7,7 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 25px 20px;
-  border-bottom: 1px solid var(--purple-accent-dark) ;
+  border-bottom: 1px solid var(--purple-accent-dark);
   border: 1px solid rgba(199, 19, 249, 0.263);
   max-width: 1560px;
   display: flex;
@@ -36,8 +36,6 @@
       width: 50px;
     }
   }
-
-  
 }
 
 @media (min-width: 768px) {
@@ -45,7 +43,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    padding: 25px 35px;
+    padding: 30px 35px 20px 35px;
   }
 
   .mylogo {
@@ -56,17 +54,22 @@
   .logoIcon {
     width: 45px;
     height: 45px;
-    padding: 10px;
   }
 
   .burger {
     display: none;
   }
 }
+
 @media (min-width: 1024px) {
   .header {
-    padding: 35px 60px;
+    padding: 45px 80px 20px 80px;
+    // align-items: center;
     gap: 45px;
+  }
+  .mylogo {
+    width: 80px;
+    height: 80px;
   }
 
   .logoIcon {

@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import { useState } from 'react';
@@ -31,14 +29,14 @@ export const DiplomaGallery: React.FC = () => {
     <div id="sertificates" className={styles.section}>
       <h2 className={styles.title}>
         Skills & <span className={styles.accent}>Certificates </span>
-          <span
-            className={styles.infoIcon}
-            onClick={openDialog}
-            role="button"
-            title="Info"
-          >
-            &#8505;
-          </span>
+        <span
+          className={styles.infoIcon}
+          onClick={openDialog}
+          role="button"
+          title="Info"
+        >
+          &#8505;
+        </span>
       </h2>
 
       <div className={styles.gridContainer}>
@@ -98,8 +96,8 @@ export const DiplomaGallery: React.FC = () => {
           <h3 className={styles.hedline}>Information</h3>
           <hr className={styles.line} />
           <p className={styles.text}>
-            “ Zoom function is available - click on any certificate to open it
-            in an enlarged view.”
+             Zoom function is available - click on any certificate to open it
+            in an enlarged view.
           </p>
           <button onClick={closeDialog} className={styles.closeBtn}>
             &times;
@@ -109,4 +107,3 @@ export const DiplomaGallery: React.FC = () => {
     </div>
   );
 };
-

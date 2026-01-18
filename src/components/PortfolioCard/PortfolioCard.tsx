@@ -9,9 +9,7 @@ import ScreenIcon from '@/public/icons/ScreenIcon';
 import SkillsList from '../SkillsList/SkillsList';
 import styles from './PortfolioCard.module.scss';
 import LinkIcon from '@/public/icons/LinkIcon';
-// import GitIcon from '@/public/icons/GitIcon';
-// import Image from 'next/image';
-// import CoverImage from '@/public/img/triangle.png';
+
 import ExpandDescription from '../ExpandDescription/EpandDescription';
 
 const PortfolioCard: React.FC = () => {

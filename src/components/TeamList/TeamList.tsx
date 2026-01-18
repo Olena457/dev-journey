@@ -1,4 +1,3 @@
-
 import styles from './TeamList.module.scss';
 import TeamCard from '../TeamCard/TeamCard';
 import { projectsData } from '../TeamCard/teamsCardData';
@@ -15,7 +14,6 @@ const TeamList = () => {
       </h2>
 
       <section className={styles.contentSection}>
-        
         <div className={styles.cardsWrapper}>
           {projects.map(item => (
             <TeamCard key={item.id} {...item} />

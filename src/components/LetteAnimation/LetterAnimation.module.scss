@@ -1,5 +1,3 @@
-
-
 .wrapper {
   position: absolute;
   inset: 0;
@@ -17,12 +15,20 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(16,16,16,0) 60%, rgba(16,16,16,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(16, 16, 16, 0) 60%,
+    rgba(16, 16, 16, 1) 100%
+  );
 }
 
 .centerVignette {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
 }

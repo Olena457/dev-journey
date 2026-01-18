@@ -1,5 +1,5 @@
-import styles from './SkillsList.module.scss';
 import clsx from 'clsx';
+import styles from './SkillsList.module.scss';
 
 interface SkillsListProps {
   list: string;

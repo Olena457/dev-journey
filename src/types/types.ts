@@ -56,7 +56,7 @@ export interface MarqueeItem {
   id: number;
   imageProgect: string;
 }
-// icons types
+
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
   id: string;
   width?: string;
@@ -95,8 +95,8 @@ export interface AccordionIconProps extends IconProps {
   isOpen: boolean;
 }
 export interface StartNowContent {
-  label: string; 
-  title: string; 
-  description: string; 
-  buttonText: string; 
+  label: string;
+  title: string;
+  description: string;
+  buttonText: string;
 }

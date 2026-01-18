@@ -44,8 +44,8 @@ import { IconProps } from '@/src/types/types';
 
 const LogoIcon: React.FC<IconProps> = ({
   id = 'custom-icon',
-  width = '24px',
-  height = '24px',
+  width = '40px',
+  height = '40px',
   className,
   ...rest
 }) => {

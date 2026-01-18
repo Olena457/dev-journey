@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import styles from './HeaderContainer.module.scss';
 import LogoIcon from '@/public/icons/LogoIcon';
-// import { IconComponent } from '../ui/IconComponent';
 import MenuBurger from '@/src/components/MenuBurger/MenuBurger';
 import BurgerIcon from '@/public/icons/BurgerIcon';
 
@@ -31,7 +30,7 @@ const HeaderComponent: React.FC = () => {
       </button>
       <div className={clsx(styles.mylogo, { [styles.hidden]: isMenuOpen })}>
         <div className="mylogo">
-          <LogoIcon id='logo'  width="40" height="40" className="logoIcon" />
+          <LogoIcon id="logo"  className="logoIcon" />
         </div>
       </div>
     </div>

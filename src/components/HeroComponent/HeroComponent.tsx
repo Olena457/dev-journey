@@ -42,7 +42,6 @@ export const HeroComponent: React.FC = () => {
         <div className={styles.content}>
           <div className={styles.textBlock}>
             <h2 className={styles.title}>
-             
               <span className={styles.accent}> Frontend</span>Developer
             </h2>
             <p className={styles.description}>

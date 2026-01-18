@@ -2,7 +2,14 @@
   padding: clamp(60px, 10vw, 80px) 0;
 }
 
+.infoSide {
+  flex: 1;
+  max-width: 550px;
+  color: var(--color-white);
+}
+
 .container {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 clamp(20px, 5vw, 80px);
@@ -17,31 +24,22 @@
   }
 }
 
-.infoSide {
-  flex: 1;
-  max-width: 550px;
-  color: var(--color-white);
-}
 .title {
   display: flex;
   align-items: center;
   gap: 10px;
-
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 5vw, 60px);
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
-  
   @media (min-width: 744px) {
     flex-wrap: nowrap;
-      letter-spacing: 0.04em;
-        margin-bottom: 30px;
-
-
+    letter-spacing: 0.04em;
+    margin-bottom: 30px;
   }
   @media (min-width: 1024px) {
     flex-wrap: wrap;
@@ -51,6 +49,30 @@
     margin-bottom: 40px;
   }
 }
+
+.backgroundPart {
+  position: absolute;
+  top: -35px;
+  right: -30px;
+  width: 280px;
+  height: 280px;
+  z-index: -1;
+  overflow: hidden;
+
+  @media (min-width: 760px) {
+    width: 350px;
+    height: 350px;
+    top: -70px;   
+    right: -20px;
+  }
+  @media (min-width: 1024px) {
+    top: 40%;
+    right: 52%;
+    width: 450px;
+    height: 450px;
+  }
+}
+
 .accent {
   font-family: var(--font-cardo), serif;
   font-style: italic;
@@ -115,7 +137,6 @@
 
   &::after {
     content: '⌵';
-    // color:#808080;
     color: #ffffff;
     font-weight: 600;
     font-size: 16px;

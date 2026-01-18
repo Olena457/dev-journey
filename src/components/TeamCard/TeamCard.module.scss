@@ -75,7 +75,6 @@
   position: absolute;
   left: 12px;
   top: 20px;
-  // transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,7 +118,7 @@
   text-align: center;
   background-color: var(--gray-color-dark);
   background-color: rgba(230, 210, 255, 0.8);
-  
+
   opacity: 0.7;
   border-radius: 20px;
   transition: all 0.4s ease;
@@ -162,11 +161,8 @@
   }
 }
 .wrapperDescription {
-  // position: absolute;
-  // left: 12px;
   margin-left: 12px;
   margin-top: 60%;
-  // transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;

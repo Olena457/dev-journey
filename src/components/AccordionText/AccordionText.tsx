@@ -1,20 +1,32 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+import PlanetImage from '@/public/img/planet.png';
 import { faqData } from './facData';
+// import DonatIcon from '@/public/icons/DonatIcon';
 import styles from './AccordionText.module.scss';
-import DonatIcon from '@/public/icons/DonatIcon';
 
 export const AccordionText: React.FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         {/* Left side : Text  */}
+
+        <div className={styles.backgroundPart}>
+          <Image
+            src={PlanetImage}
+            alt="background"
+            fill
+            sizes="(min-width: 760px) 450px, 150px"
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
         <div className={styles.infoSide}>
           <h2 className={styles.title}>
-            <span className={styles.iconWrapper}>
+            {/* <span className={styles.iconWrapper}>
               <DonatIcon id="donat" width="25px" height="25px" />
-            </span>
+            </span> */}
             Start <span className={styles.accent}>Now</span> With
             <span className={styles.accent}>Our</span>Service
           </h2>
@@ -22,7 +34,6 @@ export const AccordionText: React.FC = () => {
             We'd love to hear from you to discuss web design, product
             development or to hear your new startup idea.
           </p>
-          {/* <button className={styles.button}>Let's Work Together!</button> */}
         </div>
 
         {/* Right side: Accordeon */}
