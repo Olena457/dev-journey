@@ -86,19 +86,19 @@
 
 .socialWrapper {
   display: flex;
-  gap: clamp(20px, 1.5vw + 10px, 40px);
+  gap: clamp(10px, 1.5vw + 5px, 12px);
   margin-top: clamp(5px, 8vw - 10px, 95px);
 }
 .socialLink {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   border-radius: 20%;
 
   background: rgba(120, 19, 134, 0.3);
-  color: var(--color-main-white);
+  // color: var(--color-main-white);
   border: 1px solid rgba(217, 34, 241, 0.3);
   transition: all 0.3s ease;
 
@@ -108,8 +108,8 @@
     fill: currentColor;
 
     @media (min-width: 768px) {
-      width: 34px;
-      height: 34px;
+      width: 28px;
+      height: 28px;
     }
   }
 

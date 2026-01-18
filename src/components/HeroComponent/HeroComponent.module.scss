@@ -35,7 +35,7 @@
 .hero {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // height: 100vh;
   gap: 54px;
   width: 100%;
   padding: 110px 25px 40px 25px;
@@ -50,7 +50,7 @@
     padding: 50px 55px 50px 55px;
   }
   @media (min-width: 1024px) {
-    padding: 70px 60px 5px 60px;
+    padding: 70px 60px 70px 60px;
   }
 }
 
@@ -61,29 +61,7 @@
 }
 
 
-.title {
-  font-family: var(--font-cardo), sans-serif;
-  font-size: clamp(24px, 4.5vw, 60px);
-  font-weight: 600;
-  color: var(--color-white);
 
-  text-align: left;
-  flex-wrap: wrap;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  @media (min-width: 744px) {
-    line-height: 140%;
-  }
-
-  .accent {
-    font-family: var(--font-cardo), serif;
-    font-weight: 600;
-    margin-right: 15px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-  }
-}
 
 .content {
   display: flex;
@@ -128,17 +106,28 @@
   gap: clamp(20px, 1.5vw + 10px, 40px);
   margin-top: clamp(5px, 8vw - 10px, 95px);
 }
-// .quoteBadge {
-//   background: rgba(255, 255, 255, 0.05);
-//   border: 1px solid rgba(255, 255, 255, 0.1);
-//   border-radius: 12px;
-//   padding: 20px;
-//   max-width: 400px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
 
+.descriptionWrap {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+ 
+}
+.author {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 25px;
+  width: 100%;
+
+}
 
 // .socialLink {
 //   display: flex;

@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import PlanetImage from '@/public/img/planet.png';
 import { faqData } from './facData';
-// import DonatIcon from '@/public/icons/DonatIcon';
 import styles from './AccordionText.module.scss';
 
 export const AccordionText: React.FC = () => {
@@ -24,9 +23,7 @@ export const AccordionText: React.FC = () => {
         </div>
         <div className={styles.infoSide}>
           <h2 className={styles.title}>
-            {/* <span className={styles.iconWrapper}>
-              <DonatIcon id="donat" width="25px" height="25px" />
-            </span> */}
+            
             Start <span className={styles.accent}>Now</span> With
             <span className={styles.accent}>Our</span>Service
           </h2>

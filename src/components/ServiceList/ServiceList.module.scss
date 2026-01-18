@@ -23,15 +23,22 @@
   overflow: hidden;
 
   @media (min-width: 760px) {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   @media (min-width: 1024px) {
     top: 20%;
-    left: 90%;
+    left: 70%;
     width: 250px;
     height: 250px;
   }
+    @media (min-width: 1200px) {
+       top: 20%;
+    left: 90%;
+    width: 250px;
+    height: 250px;
+    }
+
 }
 .services {
   display: flex;
@@ -146,7 +153,6 @@
   align-items: center;
   gap: 1rem;
   color: #a6a6a6;
-  // border: 1px solid #4c0c45;
   border: 1px solid rgba(109, 6, 141, 0.516);
   border-radius: 12px;
   padding: 4.5rem 2rem 2rem 2rem;
@@ -201,12 +207,18 @@
   @media (min-width: 768px) {
     height: 330px;
 
-    width: 550px;
+    width: 500px;
     padding: 3rem 2.5rem 2.5rem 2.5rem;
   }
   @media (min-width: 1024px) {
-    max-width: 580px;
+
+    width: 520px;
   }
+      @media (min-width: 1200px) {
+            max-width: 580px;
+
+      }
+
 }
 
 .iconWrapper {
