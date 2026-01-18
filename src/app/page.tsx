@@ -1,3 +1,4 @@
+import HomeComponent from '../components/HomeComponent/HomeComponent';
 import { HeroComponent } from '../components/HeroComponent/HeroComponent';
 import {CarouselCard}from '../components/CarouselCard/CarouselCard'
 import HeaderComponent from '../components/HeaderContainer/HeaderContainer';
@@ -12,17 +13,18 @@ import PhotoMarquee from '../components/PhotoMarquee/PhotoMarquee';
 export default function Home() {
   return (
     <div>
-      <main >
-        <HeroComponent/>
-        <CarouselCard/>
-        <HeaderComponent/>
-        <PortfolioCard/>
-        <TeachList/>
+      <main>
+        <HomeComponent/>
+        <CarouselCard />
+        <HeaderComponent />
+        <PortfolioCard />
+        <TeachList />
         <TeamList />
         <ServicesList />
         <DiplomaGallery />
-        <AccordionText/>
+        <AccordionText />
         <PhotoMarquee />
+        <HeroComponent />
       </main>
     </div>
   );

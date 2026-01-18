@@ -16,6 +16,7 @@ export const optionsItems: HeaderMenuItem[] = [
     item: 'Projects',
     link: 'projects',
   },
+
   {
     id: 'team',
     item: 'Team',
@@ -31,6 +32,11 @@ export const optionsItems: HeaderMenuItem[] = [
     id: 'sertificates',
     item: 'Sertificates',
     link: 'sertificates',
+  },
+  {
+    id: 'gallery',
+    item: 'Gallery',
+    link: 'gallery',
   },
   {
     id: 'contacts',

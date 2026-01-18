@@ -67,9 +67,9 @@
   @media (min-width: 768px) {
     font-size: 16px;
   }
-  @media (min-width: 1024px) {
-    font-size: 18px;
-  }
+  // @media (min-width: 1024px) {
+  //   font-size: 18px;
+  // }
 }
 .is-open {
   transform: translateX(0);
@@ -108,16 +108,16 @@
   .close {
     display: none;
   }
-  .menuList {
-    font-size: 14px;
-  }
+  // .menuList {
+  //   font-size: 14px;
+  // }
   .menuList {
     display: flex;
     flex-direction: row;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: flex-end;
     // padding-left: auto;
-    gap: 20px;
+    gap: 10px;
     height: auto;
     padding: 0;
     margin: 0;
@@ -125,7 +125,9 @@
 }
 @media (min-width: 1025px) {
   .menuList {
+    padding-top: 10px;
+padding-right: 50px;
     font-size: 16px;
-    gap: 25px;
+    gap: 20px;
   }
 }

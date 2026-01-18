@@ -35,48 +35,22 @@
 .hero {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   gap: 54px;
   width: 100%;
   padding: 110px 25px 40px 25px;
 
-  background-image:
-    repeating-linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.06),
-      rgba(0, 0, 0, 0.07) 3px,
-      transparent 30px,
-      transparent 80px
-    ),
-    linear-gradient(
-      to right,
+  
 
-      #2c1048 0%,
-      #a53aed 10%,
-      #08080d 70%,
-      #000000 100%
-    );
-
-  //  #2C1048 0%,
-  //  #7102ba 10%,
-  //  #08080d 50%,
-  //  #000000 100%,
-
-  // #a53aed 0%,
-  // #671d95 30%,
-  // #08080d 80%,
-  // #000000 100%,
-
-  //
 
   @media (min-width: 425px) {
-    padding: 120px 35px 50px 35px;
+    padding: 50px 35px 50px 35px;
   }
   @media (min-width: 768px) {
-    padding: 150px 55px 50px 55px;
+    padding: 50px 55px 50px 55px;
   }
   @media (min-width: 1024px) {
-    padding: 210px 60px 70px 60px;
+    padding: 70px 60px 5px 60px;
   }
 }
 
@@ -86,22 +60,7 @@
   gap: 1rem;
 }
 
-// .title {
-//   font-family: var(--font-cordo);
-//   font-size: clamp(1.3rem, 2.5vw, 3.5rem);
-//   font-weight:400;
-//   text-align: left;
-//   line-height: 1.2;
-//   color:var(--color-white);
 
-//   text-transform: uppercase;
-//    background: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%);
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   color: transparent;
-
-// }
-// __________________________________
 .title {
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(24px, 4.5vw, 60px);
@@ -115,7 +74,6 @@
 
   @media (min-width: 744px) {
     line-height: 140%;
-    margin-bottom: 60px;
   }
 
   .accent {
@@ -133,6 +91,7 @@
   justify-content: space-between;
   gap: 1.5rem;
   width: 100%;
+  color: var(--gray-text-color);
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -161,7 +120,7 @@
   width: 100%;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   line-height: 1.6;
-  color: var(--color-main-white);
+  color: var(--gray-text-color);
 }
 
 .socialWrapper {
@@ -169,41 +128,65 @@
   gap: clamp(20px, 1.5vw + 10px, 40px);
   margin-top: clamp(5px, 8vw - 10px, 95px);
 }
+// .quoteBadge {
+//   background: rgba(255, 255, 255, 0.05);
+//   border: 1px solid rgba(255, 255, 255, 0.1);
+//   border-radius: 12px;
+//   padding: 20px;
+//   max-width: 400px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 
-.socialLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 20%;
 
-  background: rgba(120, 19, 134, 0.3);
-  color: var(--color-main-white);
-  border: 1px solid rgba(217, 34, 241, 0.3);
-  transition: all 0.3s ease;
+// .socialLink {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 45px;
+//   height: 45px;
+//   border-radius: 20%;
 
-  svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
+//   background: rgba(120, 19, 134, 0.3);
+//   color: var(--color-main-white);
+//   border: 1px solid rgba(217, 34, 241, 0.3);
+//   transition: all 0.3s ease;
 
-    @media (min-width: 768px) {
-      width: 34px;
-      height: 34px;
-    }
-  }
+//   svg {
+//     width: 24px;
+//     height: 24px;
+//     fill: currentColor;
 
-  &:hover {
-    background: rgba(165, 75, 225, 0.2);
-    transform: translateY(-3px);
-    border-color: #6de8f5;
-  }
-  @media (min-width: 768px) {
-    width: 55px;
-    height: 55px;
-  }
-}
+//     @media (min-width: 768px) {
+//       width: 34px;
+//       height: 34px;
+//     }
+//   }
+
+//   &:hover {
+//     background: rgba(165, 75, 225, 0.2);
+//     transform: translateY(-3px);
+//     border-color: #6de8f5;
+//   }
+//   @media (min-width: 768px) {
+//     width: 55px;
+//     height: 55px;
+//   }
+// }
+
+// .pulsingHeart {
+//   display: inline-block;
+//   color: #ff4d4d;
+//   animation: pulse 1.5s infinite;
+// }
+
+// @keyframes pulse {
+//   0% { transform: scale(1); }
+//   50% { transform: scale(1.3); }
+//   100% { transform: scale(1); }
+// }
+
 
 //  background: linear-gradient(135deg,  #00a3b6 25%, #eee5ff 50%, rgb(83, 195, 232, 1) 75%);
 // background-size: 400% 100%;

@@ -29,8 +29,8 @@ const HeaderComponent: React.FC = () => {
         />
       </button>
       <div className={clsx(styles.mylogo, { [styles.hidden]: isMenuOpen })}>
-        <div className="mylogo">
-          <LogoIcon id="logo"  className="logoIcon" />
+        <div className={styles.mylogo }>
+          <LogoIcon id="logo" className={styles.logoIcon} />
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import styles from './PhotoMarquee.module.scss';
 
 const PhotoMarquee = () => {
   const renderRow = (images: typeof MARQUEE_IMAGES, speedClass: string) => (
-    <div className={`${styles.marqueeInner} ${speedClass}`}>
+    <div   className={`${styles.marqueeInner} ${speedClass}`}>
       {[...images, ...images, ...images].map((item, index) => (
         <div key={`${item.id}-${index}`} className={styles.photoCard}>
           <img src={item.imageProgect} alt="Project" className={styles.image} />
@@ -14,10 +14,10 @@ const PhotoMarquee = () => {
   );
 
   return (
-    <div className={styles.wrapTeam}>
-        <h2 className={styles.title}>
-          <span className={styles.accent}> Photo</span>Gallery
-        </h2>
+    <div id="gallery" className={styles.wrapTeam}>
+      <h2 className={styles.title}>
+        <span className={styles.accent}> Photo</span>Gallery
+      </h2>
       <div className={styles.wrapTeam}>
         <div className={styles.marqueeContainer}>
           {renderRow(MARQUEE_IMAGES.slice(0, 6), styles.fast)}
