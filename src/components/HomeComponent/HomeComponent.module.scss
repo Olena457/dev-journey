@@ -1,27 +1,44 @@
 
+
 .hero {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
-  padding: 110px 25px 40px 25px;
+  padding: 100px 25px 40px 25px; 
   box-sizing: border-box;
+  overflow: hidden; 
 
-  @media (min-width: 425px) { 
-    padding: 120px 35px 50px 35px; 
+  @media (min-width: 425px) {
+    padding: 100px 35px 50px 35px;
   }
-  @media (min-width: 768px) {
-     padding: 150px 55px 50px 55px;
-     }
-  @media (min-width: 1024px) {
-     padding: 40px 60px 40px 60px; 
-    }
-}
 
+  @media (min-width: 768px) {
+    padding: 60px 40px 40px 40px;
+    height: 100vh;
+  }
+
+  @media (min-width: 1024px) {
+    // height: 90vh; // На десктопах фіксуємо висоту екрана
+    padding: 0px 60px 40px 60px; ;
+  }
+  @media (min-width: 1200px) {
+    height: 100vh; // На десктопах фіксуємо висоту екрана
+    padding: 0px 60px 40px 60px;
+  }
+}
+.underline {
+  width: 95%;
+  height: 2px;
+  color: var(--gray-text-color-two);
+  margin-top: 40px;
+}
 .container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  max-width: 1440px; 
+  margin: 0 auto;
+  width: 100%;
 }
 
 .content {
@@ -29,168 +46,196 @@
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
+  gap: 2rem;
+  justify-content: center; 
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+        align-items: stretch;
+
+    gap: 0px;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  @media (min-width: 1200px) {
+      flex-grow: 0;
+
+    flex-direction: row;
+    align-items: center;
+    
+  }
 }
 
 .textBlock {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: flex-start;
+  z-index: 2;
+
+ @media (min-width: 768px) {
+    justify-content: space-between; 
+  }
+  
+  @media (min-width: 1024px) {
+    flex: 1;
+    max-width: 50%;
+  }
 }
 
 .topContent {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+
+   @media (min-width: 768px) {
+    margin-top: auto; 
+    margin-bottom: 2rem;
+  }
+    @media (min-width: 1024px) {
+    }
 }
 
 .title {
   font-family: var(--font-cardo), sans-serif;
-  font-size: clamp(24px, 4.5vw, 60px);
+  font-size: clamp(28px, 4.5vw, 56px); 
   font-weight: 600;
   color: var(--color-white);
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
   .accent {
     font-weight: 600;
     margin-right: 15px;
   }
+  @media (min-width: 768px) {
+     letter-spacing: 0.04em;
+
+  }
+  @media (min-width: 1024px) {
+     letter-spacing: 0.03em;
+
+  }
 }
 
 .description {
   width: 100%;
-  max-width: 600px;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  line-height: 1.6;
-  color: var(--color-main-white);
+  max-width: 550px;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--gray-text-color);
+  
+  @media (min-width: 1024px) {
+       font-size: 24px;
+
+  }
 }
 
 .socialWrapper {
   display: flex;
-  gap: clamp(10px, 1.5vw + 5px, 12px);
-  margin-top: auto;
-  padding-top: 2rem;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top:2.5rem; 
+
+
+   @media (min-width: 768px) {
+     justify-content: start;
+margin-top: auto;
+  }
+
+  @media (min-width: 1024px) {
+    align-items: normal;
+    justify-content: space-around;
+  }
+   @media (min-width: 1200px) {
+     justify-content: start;
+       justify-content: space-between;
+ margin-top:8rem; 
+  }
 }
 
 .socialLink {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 20%;
-  background: rgba(120, 19, 134, 0.3);
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: rgba(120, 19, 134, 0.2);
   border: 1px solid rgba(217, 34, 241, 0.3);
   transition: all 0.3s ease;
-  color: #fff;
+  // color: #fff;
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     fill: currentColor;
   }
 
   &:hover {
     background: rgba(165, 75, 225, 0.4);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     border-color: #6de8f5;
+    box-shadow: 0 5px 15px rgba(165, 75, 225, 0.3);
   }
 
   @media (min-width: 768px) {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     svg {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
     }
   }
 }
+
+
 // __________________________
-.content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  width: 100%;
-  gap: 2rem;
 
-  @media (min-width: 1024px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.textBlock {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: flex-start;
-  z-index: 2;
-
-  @media (min-width: 1024px) {
-    max-width: 50%;
-  }
-}
-
-// .imageBox {
-//   width: 100%;
-//   aspect-ratio: 1 / 1;
-//   max-width: 300px;
-//   margin: 0 auto;
-
-//   background-image: url('/img/woman.png'); 
-//   background-size: cover;
-//   background-position: center;
-
-//   -webkit-mask-image: url('/public/img/woman.png');
-//   mask-image: url('/shape.svg');
-//   -webkit-mask-repeat: no-repeat;
-//   mask-repeat: no-repeat;
-//   -webkit-mask-size: contain;
-//   mask-size: contain;
-//   -webkit-mask-position: center;
-//   mask-position: center;
-
-//   @media (min-width: 768px) {
-//     max-width: 450px;
-//   }
-
-//   @media (min-width: 1024px) {
-//     max-width: 500px;
-//     margin: 0;
-//   }
-// }
 .imageBox {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  max-width: 320px;
+  aspect-ratio: 1 / 1; 
+  max-width: 350px;    
   margin: 0 auto;
   position: relative;
 
- background-image: url('/img/woman.png'); 
-   background-size: 120%;
+  // into imaage
+  background-image: url('/img/woman.png');
+  // background-size: cover;
+  background-size: 130%;
+  background-position: 10% 2%;; 
   background-repeat: no-repeat;
-  // background-position: center 15%; 
-  background-position: -40% -55%;
 
-  -webkit-mask-image: url('/img/woman.png');
+  // setting mask
+  -webkit-mask-image: url('/shape.svg');
   mask-image: url('/shape.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: 100%; 
-  mask-size: 100%;
+  -webkit-mask-size: contain; //mask size
+  mask-size: contain;
   -webkit-mask-position: center;
   mask-position: center;
 
+
+
   @media (min-width: 768px) {
-    max-width: 500px;
-    height: 500px;
+    max-width: none; 
+    align-self: center; 
   }
 
   @media (min-width: 1024px) {
     max-width: 950px;
-    max-height: 950px;
-    margin: 0;
+    width: 100%;
+  background-position: -20% -10%; 
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 900px;
+    width: 100%;
+      background-size: 110%;
+
+  background-position: -70% -80%;
   }
 }
