@@ -3,7 +3,7 @@ import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
 const DotIcon: React.FC<IconProps> = ({
-  id = 'overlapping-diamonds',
+  id = 'diamonds',
   width = '64px',
   height = '64px',
   className,

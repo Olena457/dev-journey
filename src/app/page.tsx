@@ -9,6 +9,7 @@ import { AccordionText } from '../components/AccordionText/AccordionText';
 import { ServicesList } from '../components/ServiceList/ServiceList';
 import { DiplomaGallery } from '../components/DiplomaGallery/DiplomaGallery';
 import PhotoMarquee from '../components/PhotoMarquee/PhotoMarquee';
+import { BenefitLists } from '../components/BenefitLists/BenefitLists';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <AccordionText />
         <PhotoMarquee />
         <HeroComponent />
+        <BenefitLists/>
       </main>
     </div>
   );

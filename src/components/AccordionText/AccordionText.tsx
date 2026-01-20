@@ -23,13 +23,12 @@ export const AccordionText: React.FC = () => {
         </div>
         <div className={styles.infoSide}>
           <h2 className={styles.title}>
-            
-            Start <span className={styles.accent}>Now</span> With
-            <span className={styles.accent}>Our</span>Service
+            Frequently <span className={styles.accent}>Asked</span>
+            <span className={styles.accent}>Questions</span>for me
           </h2>
           <p className={styles.description}>
-            We'd love to hear from you to discuss web design, product
-            development or to hear your new startup idea.
+            I would be happy to hear from you to discuss web design, product
+            development, or your new startup idea.
           </p>
         </div>
 

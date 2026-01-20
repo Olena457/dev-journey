@@ -109,13 +109,15 @@
     top: 0;
     left: 0%;
     right: 0;
-    height: 4px;
-    background: linear-gradient(
+    height: 3px;
+     background: linear-gradient(
       90deg,
       transparent 0%,
-      rgba(72, 24, 63, 0.4) 20%,
-      #820f84 50%,
-      rgba(72, 24, 63, 0.4) 80%,
+      rgba(72, 24, 63, 0.4) 15%,
+      #820f84 40%,
+      #5ec8d3 50%,
+      #820f84 75%,
+      rgba(72, 24, 63, 0.4) 85%,
       transparent 100%
     );
   }
@@ -125,13 +127,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 3px;
     background: linear-gradient(
       90deg,
       transparent 0%,
-      rgba(72, 24, 63, 0.4) 20%,
-      #820f84 50%,
-      rgba(72, 24, 63, 0.4) 80%,
+      rgba(72, 24, 63, 0.4) 15%,
+      #820f84 40%,
+      #5ec8d3 50%,
+      #820f84 75%,
+      rgba(72, 24, 63, 0.4) 85%,
       transparent 100%
     );
   }

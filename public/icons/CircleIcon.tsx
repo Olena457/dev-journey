@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
 const CircleIcon: React.FC<IconProps> = ({
-  id = 'overlapping-circles',
+  id = 'circles',
   width = '64px',
   height = '64px',
   className,

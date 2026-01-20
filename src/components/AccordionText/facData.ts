@@ -3,26 +3,26 @@ import { FAQItem } from '@/src/types/types';
 export const faqData: FAQItem[] = [
   {
     id: '01',
-    question: 'Customize the Design of your Website?',
+    question: 'Which programming languages do you use most?',
     answer:
-      'Yes! You can fully customize the design by changing colors, fonts, layouts, and images. Most website builders also allow you to add custom code if you need more advanced options.',
+      'In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.',
   },
   {
     id: '02',
-    question: 'Do I Need to Have Technical Skills?',
+    question: 'What are the deadlines for the project?',
     answer:
-      'No technical skills are required. Website builders are designed to be user-friendly and intuitive. They guide you through the process step by step, making it easy for anyone to create a professional-looking website.',
-  },
-  {
-    id: '03',
-    question: 'Is the Responsive Website on Devices?',
-    answer:
-      'Absolutely! All templates are designed to be responsive, meaning your website will automatically adjust to look great on any device, including smartphones and tablets.',
+      'The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.',
   },
   {
     id: '04',
-    question: 'Will My Website be SEO-friendly?',
+    question: 'Do you provide advice or support?',
     answer:
-      'Yes, website builders usually include built-in SEO tools to help improve your site’s visibility on search engines. You can optimize page titles, descriptions, keywords, and more to enhance your search ranking.',
+    'The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.',
+  },
+  {
+    id: '03',
+    question: 'What payment methods do you accept?',
+    answer:
+      'Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.',
   },
 ];
