@@ -3,8 +3,8 @@ import { IconProps } from '@/src/types/types';
 
 const ScreenIcon: React.FC<IconProps> = ({
   id = 'screen',
-  width = '64px',
-  height = '64px',
+  width = '40px',
+  height = '40px',
   className,
   ...rest
 }) => {

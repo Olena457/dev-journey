@@ -4,6 +4,7 @@ import TelegramIcon from '@/public/icons/TelegramIcon';
 import EmailIcon from '@/public/icons/EmailIcon';
 import LinkedinIcon from '@/public/icons/LinkedinIcon';
 import GitIcon from '@/public/icons/GitIcon';
+import LogoIcon from '@/public/icons/LogoIcon';
 
 export const Footer = () => {
   const socialLinks = [
@@ -25,20 +26,27 @@ export const Footer = () => {
     },
   ];
 
+  const navLinks = [
+    'home',
+    'skills',
+    'projects',
+    'team',
+    'certificates',
+    'services',
+    'gallery',
+    'contacts',
+  ];
+
   return (
     <footer id="contacts" className={styles.footer}>
       <div className={styles.footerContainer}>
+        <div className={styles.footerLogo}>
+          <LogoIcon id="logo" className={styles.logoIcon} />
+          <span className={styles.logoText}>topbyte</span>
+        </div>
+
         <nav className={styles.footerNav}>
-          {[
-            'home',
-            'skills',
-            'projects',
-            'team',
-            'certificates',
-            'services',
-            'gallery',
-            'contacts',
-          ].map(link => (
+          {navLinks.map(link => (
             <a key={link} href={`#${link}`} className={styles.footerLink}>
               {link.charAt(0).toUpperCase() + link.slice(1)}
             </a>
@@ -59,7 +67,6 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-          
         </div>
       </div>
     </footer>

@@ -28,10 +28,11 @@ const HeaderComponent: React.FC = () => {
           className="imageBurger"
         />
       </button>
+
       <div className={clsx(styles.mylogo, { [styles.hidden]: isMenuOpen })}>
-        <div className={styles.mylogo }>
-          <LogoIcon id="logo" className={styles.logoIcon} />
-        </div>
+        <LogoIcon id="logo" className={styles.logoIcon} />
+        <div className={styles.logoText}>TopByte</div>
+
       </div>
     </div>
   );

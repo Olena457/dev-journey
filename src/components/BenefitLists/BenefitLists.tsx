@@ -4,7 +4,6 @@ import React from 'react';
 import styles from './BenefitLists.module.scss';
 import DotIcon from '@/public/icons/DotIcon';
 import TimeIcon from '@/public/icons/TimeIcon';
-import CodeIcon from '@/public/icons/CodeIcon';
 import CircleIcon from '@/public/icons/CircleIcon';
 
 export const benefits = [
@@ -12,7 +11,7 @@ export const benefits = [
     title: 'Expertise',
     description:
       'With extensive experience in development, I have a deep understanding of programming and website development.',
-    icon: <CodeIcon id="code" width="40px" height="40px" />,
+    icon: <DotIcon id="diamonds" width="40px" height="40px" />,
   },
   {
     title: 'Communication',
@@ -21,7 +20,7 @@ export const benefits = [
     icon: <CircleIcon id="circles" width="40px" height="40px" />,
   },
   {
-    title: 'Art',
+    title: 'Creativity',
     description:
       'Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.',
     icon: <DotIcon id="diamonds" width="40px" height="40px" />,

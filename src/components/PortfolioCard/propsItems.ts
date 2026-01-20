@@ -2,6 +2,17 @@ import { PetProgectsData } from '../../types/types';
 
 export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
+    id: 13,
+    title: 'GrowBox  -smart box',
+    skills: 'Next.js 16, TypeScript, Radix-ui, Recharts, Context API, Firebase',
+    role: 'Full-Stack Developer',
+    imageProgect: '/img/grow.png',
+    description:
+      'The Commersial application contains 23 pages, responsive design, dark and light themes, and IoT integration for real-time data visualization and automated plant growth management.',
+    liveHref: 'https://next-weather-amber.vercel.app/',
+    repoHref: 'https://github.com/Olena457/next-weather.git',
+  },
+  {
     id: 1,
     title: 'Weather Forecast',
     skills: 'Next.js 16, TypeScript, Jotai, React Query, Tailwind,Geolocation',
