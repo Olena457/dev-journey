@@ -101,7 +101,7 @@
   padding: 4px;
   border: 1px solid rgba(202, 59, 238, 0.3);
   position: relative;
-  overflow: hidden;
+  
 
   &::before {
     content: '';
@@ -120,8 +120,10 @@
       rgba(72, 24, 63, 0.4) 85%,
       transparent 100%
     );
-  }
-  &::after {
+    }
+    
+
+    &::after {
     content: '';
     position: absolute;
     bottom: 0;

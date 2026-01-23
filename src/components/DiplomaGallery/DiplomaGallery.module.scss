@@ -237,7 +237,13 @@ dialog::backdrop {
   border: 3px solid transparent;
   background-clip: padding-box, border-box;
   background-origin: border-box;
-  background: linear-gradient(90deg, #820f84 30%, #48183f 70%);
+   background: linear-gradient(
+      90deg,
+      #820f84 0%,
+      #5ec8d3 50%,
+      #820f84 75%,
+    );
+  // background: linear-gradient(90deg, #820f84 30%, #48183f 70%);
 }
 
 .overlay {

@@ -122,6 +122,9 @@
 
 .description {
   width: 100%;
+  font-size: 24px;
+  font-family: var(--font-cardo), sans-serif;
+  font-style: italic;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   line-height: 1.6;
   color: var(--color-white);
@@ -145,7 +148,7 @@
   opacity: 0.7;
   text-align: right;
   font-style: italic;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .divider {

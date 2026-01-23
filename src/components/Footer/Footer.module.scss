@@ -63,7 +63,7 @@
 .logoText {
   font-family: var(--font-cardo), sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-white);
@@ -78,16 +78,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px 40px;
-  order: 2; // Другий на мобільних
+  order: 2; // second for mobile
 
   @media (min-width: 768px) {
-    order: 1; // Збоку на планшеті
+    order: 1; // first for tablet 
     justify-items: center;
     grid-template-columns: repeat(2, 180px);
   }
 
   @media (min-width: 1024px) {
-    order: 1; // Зліва на десктопі
+    order: 1; // left on desktop
     justify-items: start;
   }
 }

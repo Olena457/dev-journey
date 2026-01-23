@@ -42,7 +42,7 @@ export const Footer = () => {
       <div className={styles.footerContainer}>
         <div className={styles.footerLogo}>
           <LogoIcon id="logo" className={styles.logoIcon} />
-          <span className={styles.logoText}>topbyte</span>
+          <span className={styles.logoText}>Altiora</span>
         </div>
 
         <nav className={styles.footerNav}>

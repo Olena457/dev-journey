@@ -47,30 +47,36 @@ export const HeroComponent: React.FC = () => {
             <div className={styles.quoteBadge}>
               <div className={styles.descriptionWrap}>
                 <p className={styles.description}>
+                  “Succcess is about the courage to undertake a journey that you believe in.”
+                </p>
+                <span className={styles.author}>- Steve Jobs-</span>
+              
+              {/* <hr className={styles.divider} /> */}
+                <p className={styles.description}>
                   “If you stop learning, you stop being useful.”
                 </p>
-                <span className={styles.author}>- Eric Schmidt</span>
+                <span className={styles.author}>- Eric Schmidt -</span>
               </div>
-              <hr className={styles.divider} />
+              {/* <hr className={styles.divider} /> */}
 
               <div className={styles.descriptionWrap}>
                 <p className={styles.description}>
                   “The only way to do great work is to love what you do.”
                 </p>
-                <span className={styles.author}>- Steve Jobs</span>
+                <span className={styles.author}>- Steve Jobs -</span>
               </div>
 
-              <hr className={styles.divider} />
+              {/* <hr className={styles.divider} /> */}
 
               <div className={styles.descriptionWrap}>
                 <p className={styles.description}>
                   “Your most unhappy customers are your greatest source of
                   learning.”
                 </p>
-                <span className={styles.author}>- Bill Gates</span>
+                <span className={styles.author}>- Bill Gates-</span>
               </div>
 
-              <hr className={styles.divider} />
+              {/* <hr className={styles.divider} /> */}
             </div>
           </div>
 
