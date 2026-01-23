@@ -59,6 +59,15 @@
   --breakpoints-md: 768px;
   --breakpoints-lg: 1440px;
   --breakpoints-xl: 1540px;
+/* Gooey background colors */
+  --gooey-color-1: 130, 15, 132;   
+  --gooey-color-2: 106, 233, 247;  
+  --gooey-color-3: 210, 0, 218;    
+  --gooey-color-4: 86, 9, 87;      
+  --gooey-color-5: 37, 45, 49;    
+  
+  --gooey-blur: 40px;
+  --gooey-size: 80%;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -67,6 +76,7 @@
     --foreground: #ededed;
   }
 } */
+
 
 html {
   scroll-behavior: smooth;

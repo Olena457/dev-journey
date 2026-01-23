@@ -131,16 +131,15 @@ import styles from './PortfolioCard.module.scss';
 import LinkIcon from '@/public/icons/LinkIcon';
 
 import ExpandDescription from '../ExpandDescription/EpandDescription';
+import BackgroundCanvas from '../BackgroundCanvas/BackgroundCanvas';
 
 const PortfolioCard: React.FC = () => {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  // Реф для збереження координат поточної картки (уникаємо Forced Reflow)
   const boundsRef = useRef<DOMRect | null>(null);
 
   const handleMouseEnter = (index: number) => {
     const card = cardRefs.current[index];
     if (card) {
-      // Отримуємо розміри ОДИН раз при вході мишки
       boundsRef.current = card.getBoundingClientRect();
     }
   };
@@ -154,7 +153,6 @@ const PortfolioCard: React.FC = () => {
 
     const { left, top, width, height } = boundsRef.current;
 
-    // Обчислення положення курсору відносно центру
     const x = (e.clientX - left) / width - 0.5;
     const y = (e.clientY - top) / height - 0.5;
 
@@ -173,7 +171,7 @@ const PortfolioCard: React.FC = () => {
 
   const handleMouseLeave = (index: number) => {
     const card = cardRefs.current[index];
-    boundsRef.current = null; // Очищуємо координати
+    boundsRef.current = null; 
     if (card) {
       card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateX(0) translateY(0)`;
     }
@@ -181,12 +179,13 @@ const PortfolioCard: React.FC = () => {
 
   return (
     <ul id="projects" className={styles.list}>
+      <BackgroundCanvas />
       {/* Shadows */}
-      <div className={`${styles.shadow} ${styles.shadow1}`}></div>
+      {/* <div className={`${styles.shadow} ${styles.shadow1}`}></div>
       <div className={`${styles.shadow} ${styles.shadow2}`}></div>
       <div className={`${styles.shadow} ${styles.shadow3}`}></div>
       <div className={`${styles.shadow} ${styles.shadow4}`}></div>
-      <div className={`${styles.shadow} ${styles.shadow5}`}></div>
+      <div className={`${styles.shadow} ${styles.shadow5}`}></div> */}
 
       <div className={styles.wraper}>
         <h2 className={styles.mainTitle}>
