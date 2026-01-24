@@ -119,6 +119,11 @@
 .list {
   padding: 30px 10px;
   position: relative;
+  background-image: url('/ffuel.svg'); 
+  background-attachment: fixed; 
+  background-size: cover;       
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media screen and (min-width: 425px) and (max-width: 768.99px) {
     padding: 20px 45px;
@@ -351,11 +356,11 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
-  // color: #d91adc;
-  background: linear-gradient(360deg, #820f84 0%, #6de8f5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #bbb9b9;
+  // background: linear-gradient(360deg, #820f84 0%, #6de8f5 100%);
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent;
 }
 
 .description {

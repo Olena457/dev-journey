@@ -122,6 +122,7 @@
 // export default PortfolioCard;
 'use client';
 import React, { useRef } from 'react';
+
 import { PORTFOLIO_PROJECTS } from './propsItems';
 import { PetProgectsData } from '../../types/types';
 import ScreenIcon from '@/public/icons/ScreenIcon';
