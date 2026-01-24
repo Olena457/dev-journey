@@ -132,7 +132,7 @@ import styles from './PortfolioCard.module.scss';
 import LinkIcon from '@/public/icons/LinkIcon';
 
 import ExpandDescription from '../ExpandDescription/EpandDescription';
-import BackgroundCanvas from '../BackgroundCanvas/BackgroundCanvas';
+// import BackgroundCanvas from '../BackgroundCanvas/BackgroundCanvas';
 
 const PortfolioCard: React.FC = () => {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -180,7 +180,7 @@ const PortfolioCard: React.FC = () => {
 
   return (
     <ul id="projects" className={styles.list}>
-      <BackgroundCanvas />
+      {/* <BackgroundCanvas /> */}
       {/* Shadows */}
       {/* <div className={`${styles.shadow} ${styles.shadow1}`}></div>
       <div className={`${styles.shadow} ${styles.shadow2}`}></div>

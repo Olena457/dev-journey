@@ -119,11 +119,20 @@
 .list {
   padding: 30px 10px;
   position: relative;
-  background-image: url('/ffuel.svg'); 
-  background-attachment: fixed; 
-  background-size: cover;       
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+        to right, 
+        #000000 0%, 
+        #000000 45%, 
+        rgba(72, 24, 63, 0.4) 65%, 
+        #860580 100%
+    );
+  // background-image: url('/ffuel.svg'); 
+  // background-attachment: fixed; 
+  // background-size: cover;       
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-color: #000; /* Основний фон */
+  min-height: 100vh;
 
   @media screen and (min-width: 425px) and (max-width: 768.99px) {
     padding: 20px 45px;
