@@ -90,7 +90,7 @@ export const CarouselCard: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [direction, setDirection] = useState(-1); // -1 вліво, 1 вправо
   const positionRef = useRef(0);
-  const velocityRef = useRef(120); // Швидкість px/s
+  const velocityRef = useRef(30); // Швидкість px/s
 
   useEffect(() => {
     let lastTime = 0;
