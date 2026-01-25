@@ -1,2 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.46"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-	<feGaussianBlur stdDeviation="70" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="150" ry="150" cx="599.8981111702275" cy="617.9575961392194" fill="hsl(299, 80%, 29%)"></ellipse><ellipse rx="150" ry="150" cx="429.63176621319434" cy="263.84926777277315" fill="hsl(298, 100%, 43%)"></ellipse><ellipse rx="150" ry="150" cx="627.6337028869956" cy="408.5644421236011" fill="hsl(185, 100%, 57%)"></ellipse></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d200da" />
+      <stop offset="100%" stop-color="#6de8f5" />
+    </linearGradient>
+  </defs>
+  
+  <g>
+    <g fill="url(#starGradient)" id="star" opacity="0.8">
+      <path d="M 489.52513959766065 238.12848994151608 
+               C 1000 1000 1000 1000 1695.530727510335 615.2234644257329 
+               C 1000 1000 1000 1000 1489.5251395976607 1601.2569838892805 
+               C 1000 1000 1000 1000 307.96089262377836 1510.4748604023393 
+               C 1000 1000 1000 1000 489.52513959766065 238.12848994151608"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

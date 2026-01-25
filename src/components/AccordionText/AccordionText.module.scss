@@ -29,7 +29,7 @@
   align-items: center;
   gap: 10px;
   font-family: var(--font-cardo), sans-serif;
-  font-size: clamp(30px, 5vw, 60px);
+  font-size: clamp(30px, 4vw, 60px);
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -99,16 +99,33 @@
   }
 }
 
+
 .accordionSide {
   flex: 1.2;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
-  border-top: 1px solid rgba(177, 172, 172, 0.7);
+  border-top: 1px solid rgba(139, 136, 136, 0.3);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 24px;
+  
 
   &:last-child {
-    border-top: 1px solid rgba(177, 172, 172, 0.7);
+    border-bottom: 1px solid rgba(177, 172, 172, 0.3);
+  }
+
+  &[open] {
+    background-color: rgba(177, 21, 175, 0.386);;
+    border-radius: 16px;
+    border-color: transparent;
+    margin: 8px 0;
+
+    & + .item {
+      border-top-color: transparent;
+    }
   }
 }
 
@@ -117,50 +134,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: clamp(20px, 3vw, 35px) 0;
+  padding: 30px 0;
   cursor: pointer;
+  outline: none;
+
   &::-webkit-details-marker {
     display: none;
   }
 }
+
 .question {
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: clamp(18px, 1.8vw, 22px);
   font-weight: 400;
   max-width: 90%;
   color: var(--color-white);
+  transition: color 0.3s ease;
 }
 
 .icon {
   width: 24px;
   height: 24px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
 
   &::after {
     content: '⌵';
     color: #ffffff;
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 24px;
     display: block;
-    transition: transform 0.3s ease;
-
-    @media (min-width: 768px) {
-      font-size: 20px;
-    }
-    @media (min-width: 1024px) {
-      font-size: 24px;
-    }
   }
-}
-
-.item[open] .summary .icon::after {
-  transform: rotate(180deg);
-  color: #820f84;
 }
 
 .content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
+  transition: grid-template-rows 0.5s ease-in-out;
   overflow: hidden;
 
   .inner {
@@ -168,13 +178,19 @@
   }
 }
 
-.item[open] .content {
-  grid-template-rows: 1fr;
+.item[open] {
+  .content {
+    grid-template-rows: 1fr;
+  }
+
+  .icon {
+    transform: rotate(180deg);
+  }
 }
 
 .answer {
   padding-bottom: 30px;
   font-size: clamp(14px, 1.2vw, 16px);
-  color: var(--gray-text-color);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.7;
 }

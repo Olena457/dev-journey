@@ -25,11 +25,12 @@
   justify-content: center;
 
   @media (min-width: 768px) {
-    padding: 40px 0px;
+    padding: 20px 0px;
   }
 
   @media (min-width: 1024px) {
-    padding: 100px 0px;
+    padding: 60px 0px 40px 0px  ;
+    margin-top: 100px;
   }
 }
 

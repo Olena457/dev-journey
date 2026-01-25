@@ -31,7 +31,7 @@ const HeaderComponent: React.FC = () => {
 
       <div className={clsx(styles.mylogo, { [styles.hidden]: isMenuOpen })}>
         <LogoIcon id="logo" className={styles.logoIcon} />
-        <div className={styles.logoText}>Altiora</div>
+        <div className={styles.logoText}>OD</div>
 
       </div>
     </div>

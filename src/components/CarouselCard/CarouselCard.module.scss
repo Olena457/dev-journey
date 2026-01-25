@@ -1,100 +1,301 @@
+// .wrapper {
+//   width: 100%;
+//   max-width: 100vw;
+//   overflow: hidden;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+//   padding: 40px 0;
+
+//   @media (min-width: 768px) {
+//     padding: 60px 0;
+//     gap: 30px;
+//   }
+
+//   @media (min-width: 1024px) {
+//     padding: 80px 0;
+//     gap: 40px;
+//   }
+// }
+
+// .label {
+//   display: block;
+//   margin-bottom: 20px;
+//   opacity: 0.8;
+// }
+// .titleMain {
+//   font-family: var(--font-cardo), sans-serif;
+//   font-size: clamp(30px, 4.5vw, 62px);
+//   line-height: 1.1;
+//   font-weight: 600;
+//   color: var(--color-white);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 40px;
+//   flex-wrap: wrap;
+//   line-height: 1.5;
+//   letter-spacing: 0.03em;
+//   gap: 10px;
+
+//   @media (min-width: 744px) {
+//     line-height: 140%;
+//     margin-bottom: 50px;
+//   }
+
+//   .accent {
+//     font-family: var(--font-cardo), serif;
+//     font-style: italic;
+//     font-weight: 400;
+//     margin-right: 15px;
+//     line-height: 1.5;
+//     letter-spacing: 0.04em;
+//   }
+// }
+// .scrollContainer {
+//   width: 100%;
+//   overflow-x: auto;
+//   overflow-y: hidden;
+//   scroll-snap-type: x mandatory;
+//   -webkit-overflow-scrolling: touch;
+//   scrollbar-width: none;
+
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
+
+// .content {
+//   display: flex;
+//   list-style: none;
+//   padding: 0 20px;
+//   margin: 0;
+//   width: max-content;
+// }
+
+// .card {
+//   flex: 0 0 85vw;
+//   scroll-snap-align: center;
+//   margin-right: 15px;
+//   border: 1px solid rgba(166, 59, 238, 0.3);
+//   border-radius: 24px;
+//   padding: 30px;
+//   position: relative;
+//   margin-bottom: 30px;
+//   overflow: hidden;
+//   box-shadow: 0px 5px 10px rgba(130, 15, 132, 0.5);
+
+//   @media (min-width: 768px) {
+//     flex: 0 0 45vw;
+//     margin-right: 20px;
+//   }
+
+//   @media (min-width: 1024px) {
+//     flex: 0 0 460px;
+//     margin-right: 32px;
+//     padding: 40px;
+//   }
+
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     height: 1px;
+//     background: linear-gradient(
+//       90deg,
+//       transparent 0%,
+//       rgba(72, 24, 63, 0.4) 20%,
+//       #820f84 50%,
+//       rgba(72, 24, 63, 0.4) 80%,
+//       transparent 100%
+//     );
+//   }
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 100%;
+//     height: 100%;
+//     background: radial-gradient(
+//       circle at center top,
+//       rgba(200, 0, 255, 0.17),
+//       transparent 80%
+//     );
+
+//     pointer-events: none;
+//   }
+// }
+
+// .controls {
+//   display: flex;
+//   justify-content: center;
+//   gap: 30px;
+//   margin-top: 10px;
+// }
+
+// .arrow {
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   border: 2px solid rgba(177, 172, 172, 0.7);
+//   background: transparent;
+//   color: var(--color-white);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+//   font-size: 20px;
+//   transition: all 0.3s ease;
+
+//   span {
+//     line-height: 1;
+//   }
+
+//   &:hover {
+//     background: radial-gradient(circle at center top, rgba(200, 0, 255, 0.15));
+//     border-color: var(--fuchsia-dark-color);
+//   }
+// }
+
+// .header {
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+//   @media (min-width: 768px) {
+//     gap: 15px;
+//   }
+//   @media (min-width: 1024px) {
+//     gap: 15px;
+//   }
+// }
+
+// .icon {
+//   display: block;
+//   margin-bottom: 15px;
+//   width: 44px;
+//   height: 44px;
+
+//   @media (min-width: 1024px) {
+//     width: 64px;
+//     height: 64px;
+//   }
+// }
+// .title {
+//   color: var(--color-white);
+//   font-size: 17px;
+//   margin-bottom: 15px;
+
+//   @media (min-width: 768px) {
+//     font-size: 20px;
+//   }
+//   @media (min-width: 1024px) {
+//     font-size: 24px;
+//   }
+// }
+
+// .description {
+//   background-color: transparent;
+//   color: var(--gray-text-color);
+//   line-height: 1.5;
+// }
+
+// --- Основний контейнер ---
 .wrapper {
+  position: relative;
   width: 100%;
-  max-width: 100vw;
+  height: 100vh;
+  background: #000;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 40px 0;
-
-  @media (min-width: 768px) {
-    padding: 60px 0;
-    gap: 30px;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 80px 0;
-    gap: 40px;
-  }
+  justify-content: center;
+  padding: 80px 0;
 }
 
-.label {
-  display: block;
-  margin-bottom: 20px;
-  opacity: 0.8;
-}
+// --- Заголовок ---
 .titleMain {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 4.5vw, 62px);
-  line-height: 1.1;
   font-weight: 600;
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-  line-height: 1.5;
+  color: #fff;
+  z-index: 60;
   letter-spacing: 0.03em;
-  gap: 10px;
-
-  @media (min-width: 744px) {
-    line-height: 140%;
-    margin-bottom: 50px;
-  }
 
   .accent {
     font-family: var(--font-cardo), serif;
     font-style: italic;
     font-weight: 400;
-    margin-right: 15px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
   }
 }
+
+// --- Ефект Сканера ---
+.scannerLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #c800ff;
+  z-index: 50;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.scannerGlow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px #c800ff, 0 0 30px #c800ff, 0 0 60px #820f84;
+  filter: blur(2px);
+}
+
+// --- Контейнер для карток (Потік) ---
 .scrollContainer {
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  overflow: visible;
+  display: flex;
+  align-items: center;
 }
 
 .content {
   display: flex;
   list-style: none;
-  padding: 0 20px;
+  padding: 0;
   margin: 0;
-  width: max-content;
+  will-change: transform;
+}
+
+// --- Картка ---
+.cardWrapper {
+  position: relative;
+  flex: 0 0 460px; // Фіксована ширина
+  height: 300px;
+  margin-right: 32px;
 }
 
 .card {
-  flex: 0 0 85vw;
-  scroll-snap-align: center;
-  margin-right: 15px;
-  border: 1px solid rgba(166, 59, 238, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 24px;
-  padding: 30px;
-  position: relative;
-  margin-bottom: 30px;
+  padding: 40px;
+  border: 1px solid rgba(166, 59, 238, 0.3);
   overflow: hidden;
-  box-shadow: 0px 5px 10px rgba(130, 15, 132, 0.5);
-
-  @media (min-width: 768px) {
-    flex: 0 0 45vw;
-    margin-right: 20px;
-  }
-
-  @media (min-width: 1024px) {
-    flex: 0 0 460px;
-    margin-right: 32px;
-    padding: 40px;
-  }
 
   &::before {
     content: '';
@@ -103,103 +304,96 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(72, 24, 63, 0.4) 20%,
-      #820f84 50%,
-      rgba(72, 24, 63, 0.4) 80%,
-      transparent 100%
-    );
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-      circle at center top,
-      rgba(200, 0, 255, 0.17),
-      transparent 80%
-    );
-
-    pointer-events: none;
+    background: linear-gradient(90deg, transparent, #820f84, transparent);
+    z-index: 3;
   }
 }
 
-.controls {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
+// Шар "Дизайн" (видимий справа від лінії)
+.cardNormal {
+  background: #0a0a0a;
+  z-index: 2;
+  clip-path: inset(0 0 0 var(--scan-prop, 0%));
 }
 
-.arrow {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid rgba(177, 172, 172, 0.7);
-  background: transparent;
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 20px;
-  transition: all 0.3s ease;
+// Шар "Код" (видимий зліва від лінії)
+.cardCode {
+  background: #050005;
+  z-index: 1;
+  border-color: rgba(200, 0, 255, 0.5);
+  clip-path: inset(0 calc(100% - var(--scan-prop, 0%)) 0 0);
 
-  span {
-    line-height: 1;
-  }
-
-  &:hover {
-    background: radial-gradient(circle at center top, rgba(200, 0, 255, 0.15));
-    border-color: var(--fuchsia-dark-color);
+  .codeContent {
+    font-family: monospace;
+    font-size: 11px;
+    color: #c800ff;
+    opacity: 0.7;
+    line-height: 1.4;
+    white-space: pre-wrap;
   }
 }
 
+// --- Внутрішні елементи картки ---
 .header {
   display: flex;
   align-items: center;
-  gap: 5px;
-  @media (min-width: 768px) {
-    gap: 15px;
-  }
-  @media (min-width: 1024px) {
-    gap: 15px;
-  }
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .icon {
-  display: block;
-  margin-bottom: 15px;
-  width: 44px;
-  height: 44px;
-
-  @media (min-width: 1024px) {
-    width: 64px;
-    height: 64px;
-  }
+  width: 64px;
+  height: 64px;
 }
-.title {
-  color: var(--color-white);
-  font-size: 17px;
-  margin-bottom: 15px;
 
-  @media (min-width: 768px) {
-    font-size: 20px;
-  }
-  @media (min-width: 1024px) {
-    font-size: 24px;
-  }
+.title {
+  font-family: var(--font-montserrat);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .description {
-  background-color: transparent;
-  color: var(--gray-text-color);
-  line-height: 1.5;
+  font-family: var(--font-inter);
+  color: #a0a0a0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.cardNumber {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-family: var(--font-montserrat);
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+// --- Контролери ---
+.controls {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 100;
+}
+
+.controlBtn {
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(200, 0, 255, 0.1);
+    border-color: #c800ff;
+  }
 }

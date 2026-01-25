@@ -101,14 +101,15 @@
 
 .title {
   font-family: var(--font-cardo), sans-serif;
-  font-size: clamp(28px, 4.5vw, 56px); 
-  font-weight: 600;
+  font-size: clamp(28px, 3.5vw, 46px); 
+  font-weight: 700;
   color: var(--color-white);
   line-height: 1.2;
   letter-spacing: 0.02em;
 
   .accent {
-    font-weight: 600;
+    font-weight: 400;
+    font-style: italic;
     margin-right: 15px;
   }
   @media (min-width: 768px) {
@@ -123,7 +124,7 @@
 
 .description {
   width: 100%;
-  max-width: 550px;
+  max-width: 650px;
   font-size: 22px;
   line-height: 1.4;
   color: var(--gray-text-color);

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
 const TeamIcon: React.FC<IconProps> = ({
-  id = 'gradient',
+  id = 'team',
   width="100%",
   height="100%",
   viewBox="0 0 64 64",

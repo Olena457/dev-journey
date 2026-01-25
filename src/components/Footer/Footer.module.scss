@@ -31,7 +31,7 @@
   @media (min-width: 1024px) {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     gap:20px 20px;
   }
@@ -40,7 +40,7 @@
 .footerLogo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
   order: 1; 
 
   @media (min-width: 768px) {
@@ -50,6 +50,7 @@
   }
 
   @media (min-width: 1024px) {
+    margin-right: 40px;
     order: 2; 
     width: auto;
   }
@@ -62,7 +63,7 @@
 
 .logoText {
   font-family: var(--font-cardo), sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -78,16 +79,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px 40px;
-  order: 2; // second for mobile
+  order: 2; 
 
   @media (min-width: 768px) {
-    order: 1; // first for tablet 
+    order: 1;
     justify-items: center;
     grid-template-columns: repeat(2, 180px);
   }
 
   @media (min-width: 1024px) {
-    order: 1; // left on desktop
+    order: 1; 
     justify-items: start;
   }
 }

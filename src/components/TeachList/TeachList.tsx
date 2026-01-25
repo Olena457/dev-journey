@@ -51,6 +51,9 @@ const TechnologyStack = () => {
 
   return (
     <div id="skills" className={styles.wrapper}>
+      <h2 className={styles.titleMain}>
+        Technologies<span className={styles.accent}> & Tools</span>
+      </h2>
       <div className={`${styles.gradient} ${styles.gradientLeft}`}></div>
       <div className={`${styles.gradient} ${styles.gradientRight}`}></div>
       <div className={styles.scroller}>

@@ -41,11 +41,12 @@ export const HomeComponent: React.FC = () => {
           <div className={styles.textBlock}>
             <div className={styles.topContent}>
               <h2 className={styles.title}>
-                <span className={styles.accent}>Frontend</span>Developer
+                Hi, I'm a 
+                <span className={styles.accent}> Frontend </span>Developer
               </h2>
               <p className={styles.description}>
                 Transforming ideas into interactive and seamless digital
-                experiences through modern frontend development.
+                experiences with cutting-edge web development.
               </p>
             </div>
 

@@ -41,8 +41,8 @@ export const Footer = () => {
     <footer id="contacts" className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerLogo}>
+          <span className={styles.logoText}>OD</span>
           <LogoIcon id="logo" className={styles.logoIcon} />
-          <span className={styles.logoText}>Altiora</span>
         </div>
 
         <nav className={styles.footerNav}>
