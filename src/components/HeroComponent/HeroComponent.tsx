@@ -27,7 +27,6 @@ export const HeroComponent: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    // Якщо це остання цитата — повертаємося на початок, інакше йдемо вперед
     if (currentIndex === QUOTES.length - 1) {
       setCurrentIndex(0);
     } else {
@@ -45,11 +44,9 @@ export const HeroComponent: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textBlock}>
-            <div className={styles.decor}></div>
 
             <div className={styles.quoteCard}>
               <div className={styles.quoteTextContainer}>
-                {/* Додаємо ключовий індекс для перезапуску CSS анімації при зміні тексту */}
                 <p key={currentIndex} className={styles.description}>
                   “{QUOTES[currentIndex].text}”
                 </p>

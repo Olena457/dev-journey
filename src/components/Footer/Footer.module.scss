@@ -31,7 +31,7 @@
   @media (min-width: 1024px) {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: flex-start;
     gap:20px 20px;
   }
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: 1024px) {
-    margin-right: 40px;
+    // margin-right: 40px;
     order: 2; 
     width: auto;
   }
@@ -59,6 +59,11 @@
 .logoIcon {
   width: 50px;
   height: 50px;
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+ 
 }
 
 .logoText {

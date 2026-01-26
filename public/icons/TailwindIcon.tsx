@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
@@ -17,9 +18,21 @@ const TailwindIcon: React.FC<IconProps> = ({
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      fill="#51b9fd"
       {...rest}
     >
+      <defs>
+        <linearGradient
+          id="tailwindGradient"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
+        >
+          <stop offset="0%" stopColor="#820f84" /> 
+          <stop offset="100%" stopColor="#6de8f5" /> 
+        </linearGradient>
+      </defs>
+
       <g id="SVGRepo_bgCarrier" strokeWidth={0} />
       <g
         id="SVGRepo_tracerCarrier"
@@ -30,7 +43,7 @@ const TailwindIcon: React.FC<IconProps> = ({
         <title>{'file_type_tailwind'}</title>
         <path
           d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
-          style={{ fill: '#0081CB' }}
+          fill="url(#tailwindGradient)"
         />
       </g>
     </svg>

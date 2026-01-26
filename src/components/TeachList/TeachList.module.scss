@@ -111,16 +111,16 @@ margin-bottom: 60px;
 }
 
 .techName {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--gray-text-color);
 }
 
-// @keyframes scroll {
-//   from {
-//     transform: translateX(0);
-//   }
-//   to {
-//     transform: translateX(-50%);
-//   }
-// }
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

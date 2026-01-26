@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { IconProps } from '@/src/types/types';
 
@@ -16,18 +17,18 @@ const HtmlIcon: React.FC<IconProps> = ({
       className={className}
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
-      fill="#000000"
       {...rest}
     >
-      <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <defs>
+        <linearGradient id="htmlGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#820f84" />
+          <stop offset="100%" stopColor="#6de8f5" />
+        </linearGradient>
+      </defs>
+
       <g id="SVGRepo_iconCarrier">
-        <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" />
-        <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" />
+        <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="url(#htmlGradient)" />
+        <path d="M26 5H16V29.5L24 27L26 5Z" fill="url(#htmlGradient)" />
         <path
           d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
           fill="white"

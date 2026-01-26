@@ -26,7 +26,7 @@
   
   /* brand colors  */
 
-  --color-purple: #8f6ec5;
+  /* --color-purple: #8f6ec5; */
   --color-contrast:#6de8f5;
   --color-contrast:#15f9f9;
   
@@ -36,6 +36,7 @@
   --dark-chocolate-color:rgba(37, 20, 25, 0.3);
   --fuchsia-accent-color:#d200da;
   --fuchsia-dark-color:#820f84;
+  --fuchsia-dark-color:#a67aff;
   
   /* gradients colors */
 

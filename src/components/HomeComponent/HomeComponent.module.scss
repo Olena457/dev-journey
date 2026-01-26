@@ -19,11 +19,10 @@
   }
 
   @media (min-width: 1024px) {
-    // height: 90vh; // На десктопах фіксуємо висоту екрана
     padding: 0px 60px 40px 60px; ;
   }
   @media (min-width: 1200px) {
-    height: 100vh; // На десктопах фіксуємо висоту екрана
+    height: 100vh;
     padding: 0px 60px 40px 60px;
   }
 }
@@ -168,7 +167,7 @@ margin-top: auto;
   background: rgba(120, 19, 134, 0.2);
   border: 1px solid rgba(217, 34, 241, 0.3);
   transition: all 0.3s ease;
-  // color: #fff;
+  
 
   svg {
     width: 22px;

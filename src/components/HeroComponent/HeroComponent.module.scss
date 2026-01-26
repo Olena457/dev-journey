@@ -37,7 +37,6 @@
   flex-direction: column;
      position:relative;
 
-  // height: 100vh;
   gap: 54px;
   width: 100%;
   padding: 40px 25px 40px 25px;
@@ -68,6 +67,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 1.5rem;
   width: 100%;
   color: var(--gray-text-color);
@@ -86,7 +86,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-bottom: 40px;
   flex-wrap: wrap;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -107,19 +106,6 @@
   }
 }
 
-// .textBlock {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2rem;
-//   width: 100%;
-  
-
-//   @media (min-width: 1024px) {
-//     width: 50%;
-//   }
-// }
-/* ... твої існуючі стилі для hero, titleMain, animationBlock залишаються ... */
 
 .textBlock {
   position: relative;
@@ -139,11 +125,14 @@
   width: 100%;
   max-width: 600px;          
   min-height: 320px;        
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
-  // border: 1px solid rgba(255, 255, 255, 0.15);
-  // border: 1px solid #820f84;
   border: 1px solid rgba(109, 6, 141, 0.516);
+
+background: radial-gradient(circle at 0% 0%, rgba(211, 0, 218, 0.731) 0%, transparent 40%), 
+ radial-gradient(circle at 100% 100%, rgba(229, 90, 242, 0.342) 0%, transparent 40%), 
+ linear-gradient(135deg, #121214 0%, #050505 100%);
+
+
+
 
   border-radius: 24px;
   padding: 40px;             
@@ -158,10 +147,11 @@
 }
 
 .description {
-  font-size: clamp(1.2rem, 2.5vw, 2rem); 
+  font-size: clamp(1.2rem, 1.9vw, 1.6rem); 
   line-height: 1.5;
-  color: var(--color-white);
+  color: var(--gray-text-color-two, rgba(255, 255, 255, 0.7));
   margin-bottom: 20px;
+  letter-spacing: 0.01em;
   font-style: italic;
   
   animation: fadeIn 0.8s ease-in-out;
@@ -174,81 +164,76 @@
 
 .author {
   font-size: 1rem;
-  color: var(--accent-color, #a0a0a0);
+  color: var(--gray-text-color-two, rgba(255, 255, 255, 0.7));
   text-align: right;
   opacity: 0.8;
+   @media (min-width: 768px) {
+      font-size: 1.2rem;
+
+  }
 }
 
 .nextButton {
   align-self: flex-end;      
   margin-top: 30px;
   background: transparent;
-  // border: 1px solid rgba(255, 255, 255, 0.3);
-  // border: 1px solid #820f84;
   border: 1px solid rgba(109, 6, 141, 0.516);
-
-
+ font-family: var(--font-montserrat);
+  font-size: 0.9rem;
   
-  color: #fff;
-  padding: 12px 24px;
+  color: var(--gray-text-color-two, rgba(255, 255, 255, 0.7));
+  padding: 8px 16px;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
     background: rgba(200, 0, 255, 0.142);
-    // border-color: #820f84;
+    color:var(--color-white, #fff)
   }
 }
 
 .buttonText {
-  text-transform: uppercase;
+ 
   font-size: 0.8rem;
-  letter-spacing: 2px;
-  font-weight: 600;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
 }
 
-.decor{
-  position: absolute;
-  top: 15px;
-  left: -15px;
-  width: 150px;
-  height: 150px;
-  z-index: -1;
-   background-image: url('/ffuel.svg'); 
-  background-size: cover;       
-  background-position: start;
-  background-repeat: no-repeat;
+// .decor{
+//   position: absolute;
+//   top: 15px;
+//   left: -15px;
+//   width: 150px;
+//   height: 150px;
+//   z-index: -1;
+//    background-image: url('/ffuel.svg'); 
+//   background-size: cover;       
+//   background-position: start;
+//   background-repeat: no-repeat;
 
-  @media (min-width: 768px) {
-     top: -3px;
-  left: -15px;
-    width: 250px;
-    height: 250px;
+//   @media (min-width: 768px) {
+//      top: -3px;
+//   left: -15px;
+//     width: 250px;
+//     height: 250px;
   
-  }
-  @media (min-width: 1024px) {
+//   }
+//   @media (min-width: 1024px) {
     
-    width: 300px;
-    height: 300px;
-  }
-}
+//     width: 300px;
+//     height: 300px;
+//   }
+// }
 
-.stack {
-  font-size: 1.125rem;
-  font-weight: bold;
-  line-height: 1.25rem;
-  color: var(--color-main-white);
-}
+// .stack {
+//   font-size: 1.125rem;
+//   font-weight: bold;
+//   line-height: 1.25rem;
+//   color: var(--color-main-white);
+// }
 
-.description {
-  width: 100%;
-  font-size: 24px;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  line-height: 1.6;
-  color: var(--gray-text-color);
 
-}
 
 
 
@@ -260,10 +245,4 @@
  
  
 }
-.author {
-  font-size: 0.8rem;
-  opacity: 0.7;
-  text-align: right;
-  font-style: italic;
-  margin-bottom: 5px;
-}
+

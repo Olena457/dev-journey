@@ -48,9 +48,9 @@ const NodeIcon: React.FC<IconProps> = ({
             y2={239.465}
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset={0.57} stopColor="#3e863d" />
-            <stop offset={0.72} stopColor="#619857" />
-            <stop offset={1} stopColor="#76ac64" />
+            <stop offset={0.57} stopColor="#820f84" />
+            <stop offset={0.72} stopColor="#6de8f5" />
+            <stop offset={1} stopColor="#6de8f5" />
           </linearGradient>
           <linearGradient
             id="f"
@@ -60,11 +60,11 @@ const NodeIcon: React.FC<IconProps> = ({
             y2={279.652}
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset={0.16} stopColor="#6bbf47" />
-            <stop offset={0.38} stopColor="#79b461" />
-            <stop offset={0.47} stopColor="#75ac64" />
-            <stop offset={0.7} stopColor="#659e5a" />
-            <stop offset={0.9} stopColor="#3e863d" />
+            <stop offset={0.16} stopColor="#6de8f5" />
+            <stop offset={0.38} stopColor="#820f84" />
+            <stop offset={0.47} stopColor="#820f84" />
+            <stop offset={0.7} stopColor="#6de8f5" />
+            <stop offset={0.9} stopColor="#820f84" />
           </linearGradient>
           <clipPath id="a">
             <path d="m239.03 226.605-42.13 24.317a5.085 5.085 0 0 0-2.546 4.406v48.668c0 1.817.968 3.496 2.546 4.406l42.133 24.336a5.1 5.1 0 0 0 5.09 0l42.126-24.336a5.096 5.096 0 0 0 2.54-4.406v-48.668c0-1.816-.97-3.496-2.55-4.406l-42.12-24.317a5.123 5.123 0 0 0-5.1 0" />

@@ -19,7 +19,6 @@ import FirebaseIcon from '@/public/icons/FirebaseIcon';
 import GitIcon from '@/public/icons/GitIcon';
 import MongoIcon from '@/public/icons/MongoIcon';
 import MysqlIcon from '@/public/icons/MysqlIcon';
-import OptimIcon from '@/public/icons/OptimIcon';
 
 const technologiesData: {
   id: number;
@@ -43,7 +42,6 @@ const technologiesData: {
   { id: 15, name: 'Git', icon: GitIcon },
   { id: 16, name: 'MongoDB', icon: MongoIcon },
   { id: 17, name: 'MySQL', icon: MysqlIcon },
-  { id: 18, name: 'Optim', icon: OptimIcon },
 ];
 
 const TechnologyStack = () => {
