@@ -1,8 +1,42 @@
+
+'use client';
+import React, { useState } from 'react';
 import LetterAnimation from '../LetteAnimation/LetterAnimation';
 import styles from './HeroComponent.module.scss';
 
+const QUOTES = [
+  {
+    text: 'Success is about the courage to undertake a journey that you believe in.',
+    author: 'Steve Jobs',
+  },
+  {
+    text: 'Your most unhappy customers are your greatest source of learning.',
+    author: 'Bill Gates',
+  },
+  {
+    text: 'If you stop learning, you stop being useful.',
+    author: 'Eric Schmidt',
+  },
+  {
+    text: 'The only way to do great work is to love what you do.',
+    author: 'Steve Jobs',
+  },
+];
 
 export const HeroComponent: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    // Якщо це остання цитата — повертаємося на початок, інакше йдемо вперед
+    if (currentIndex === QUOTES.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(prev => prev + 1);
+    }
+  };
+
+  const isLastQuote = currentIndex === QUOTES.length - 1;
+
   return (
     <div className={styles.hero}>
       <h2 className={styles.titleMain}>
@@ -11,37 +45,24 @@ export const HeroComponent: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textBlock}>
-<div className={styles.decor}></div>
-            <div className={styles.quoteBadge}>
-              <div className={styles.descriptionWrap}>
-               
-                <p className={styles.description}>
-                  “Succcess is about the courage to undertake a journey that you
-                  believe in.”
-                </p>
-                <span className={styles.author}>- Steve Jobs-</span>
+            <div className={styles.decor}></div>
 
-                <p className={styles.description}>
-                  “If you stop learning, you stop being useful.”
+            <div className={styles.quoteCard}>
+              <div className={styles.quoteTextContainer}>
+                {/* Додаємо ключовий індекс для перезапуску CSS анімації при зміні тексту */}
+                <p key={currentIndex} className={styles.description}>
+                  “{QUOTES[currentIndex].text}”
                 </p>
-                <span className={styles.author}>- Eric Schmidt -</span>
+                <span className={styles.author}>
+                  - {QUOTES[currentIndex].author} -
+                </span>
               </div>
 
-              <div className={styles.descriptionWrap}>
-                <p className={styles.description}>
-                  “The only way to do great work is to love what you do.”
-                </p>
-                <span className={styles.author}>- Steve Jobs -</span>
-              </div>
-
-              <div className={styles.descriptionWrap}>
-                <p className={styles.description}>
-                  “Your most unhappy customers are your greatest source of
-                  learning.”
-                </p>
-                <span className={styles.author}>- Bill Gates-</span>
-              </div>
-
+              <button className={styles.nextButton} onClick={handleNext}>
+                <span className={styles.buttonText}>
+                  {isLastQuote ? 'Back' : 'Next'}
+                </span>
+              </button>
             </div>
           </div>
 
@@ -55,4 +76,5 @@ export const HeroComponent: React.FC = () => {
     </div>
   );
 };
+
 export default HeroComponent;

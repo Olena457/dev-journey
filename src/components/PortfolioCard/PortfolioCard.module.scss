@@ -54,8 +54,30 @@
     letter-spacing: 0.04em;
   }
 }
-.item {
-  padding: 18px;
+// .item {
+//   padding: 18px;
+  .item {
+  /* Початковий стан для страховки */
+  opacity: 0; 
+  
+  /* Назва анімації | тривалість | тип затримки | заповнення */
+  /* forwards означає, що елемент залишиться в кінцевому стані анімації */
+  animation: slideIn 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+
+
+  @keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); // Починаємо низько
+    filter: blur(10px); // Додамо ефект розмиття для солідності
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+   }
+
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -147,7 +169,7 @@
     right: 0;
     height: 3px;
 
-    background: linear-gradient(
+    background: linear-gradient(  
       90deg,
       transparent 0%,
       rgba(72, 24, 63, 0.4) 15%,

@@ -126,6 +126,7 @@
 // export default PortfolioCard;
 'use client';
 import React, { useRef, useState } from 'react';
+import clsx from 'clsx';
 
 import { PORTFOLIO_PROJECTS } from './propsItems';
 import { PetProgectsData } from '../../types/types';
@@ -186,7 +187,11 @@ const PortfolioCard: React.FC = () => {
       <ul id="projects" className={styles.list}>
 
         {visibleProjects.map((project: PetProgectsData, index: number) => (
-          <li key={project.id} className={styles.item}>
+          // <li key={project.id} className={styles.item}>
+            <li 
+      key={project.id} 
+      className={clsx(styles.item, styles.visible)} // Додаємо клас visible
+    >
             <div className={styles.itemWrapper}>
               <div
                 ref={el => {
