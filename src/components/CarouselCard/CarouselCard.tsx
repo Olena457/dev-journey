@@ -34,7 +34,7 @@ export const CarouselCard: React.FC = () => {
 
       if (!stateRef.current.isPaused && cardLineRef.current) {
         stateRef.current.position -= stateRef.current.velocity * deltaTime;
-// reset
+
         if (Math.abs(stateRef.current.position) >= totalWidth) {
           stateRef.current.position = 0;
         }

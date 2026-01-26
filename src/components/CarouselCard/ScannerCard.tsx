@@ -41,7 +41,7 @@
 // };
 'use client';
 import React, { useMemo, useState, useEffect } from 'react';
-import TeamIcon from '@/public/icons/TeamIcon';
+import ScreenIcon from '@/public/icons/ScreenIcon';
 import styles from './CarouselCard.module.scss';
 import { ParticlesBackground } from '../ParticlesBackground/ParticlesBackground';
 
@@ -70,7 +70,7 @@ export const ScannerCard: React.FC<ScannerCardProps> = ({ item }) => {
   const CardContent = () => (
     <>
       <div className={styles.header}>
-        <TeamIcon id="team" width="40" height="40" className={styles.icon} />
+        <ScreenIcon id="screen" width="30" height="30" className={styles.icon} />
         <h3 className={styles.title}>{item.title}</h3>
       </div>
       <p className={styles.description}>{item.description}</p>

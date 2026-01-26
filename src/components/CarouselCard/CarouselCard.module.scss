@@ -396,6 +396,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 40px;
+  padding: 80px 0;
+   @media (min-width: 768px) {
+      margin-bottom: 60px;
+
+   }
+    @media (min-width: 1024px) {
+        margin-bottom: 80px;
+
+    }
 }
 .particlesBackground {
   position: absolute;
@@ -414,7 +424,7 @@
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(30px, 4.5vw, 62px);
   font-weight: 600;
-  color: #fff;
+  color: var(--color-white, #fff);
   z-index: 60;
   letter-spacing: 0.03em;
 
@@ -460,7 +470,7 @@
   box-shadow:
     0 0 15px #c800ff,
     0 0 30px #c800ff,
-    0 0 60px #820f84;
+    0 0 60px #df06e2;
   filter: blur(2px);
 }
 
@@ -484,12 +494,12 @@
 }
 
 .cardWrapper {
-  flex: 0 0 300px;
+  position: relative; 
+  flex: 0 0 300px;    
   height: 260px;
   margin-right: 16px;
 
   @media (min-width: 768px) {
-    position: relative;
     flex: 0 0 460px;
     height: 320px;
     margin-right: 32px;
@@ -502,7 +512,8 @@
   inset: 0;
   border-radius: 24px;
   padding: 40px;
-  border: 1px solid rgba(166, 59, 238, 0.3);
+
+  // border: 1px solid rgba(166, 59, 238, 0.3);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -513,8 +524,17 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #820f84, transparent);
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(72, 24, 63, 0.4) 15%,
+      #820f84 40%,
+      #5ec8d3 50%,
+      #820f84 75%,
+      rgba(72, 24, 63, 0.4) 85%,
+      transparent 100%
+    );
     z-index: 10;
   }
   @media (min-width: 768px) {
@@ -523,9 +543,9 @@
 }
 
 .cardNormal {
-  background: #000000;
   z-index: 2;
   clip-path: inset(0 0 0 var(--scan-prop, 0%));
+  border: 1px solid #a414a7;
 }
 
 .cardCode {
@@ -566,7 +586,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    padding: 15px; // Невеликий відступ для символів
+    padding: 15px; 
     user-select: none;
     pointer-events: none;
   }
@@ -597,72 +617,96 @@
 .title {
   font-family: var(--font-montserrat);
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0;
+   @media (min-width: 768px) {
+
+    font-size: 22px;
+  }
 }
 
 .description {
   font-family: var(--font-inter);
   color: #a0a0a0;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 12px;
   position: relative;
   z-index: 5;
+  @media (min-width: 768px) {
+
+    font-size: 16px;
+  }
 }
 
-.cardNumber {
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  font-family: var(--font-montserrat);
-  font-size: 42px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.05);
-}
+// .cardNumber {
+//   position: absolute;
+//   bottom: 20px;
+//   right: 30px;
+//   font-family: var(--font-montserrat);
+//   font-size: 42px;
+//   font-weight: 700;
+//   color: rgba(255, 255, 255, 0.05);
+// }
 
-// КЕРУВАННЯ
 .controls {
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
   z-index: 100;
-  @media (max-width: 768px) {
-    bottom: 20px;
-    flex-direction: column;
+
+  @media (min-width: 768px) {
     gap: 12px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     width: 90%;
   }
+  
 }
 
 .speedControl {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: white;
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-white, #fff);
+  color: var(--gray-text-color-two, rgba(255, 255, 255, 0.7));
+  background: transparent;
   padding: 8px 18px;
-  border-radius: 30px;
+  border-radius: 8px;
   font-size: 13px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #820f84;
+
   backdrop-filter: blur(10px);
 
   input[type='range'] {
     cursor: pointer;
-    accent-color: #c800ff;
+    accent-color:#d200da;;
   }
+  &:hover {
+    background: rgba(200, 0, 255, 0.2);
+    color: var(--color-white, #fff);
+  }
+    @media (min-width: 768px) {
+       padding: 8px 25px;
+    }
+    @media (min-width:1024px) {
+  padding: 15px 26px;
+    }
 }
 
 .controlBtn {
-  padding: 10px 24px;
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  padding: 15px 26px;
+  border-radius: 8px;
+  border: 1px solid #820f84;
+
+  background: transparent;
+  color: var(--gray-text-color-two, rgba(255, 255, 255, 0.7));
   font-weight: 600;
   cursor: pointer;
   backdrop-filter: blur(10px);
@@ -671,5 +715,12 @@
   &:hover {
     background: rgba(200, 0, 255, 0.2);
     border-color: #c800ff;
+    color: var(--color-white, #fff);
   }
+    @media (min-width: 768px) {
+       padding: 8px 25px;
+    }
+    @media (min-width:1024px) {
+  padding: 15px 26px;
+    }
 }
