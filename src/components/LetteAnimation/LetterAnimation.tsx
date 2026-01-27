@@ -1,14 +1,12 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-import styles from './LetterAnimation.module.scss';
 import type { LetterAnimationProps } from '../../types/types';
+import styles from './LetterAnimation.module.scss';
 
 const LetterAnimation: React.FC<LetterAnimationProps> = ({
   glitchColors = ['#820f84', '#A476FF', '#252d31'],
-
   // glitchColors = ['#820f84', '#A341F2', '#204459'],
-
   glitchSpeed = 150,
   centerVignette = false,
   outerVignette = false,

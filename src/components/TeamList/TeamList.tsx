@@ -1,7 +1,7 @@
 import styles from './TeamList.module.scss';
-import TeamCard from '../TeamCard/TeamCard';
 import { projectsData } from '../TeamCard/teamsCardData';
 import { TeamCardProps } from '@/src/types/types';
+import TeamCard from '../TeamCard/TeamCard';
 
 const projects: TeamCardProps[] = projectsData;
 
@@ -13,7 +13,7 @@ const TeamList = () => {
         <span className={styles.accent}> Projects</span>
       </h2>
 
-      <section className={styles.contentSection}>
+      <section  className={styles.contentSection}>
         <div className={styles.cardsWrapper}>
           {projects.map(item => (
             <TeamCard key={item.id} {...item} />

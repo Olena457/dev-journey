@@ -42,13 +42,12 @@
 
 .item {
   position: relative;
-  
+
   z-index: 2;
   padding: 10px 15px;
-   @media (min-width: 768px) {
-      padding: 20px 15px;
-
-   }
+  @media (min-width: 768px) {
+    padding: 20px 15px;
+  }
 }
 
 .item1 {
@@ -73,7 +72,7 @@
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: var(--color-white);
+  color: var(--color-white, #fff);
   letter-spacing: 0.03em;
   flex-wrap: wrap;
 
@@ -90,7 +89,6 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-
 
 .titleIcon {
   display: flex;
@@ -109,20 +107,19 @@
   font-family: var(--font-montserrat), serif;
   font-weight: 500;
   font-size: 1rem;
-  color: var(--color-white);
+  color: var(--color-white, #fff);
   margin-top: 0;
   margin-bottom: 10px;
 
-   @media (min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 1.2rem;
   }
 }
 
-
 .description {
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--gray-text-color);
+  color: var(--gray-text-color, #ffffff99);
   min-height: 100px;
 
   @media (min-width: 768px) {

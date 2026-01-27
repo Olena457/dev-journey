@@ -7,7 +7,7 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 25px 20px;
-  
+
   max-width: 1560px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
@@ -46,11 +46,10 @@
   }
 
   .mylogo {
- 
     display: flex;
-     flex-direction: row-reverse;
-     justify-content: flex-end;
-     align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 
   .logoIcon {
@@ -79,21 +78,18 @@
   }
 }
 .logoText {
-  display: none;      
- 
+  display: none;
 
-@media (min-width: 1024px) {
-  display:block;
-   font-family: var(--font-cardo), sans-serif; 
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  background: linear-gradient(60deg, #d200da 0%, #6de8f5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-
+  @media (min-width: 1024px) {
+    display: block;
+    font-family: var(--font-cardo), sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: linear-gradient(60deg, #d200da 0%, #6de8f5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }

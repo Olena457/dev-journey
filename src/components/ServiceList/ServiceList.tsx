@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import backgroundImage from '@/public/img/right.png';
 import { services } from './valueData';
-import styles from './ServiceList.module.scss';
 import DotIcon from '@/public/icons/DotIcon';
+import backgroundImage from '@/public/img/right.png';
+import styles from './ServiceList.module.scss';
 
 export const ServicesList: React.FC = () => {
   return (

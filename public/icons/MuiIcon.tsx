@@ -29,7 +29,7 @@ const MuiIcon: React.FC<IconProps> = ({
       <g id="SVGRepo_iconCarrier">
         <g>
           <polygon
-            fill="#6de8f5"
+            fill="#d200da"
             points="0 110.848 0 0 96 55.424 96 92.3733333 32 55.424 32 129.322667"
           />
           <polygon
@@ -37,7 +37,7 @@ const MuiIcon: React.FC<IconProps> = ({
             points="96 55.424 192 0 192 110.848 128 147.797333 96 129.322667 160 92.3733333 160 55.424 96 92.3733333"
           />
           <polygon
-            fill="#6de8f5"
+            fill="#d200da"
             points="96 129.322667 96 166.272 160 203.221333 160 166.272"
           />
           <path

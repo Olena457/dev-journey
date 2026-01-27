@@ -1,7 +1,6 @@
 import styles from './TeachList.module.scss';
 import { IconProps } from '@/src/types/types';
 
-// Імпортуємо всі іконки напряму
 import HtmlIcon from '@/public/icons/HtmlIcon';
 import CssIcon from '@/public/icons/CssIcon';
 import StyleIcon from '@/public/icons/StyleIcon';
@@ -19,6 +18,7 @@ import FirebaseIcon from '@/public/icons/FirebaseIcon';
 import GitIcon from '@/public/icons/GitIcon';
 import MongoIcon from '@/public/icons/MongoIcon';
 import MysqlIcon from '@/public/icons/MysqlIcon';
+import RadixIcon from '@/public/icons/RadixIcon';
 
 const technologiesData: {
   id: number;
@@ -28,20 +28,21 @@ const technologiesData: {
   { id: 1, name: 'HTML5', icon: HtmlIcon },
   { id: 2, name: 'CSS3', icon: CssIcon },
   { id: 3, name: 'SCSS', icon: StyleIcon },
-  { id: 4, name: 'React', icon: ReactIcon },
-  { id: 5, name: 'Redux', icon: ReduxIcon },
-  { id: 6, name: 'JavaScript', icon: JsIcon },
-  { id: 7, name: 'TypeScript', icon: TypeScriptIcon },
+  { id: 12, name: 'Material UI', icon: MuiIcon }, 
   { id: 8, name: 'Next.js', icon: NextIcon },
+  { id: 5, name: 'Redux', icon: ReduxIcon },
+  { id: 4, name: 'React', icon: ReactIcon },
+  { id: 6, name: 'JavaScript', icon: JsIcon },
   { id: 9, name: 'Vue.js', icon: VueIcon },
+  { id: 7, name: 'TypeScript', icon: TypeScriptIcon },
   { id: 10, name: 'Node.js', icon: NodeIcon },
   { id: 11, name: 'Tailwind', icon: TailwindIcon },
-  { id: 12, name: 'Material UI', icon: MuiIcon },
   { id: 13, name: 'Figma', icon: FigmaIcon },
-  { id: 14, name: 'Firebase', icon: FirebaseIcon },
   { id: 15, name: 'Git', icon: GitIcon },
+  { id: 14, name: 'Firebase', icon: FirebaseIcon },
   { id: 16, name: 'MongoDB', icon: MongoIcon },
   { id: 17, name: 'MySQL', icon: MysqlIcon },
+  { id: 18, name: 'Radix UI', icon: RadixIcon },
 ];
 
 const TechnologyStack = () => {

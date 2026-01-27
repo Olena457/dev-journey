@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import styles from './TeamCard.module.scss';
 import { TeamCardProps } from '@/src/types/types';
+import styles from './TeamCard.module.scss';
 
 const TeamCard = ({
   title,
@@ -11,7 +11,7 @@ const TeamCard = ({
   href,
 }: TeamCardProps) => {
   return (
-    <div id="team" className={styles.flipCard}>
+    <div className={styles.flipCard}>
       <div className={styles.flipInner}>
         {/* front */}
 

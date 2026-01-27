@@ -7,22 +7,15 @@ export const optionsItems: HeaderMenuItem[] = [
     link: 'home',
   },
   {
-    id: 'skills',
-    item: 'Skills',
-    link: 'skills',
-  },
-  {
     id: 'projects',
     item: 'Projects',
     link: 'projects',
   },
-
   {
-    id: 'team',
-    item: 'Team',
-    link: 'team',
+    id: 'skills',
+    item: 'Skills',
+    link: 'skills',
   },
-
   {
     id: 'services',
     item: 'Services',
@@ -33,11 +26,7 @@ export const optionsItems: HeaderMenuItem[] = [
     item: 'Sertificates',
     link: 'sertificates',
   },
-  {
-    id: 'gallery',
-    item: 'Gallery',
-    link: 'gallery',
-  },
+
   {
     id: 'contacts',
     item: 'Contacts',

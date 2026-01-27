@@ -28,12 +28,10 @@ export const Footer = () => {
 
   const navLinks = [
     'home',
-    'skills',
     'projects',
-    'team',
-    'certificates',
+    'skills',
     'services',
-    'gallery',
+    'certificates',
     'contacts',
   ];
 

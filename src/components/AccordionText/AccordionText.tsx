@@ -27,7 +27,7 @@ export const AccordionText: React.FC = () => {
             <span className={styles.accent}>Questions</span>for me
           </h2>
           <p className={styles.description}>
-            I would be happy to hear from you to discuss web design, product
+            I would be happy to hear from you and discuss web design, product
             development, or your new startup idea.
           </p>
         </div>

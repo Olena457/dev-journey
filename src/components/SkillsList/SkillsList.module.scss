@@ -4,78 +4,17 @@
   flex-wrap: wrap;
 }
 
-
 .item {
   color: #abaaaa;
   background: rgba(255, 255, 255, 0.05);
   border: none;
   border-left: 2px solid;
   border-image: linear-gradient(to bottom, #d200da, #6de8f5) 1;
-  border-radius: 0; 
+  border-radius: 0;
   padding: 4px 12px;
   backdrop-filter: blur(4px);
 }
-// .item {
-//   padding: 5px 15px;
-//   font-size: 13px;
-//   font-weight: 600;
-//   color: #e0e0e0;
-//   white-space: nowrap;
-//   position: relative;
-  
-//   /* Асиметрична форма: верхній-лівий та нижній-правий кути гострі */
-//   border-radius: 12px 2px 12px 2px; 
-  
-//   border: 1px solid transparent;
-//   background-image: 
-//     linear-gradient(rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.8)), 
-//     linear-gradient(135deg, #d200da 0%, #6de8f5 100%);
-//   background-origin: border-box;
-//   background-clip: padding-box, border-box;
 
-//   /* Ефект легкого нахилу для всього елемента */
-//   transform: skewX(-3deg); 
-
-//   span {
-//     display: inline-block;
-//     transform: skewX(3deg);
-//   }
-
-//   &:hover {
-//     color: #fff;
-//     border-radius: 2px 12px 2px 12px;
-//   }
-// }
-
-
-// .item {
-//   border: none;
-//   background: transparent;
-//   position: relative;
-//   color: #e0e0e0;
-
-//   &::before, &::after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     width: 6px;
-//     height: 100%;
-//     border: 1px solid #d200da;
-//   }
-
-//   &::before {
-//     left: 0;
-//     border-right: none;
-//     border-radius: 4px 0 0 4px;
-//   }
-
-//   &::after {
-//     right: 0;
-//     border-left: none;
-//     border-radius: 0 4px 4px 0;
-//     border-color: #6de8f5; // Твій другий колір бренду
-//   }
-// }
 .portfolio {
   @media screen and (min-width: 1024px) {
     padding: 8px 14px;

@@ -17,7 +17,7 @@ export const faqData: FAQItem[] = [
     id: '04',
     question: 'Do you provide advice or support?',
     answer:
-    'The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.',
+      'Yes, I can suggest effective design solutions and reliable technical approaches for yourproject. Additionally, I offer post-launch support and maintenance services to ensure your project remains up-to-date and functions smoothly.',
   },
   {
     id: '03',

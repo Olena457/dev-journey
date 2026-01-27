@@ -13,7 +13,7 @@
   font-family: var(--font-cardo), sans-serif;
   font-size: clamp(24px, 4.5vw, 62px);
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-white, #fff);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,13 +23,13 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  @media (min-width: 744px) {
+  @media (min-width: 768px) {
     line-height: 140%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: 1024px) {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
   .accent {
@@ -46,6 +46,7 @@
   padding: 0 20px;
   display: flex;
   gap: 15px;
+  opacity: 0.85;
 
   @media (min-width: 768px) {
     height: 90vh;
@@ -111,14 +112,13 @@
 
   &:hover {
     transform: scale(1.2);
-    background: rgba(179, 71, 181, 0.642);
-    color: #fff;
-    border-color: #820f84;
+    color: #ffffff;
+   background: rgba(200, 0, 255, 0.2);
+    border-color: #c800ff;
   }
 
   @media (min-width: 1024px) {
     height: 32px;
-
     width: 32px;
   }
 }
@@ -130,7 +130,7 @@
   transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 12px;
-  background: var(--color-white);
+  background: var(--color-white, #fff);
   max-width: 500px;
   width: 90%;
   z-index: 1000;
@@ -140,7 +140,7 @@
   border: none;
   border-radius: 12px;
   padding: 40px;
-  background: var(--color-white);
+  background: var(--color-white, #fff);
   max-width: 500px;
   width: 90%;
   margin: 20% auto;
@@ -150,7 +150,7 @@ dialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
 .hedline {
-  color: var(--fuchsia-dark-color);
+  color: var(--fuchsia-dark-color, #820f84);
   font-family: var(--font-cardo), serif;
   font-size: 24px;
   font-style: italic;
@@ -158,7 +158,7 @@ dialog::backdrop {
   letter-spacing: 0.04em;
 }
 .line {
-  color: var(--fuchsia-dark-color);
+  color: var(--fuchsia-dark-color, #820f84);
   width: 50%;
 }
 .text {
@@ -168,7 +168,7 @@ dialog::backdrop {
   font-size: 14px;
   width: 20px;
   height: 20px;
-  background-color: var(--fuchsia-accent-color);
+  background-color: var(--fuchsia-accent-color, #d200da);
 }
 .gridItem {
   position: relative;
@@ -237,13 +237,7 @@ dialog::backdrop {
   border: 3px solid transparent;
   background-clip: padding-box, border-box;
   background-origin: border-box;
-   background: linear-gradient(
-      90deg,
-      #820f84 0%,
-      #5ec8d3 50%,
-      #820f84 75%,
-    );
-  // background: linear-gradient(90deg, #820f84 30%, #48183f 70%);
+  background: linear-gradient(90deg, #820f84 0%, #5ec8d3 50%, #820f84 75%);
 }
 
 .overlay {
@@ -271,7 +265,7 @@ dialog::backdrop {
 }
 
 .label {
-  color: var(--dark-black-color);
+  color: var(--dark-black-color, #000);
   background-color: #d659d8;
   font-size: 10px;
   font-weight: 700;
@@ -310,9 +304,8 @@ dialog::backdrop {
   right: 20px;
   width: 40px;
   height: 40px;
-  color: var(--dark-black-color);
-  background-color: var(--fuchsia-accent-color);
-
+  color: var(--dark-black-color, #000);
+  background-color: var(--fuchsia-accent-color, #820f84);
   font-size: 35px;
   border: none;
   border-radius: 20%;

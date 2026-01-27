@@ -1,76 +1,68 @@
 @import 'tailwindcss';
 
 :root {
-  /* white color */
+  /*  colors */
   --color-main-white: #f9f9f9;
-  --color-white: #ffff;
+  --color-white: #ffffff;
   
-  /* gray color */
-  --gray-light: rgba(238, 239, 243, 1);
-  --gray-dark: rgba(214, 222, 233, 1);
-  --gray-color-light: #f6f6f6;
   --gray-color-dark: rgba(214, 222, 233, 1);
-  --gray-color-border: rgba(252, 253, 255, 1);
+  --gray-text-color-two:rgba(255, 255, 255, 0.7);
+  --gray-color-light: #f6f6f6;
   --gray-color-text-dark: #808080;
- --gray-text-color-two:rgba(255, 255, 255, 0.7);
- --transparent-gray-text:rgba(177, 172, 172, 0.7);
  --gray-text-color:#ffffff99;
-  /* black color */
-  /* --dark-black-color:#0b1018; */
-  /* --dark-black-color:#302C42; */
-  --dark-black-second-color: #211e2e;
+
   --dark-black-color: #000000;
   --my-color-black: #000000;
+
+  --fuchsia-dark-color:#820f84;
+  --fuchsia-accent-color:#d200da;
+  --main-dark-hover: rgba(179, 71, 181, 0.642);
+
+}
+
+
+  /* --dark-black-color:#0b1018; */
+  /* --dark-black-color:#302C42; */
+  /* --dark-black-second-color: #211e2e; */
   /* --my-color-black: rgb(0, 0, 0, 1); */
 
   
   /* brand colors  */
 
   /* --color-purple: #8f6ec5; */
-  --color-contrast:#6de8f5;
+  /* --color-contrast:#6de8f5;
   --color-contrast:#15f9f9;
-  
+   */
   /* --light-purple:#d6C5f0 ; */
 
-  --dark-chocolate-color:#251419;
+  /* --dark-chocolate-color:#251419;
   --dark-chocolate-color:rgba(37, 20, 25, 0.3);
-  --fuchsia-accent-color:#d200da;
-  --fuchsia-dark-color:#820f84;
   --fuchsia-dark-color:#a67aff;
-  
-  /* gradients colors */
-
+   */
+ 
   /* color: rgb(255, 192, 203);
    border: 2px solid rgb(200, 100, 200);
    background-color: rgb(128, 0, 128); */
-  /* --gradient-color-border: linear-gradient(360deg, #a54be1 0%, #6de8f5 100%); */
  
-  /* body {
-    background-image: radial-gradient(
-      ellipse at center,
-      #433d60 0%,
-      #211e2e 100%
-    );
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
+  
+    
 
   /* breakpoints */
-  --breakpoints-xs: 320px;
+  /* --breakpoints-xs: 320px;
   --breakpoints-sm: 375px;
   --breakpoints-md: 768px;
   --breakpoints-lg: 1440px;
-  --breakpoints-xl: 1540px;
+  --breakpoints-xl: 1540px; */
 /* Gooey background colors */
-  --gooey-color-1: 130, 15, 132;   
+  /* --gooey-color-1: 130, 15, 132;   
   --gooey-color-2: 106, 233, 247;  
   --gooey-color-3: 210, 0, 218;    
   --gooey-color-4: 86, 9, 87;      
   --gooey-color-5: 37, 45, 49;    
   
   --gooey-blur: 40px;
-  --gooey-size: 80%;
-}
+  --gooey-size: 80%; */
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -117,10 +109,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--dark-black-color);
-  /* background: #252243; */
-  /* background-color: #03051E; */
-  background-color: #000000;
+  background-color: var(--dark-black-color, #000000);
    
 }
 

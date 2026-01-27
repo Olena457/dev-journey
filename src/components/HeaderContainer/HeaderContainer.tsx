@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import styles from './HeaderContainer.module.scss';
 import LogoIcon from '@/public/icons/LogoIcon';
 import MenuBurger from '@/src/components/MenuBurger/MenuBurger';
 import BurgerIcon from '@/public/icons/BurgerIcon';
+import styles from './HeaderContainer.module.scss';
 
 const HeaderComponent: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

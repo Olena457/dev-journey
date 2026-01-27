@@ -4,14 +4,13 @@
   margin: 30px 0px;
   padding: 2rem 0;
   width: 100%;
- 
 
   @media (min-width: 768px) {
-     padding: 3rem 0;
+    padding: 3rem 0;
     margin: 45px 0px;
   }
   @media (min-width: 1024px) {
-     padding: 4rem 0;
+    padding: 4rem 0;
     margin: 0px 0px 100px 0px;
   }
 }
@@ -24,18 +23,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px ;
+  margin: 30px 0px 45px 0px ;
   flex-wrap: wrap;
   line-height: 1.5;
   letter-spacing: 0.03em;
   gap: 10px;
 
-  @media (min-width: 744px) {
+  @media (min-width: 768px) {
     line-height: 140%;
-margin-bottom: 60px; 
- }
+    margin: 40px 0px 80px 0px ;
+  }
   @media (min-width: 1024px) {
-    margin-bottom: 100px ;
+    margin: 100px 0px 120px 0px;
   }
 
   .accent {
@@ -48,13 +47,13 @@ margin-bottom: 60px;
   }
 }
 .gradient {
-  pointer-events: none;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 8rem;
+  pointer-events: none;
   z-index: 20;
- 
+  
 }
 
 .gradientLeft {
@@ -70,7 +69,7 @@ margin-bottom: 60px;
   right: 0;
   background: linear-gradient(
     to left,
-    var(--my-color-black) 0%,
+    var(--my-color-black, #000000) 0%,
     transparent 100%
   );
 }
@@ -79,8 +78,8 @@ margin-bottom: 60px;
   display: flex;
   width: max-content;
   gap: 3rem;
-  animation: scroll 60s linear infinite;
-    opacity: 0.9;
+  animation: scroll 50s linear infinite;
+  opacity: 0.9;
 
   &:hover {
     animation-play-state: paused;
@@ -97,7 +96,7 @@ margin-bottom: 60px;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  opacity: 0.9;
+  opacity: 0.95;
 
   &:hover {
     transform: scale(1.1);
@@ -108,19 +107,22 @@ margin-bottom: 60px;
 .icon {
   height: 32px;
   width: 32px;
+  @media (min-width: 1024px) { 
+    height: 48px; 
+    width: 48px; }
 }
 
 .techName {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--gray-text-color);
+  color: var(--gray-text-color, #ffffff99);
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
+// @keyframes scroll {
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(-50%);
+//   }
+// }
