@@ -122,7 +122,7 @@
   padding: 20px;
   border-radius: 12px;
   background: var(--color-white, #fff);
-  max-width: 500px;
+  max-width: 400px;
   width: 90%;
   z-index: 1000;
 }
@@ -132,7 +132,7 @@
   border-radius: 12px;
   padding: 40px;
   background: var(--color-white, #fff);
-  max-width: 500px;
+  max-width: 400px;
   width: 90%;
   margin: 20% auto;
 }
@@ -141,7 +141,7 @@ dialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
 .hedline {
-  color:#820f84;
+  color: #820f84;
   font-family: var(--font-cardo), serif;
   font-size: 24px;
   font-style: italic;
@@ -149,8 +149,10 @@ dialog::backdrop {
   letter-spacing: 0.04em;
 }
 .line {
-  color: #820f84;
-  width: 50%;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, #820f84, transparent);
+  margin-bottom: 20px;
 }
 .text {
   margin-top: 20px;
@@ -286,14 +288,15 @@ dialog::backdrop {
 
 .closeBtn {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  top: 10px;
+  right: 10px;
+  transform: none;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
   color: #820f84;
   background-color: transparent;
   border: 1px solid #820f84;
-  font-size: 35px;
   border-radius: 20%;
   z-index: 5001;
   display: flex;
@@ -310,9 +313,15 @@ dialog::backdrop {
     color: #c800ff;
   }
 
-  @media (max-width: 767px) {
-    top: 10px;
-    right: 50%;
-    transform: translateX(50%);
+  @media (min-width: 768px) {
+    width: 40px;
+    font-size: 35px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+  }
+  @media (min-width: 1024px) {
+    top: 30px;
+    right: 30px;
   }
 }

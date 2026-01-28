@@ -120,7 +120,9 @@
   text-decoration: none;
   font-size: 1rem;
   transition: 0.3s;
-  &:hover { color: var(--color-white); }
+  &:hover { 
+    color: var(--color-white, #ffffff);
+   }
 }
 
 .socialList {
@@ -156,4 +158,27 @@
     height: 50px;
     svg { width: 28px; height: 28px; }
   }
+}
+.copyrightWrapper {
+  margin-top: 60px; 
+  padding-top: 25px;
+  border-top: 1px solid rgba(199, 19, 249, 0.1); 
+  text-align: center;
+  width: 100%;
+}
+
+.copyrightText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--gray-text-color, #ffffff99);
+  
+    &:hover { color: var(--color-white, #ffffff); }
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
 }

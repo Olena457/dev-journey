@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import clsx from 'clsx';
 
 import { PORTFOLIO_PROJECTS } from './propsItems';
@@ -10,11 +10,22 @@ import ScreenIcon from '@/public/icons/ScreenIcon';
 import SkillsList from '../SkillsList/SkillsList';
 import LinkIcon from '@/public/icons/LinkIcon';
 import styles from './PortfolioCard.module.scss';
+import VolumeStartIcon from '@/public/icons/VolumeStartIcon';
+import VolumeStopIcon from '@/public/icons/VolumeStopIcon';
 
 const PortfolioCard: React.FC = () => {
   const PROJECTS_PER_PAGE = 3;
-  const [visibleCount, setVisibleCount] = useState(PROJECTS_PER_PAGE);
 
+  const [visibleCount, setVisibleCount] = useState(PROJECTS_PER_PAGE);
+  const [speakingProjectId, setSpeakingProjectId] = useState<number | null>(null);
+
+
+  useEffect(() => {
+    return () => {
+      window.speechSynthesis.cancel();
+    };
+  }, []);
+  
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const boundsRef = useRef<DOMRect | null>(null);
 
@@ -49,19 +60,7 @@ const PortfolioCard: React.FC = () => {
     if (card)
       card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateX(0) translateY(0)`;
   };
-// const openDialog = () => {
-//   const dialog = document.getElementById(
-//     'project-info-dialog'
-//   ) as HTMLDialogElement;
-//   dialog?.showModal();
-// };
 
-// const closeDialog = () => {
-//   const dialog = document.getElementById(
-//     'project-info-dialog'
-//   ) as HTMLDialogElement;
-//   dialog?.close();
-  //   };
   const openDialog = (e: React.MouseEvent) => {
     e.preventDefault(); 
 
@@ -85,6 +84,31 @@ const PortfolioCard: React.FC = () => {
     ) as HTMLDialogElement;
     dialog?.close();
   };
+  // _______________speech _______________________
+const toggleSpeech = (project: PetProgectsData) => {
+  if (speakingProjectId === project.id) {
+    window.speechSynthesis.cancel();
+    setSpeakingProjectId(null);
+    return;
+  }
+
+  
+  window.speechSynthesis.cancel();
+
+  const utterance = new SpeechSynthesisUtterance(project.description);
+  utterance.lang = 'en-US'; 
+  utterance.rate = 0.9;
+
+  utterance.onend = () => setSpeakingProjectId(null);
+  utterance.onerror = () => setSpeakingProjectId(null);
+
+  setSpeakingProjectId(project.id);
+  window.speechSynthesis.speak(utterance);
+};
+
+
+
+
   return (
     <section id="projects" className={styles.sectionProjects}>
       <div className={styles.wraper}>
@@ -122,6 +146,32 @@ const PortfolioCard: React.FC = () => {
                     className={styles.projectIcon}
                   />
                   <h3 className={styles.title}>{project.title}</h3>
+                  {/* button sound */}
+                  <button
+                    type="button"
+                    onClick={() => toggleSpeech(project)}
+                    className={clsx(
+                      styles.speechBtn,
+                      speakingProjectId === project.id && styles.speaking
+                    )}
+                    aria-label="Toggle project description voice"
+                  >
+                    {speakingProjectId === project.id ? (
+                      <VolumeStopIcon
+                        id="volume-stop"
+                        width="35px"
+                        height="35px"
+                        fill="#820f84"
+                      />
+                    ) : (
+                      <VolumeStartIcon
+                        id="volume-start"
+                        width="35px"
+                        height="35px"
+                        fill="rgba(177, 172, 172, 0.7)"
+                      />
+                    )}
+                  </button>
 
                   {/* isMaintenance: true */}
                   {project.isMaintenance && (

@@ -67,6 +67,11 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={styles.copyrightWrapper}>
+        <p className={styles.copyrightText}>
+          Designed & Built by Olena Demianenko &copy; {new Date().getFullYear()}
+        </p>
+      </div>
     </footer>
   );
 };
