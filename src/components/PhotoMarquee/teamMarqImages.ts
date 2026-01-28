@@ -14,4 +14,5 @@ export const MARQUEE_IMAGES: MarqueeItem[] = [
   { id: 10, imageProgect: '/img/ins.jpg' },
   { id: 12, imageProgect: '/img/job.jpg' },
   { id: 5, imageProgect: '/img/cat.jpg' },
+  { id: 13, imageProgect: '/img/grow.png' },
 ];
