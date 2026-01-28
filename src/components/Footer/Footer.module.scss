@@ -169,15 +169,15 @@
 
 .copyrightText {
   font-family: var(--font-montserrat), sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.05em;
   color: var(--gray-text-color, #ffffff99);
   
     &:hover { color: var(--color-white, #ffffff); }
 
-  @media (max-width: 767px) {
-    font-size: 12px;
+  @media (max-width: 768px) {
+    font-size: 16px;
     padding: 0 20px;
   }
 
