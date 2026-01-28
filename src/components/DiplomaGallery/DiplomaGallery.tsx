@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './DiplomaGallery.module.scss';
 import { diplomas } from './diplomasData';
 import { Diploma } from '@/src/types/types';
+import InfoIcon from '@/public/icons/InfoIcon';
 
 export const DiplomaGallery: React.FC = () => {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
@@ -35,7 +36,13 @@ export const DiplomaGallery: React.FC = () => {
           role="button"
           title="Info"
         >
-          &#8505;
+         
+          <InfoIcon
+            id="info"
+            width="20px"
+            height="20px"
+            fill="rgba(177, 172, 172, 0.7)"
+          />
         </span>
       </h2>
 
@@ -96,8 +103,8 @@ export const DiplomaGallery: React.FC = () => {
           <h3 className={styles.hedline}>Information</h3>
           <hr className={styles.line} />
           <p className={styles.text}>
-             Zoom function is available - click on any certificate to open it
-            in an enlarged view.
+            Zoom function is available - click on any certificate to open it in
+            an enlarged view.
           </p>
           <button onClick={closeDialog} className={styles.closeBtn}>
             &times;

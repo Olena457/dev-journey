@@ -49,6 +49,7 @@ export type PetProgectsData = {
   description: string;
   liveHref: string;
   repoHref: string;
+  isMaintenance?: boolean;
 };
 export type PetProgectsProps = PetProgectsData;
 

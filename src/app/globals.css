@@ -21,56 +21,6 @@
 }
 
 
-  /* --dark-black-color:#0b1018; */
-  /* --dark-black-color:#302C42; */
-  /* --dark-black-second-color: #211e2e; */
-  /* --my-color-black: rgb(0, 0, 0, 1); */
-
-  
-  /* brand colors  */
-
-  /* --color-purple: #8f6ec5; */
-  /* --color-contrast:#6de8f5;
-  --color-contrast:#15f9f9;
-   */
-  /* --light-purple:#d6C5f0 ; */
-
-  /* --dark-chocolate-color:#251419;
-  --dark-chocolate-color:rgba(37, 20, 25, 0.3);
-  --fuchsia-dark-color:#a67aff;
-   */
- 
-  /* color: rgb(255, 192, 203);
-   border: 2px solid rgb(200, 100, 200);
-   background-color: rgb(128, 0, 128); */
- 
-  
-    
-
-  /* breakpoints */
-  /* --breakpoints-xs: 320px;
-  --breakpoints-sm: 375px;
-  --breakpoints-md: 768px;
-  --breakpoints-lg: 1440px;
-  --breakpoints-xl: 1540px; */
-/* Gooey background colors */
-  /* --gooey-color-1: 130, 15, 132;   
-  --gooey-color-2: 106, 233, 247;  
-  --gooey-color-3: 210, 0, 218;    
-  --gooey-color-4: 86, 9, 87;      
-  --gooey-color-5: 37, 45, 49;    
-  
-  --gooey-blur: 40px;
-  --gooey-size: 80%; */
-
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 
 html {
   scroll-behavior: smooth;

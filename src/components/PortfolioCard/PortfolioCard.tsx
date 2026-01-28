@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { PORTFOLIO_PROJECTS } from './propsItems';
 import { PetProgectsData } from '../../types/types';
 import ExpandDescription from '../ExpandDescription/EpandDescription';
-
+import InfoIcon from '@/public/icons/InfoIcon';
 import ScreenIcon from '@/public/icons/ScreenIcon';
 import SkillsList from '../SkillsList/SkillsList';
 import LinkIcon from '@/public/icons/LinkIcon';
@@ -49,7 +49,42 @@ const PortfolioCard: React.FC = () => {
     if (card)
       card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateX(0) translateY(0)`;
   };
+// const openDialog = () => {
+//   const dialog = document.getElementById(
+//     'project-info-dialog'
+//   ) as HTMLDialogElement;
+//   dialog?.showModal();
+// };
 
+// const closeDialog = () => {
+//   const dialog = document.getElementById(
+//     'project-info-dialog'
+//   ) as HTMLDialogElement;
+//   dialog?.close();
+  //   };
+  const openDialog = (e: React.MouseEvent) => {
+    e.preventDefault(); 
+
+    const dialog = document.getElementById(
+      'project-info-dialog'
+    ) as HTMLDialogElement;
+
+    if (dialog) {
+      dialog.showModal();
+
+      const closeBtn = dialog.querySelector(
+        `.${styles.dialogCloseBtn}`
+      ) as HTMLElement;
+      closeBtn?.focus({ preventScroll: true });
+    }
+  };
+
+  const closeDialog = () => {
+    const dialog = document.getElementById(
+      'project-info-dialog'
+    ) as HTMLDialogElement;
+    dialog?.close();
+  };
   return (
     <section id="projects" className={styles.sectionProjects}>
       <div className={styles.wraper}>
@@ -57,6 +92,7 @@ const PortfolioCard: React.FC = () => {
           My<span className={styles.accent}> Projects</span>
         </h2>
       </div>
+
       <ul className={styles.list}>
         {visibleProjects.map((project: PetProgectsData, index: number) => (
           <li key={project.id} className={clsx(styles.item, styles.visible)}>
@@ -86,6 +122,22 @@ const PortfolioCard: React.FC = () => {
                     className={styles.projectIcon}
                   />
                   <h3 className={styles.title}>{project.title}</h3>
+
+                  {/* isMaintenance: true */}
+                  {project.isMaintenance && (
+                    <span
+                      className={styles.infoIconTrigger}
+                      onClick={e => openDialog(e)}
+                      role="button"
+                    >
+                      <InfoIcon
+                        id="info"
+                        width="20px"
+                        height="20px"
+                        fill="rgba(177, 172, 172, 0.7)"
+                      />
+                    </span>
+                  )}
                 </div>
                 <SkillsList portfolio={true} list={project.skills} />
                 <p className={styles.role}>{project.role}</p>
@@ -115,8 +167,22 @@ const PortfolioCard: React.FC = () => {
           </div>
         )}
       </ul>
+
+      {/* Структура діалогового вікна */}
+      <dialog id="project-info-dialog" className={styles.dialog}>
+        <div className={styles.dialogContent}>
+          <button onClick={closeDialog} className={styles.dialogCloseBtn}>
+            &times;
+          </button>
+          <h3 className={styles.dialogTitle}>Project Information</h3>
+          <hr className={styles.dialogLine} />
+          <p className={styles.dialogText}>
+            This project is currently unavailable. The live demo will be
+            available soon.
+          </p>
+        </div>
+      </dialog>
     </section>
   );
 };
-
-export default PortfolioCard;
+  export default PortfolioCard;
