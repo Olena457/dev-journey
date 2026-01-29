@@ -1,4 +1,4 @@
-## Dev journey
+## Dev journey-portfolio landing page
 
 
 ## Getting Started
