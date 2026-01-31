@@ -30,17 +30,15 @@ This project was built using a modern stack:
 
 ## Screenshots
 
-Below are six screenshots of the project.  
-They are stored in the `public/screen/` folder and adapt responsively to different screen sizes.
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
 
-  <img src="/public/cscreens/screen-1.jpg" alt="Screenshot 1" style="width: 100%; height: auto;" />
-  <img src="/public/cscreens/screen-6.jpg" alt="Screenshot 2" style="width: 100%; height: auto;" />
-  <img src="/public/cscreens/screen-2.jpg" alt="Screenshot 3" style="width: 100%; height: auto;" />
-  <img src="/public/cscreens/screen-4.jpg" alt="Screenshot 4" style="width: 100%; height: auto;" />
-  <img src="/public/cscreens/screen-3.jpg" alt="Screenshot 5" style="width: 100%; height: auto;" />
-  <img src="/public/cscreens/screen-5.jpg" alt="Screenshot 6" style="width: 100%; height: auto;" />
+  <img src="/public/cscreens/screen-1.jpg" width="30%" height="150px" alt="Screenshot 1"/>
+  <img src="/public/cscreens/screen-2.jpg" width="30%" height="150px" alt="Screenshot 2"/>
+  <img src="/public/cscreens/screen-3.jpg" width="30%" height="150px" alt="Screenshot 3"/>
+  <img src="/public/cscreens/screen-4.jpg" width="30%" height="150px" alt="Screenshot 4"/>
+  <img src="/public/cscreens/screen-5.jpg" width="30%" height="150px" alt="Screenshot 5"/>
+  <img src="/public/cscreens/screen-6.jpg" width="30%" height="150px" alt="Screenshot 6"/>
 
 </div>
 
