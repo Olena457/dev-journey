@@ -9,7 +9,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     imageProgect: '/img/grow.png',
     isMaintenance: true,
     description:
-      'The Commercial project includes 23 pages, responsive design, and supports dark/light themes. Real-time data visualization and automated plant growth management. The system provides accurate charts for both real-time and historical data, with convenient parameter customization and continuous monitoring of key indicators.',
+      'The commercial project includes 23 pages, responsive design, and supports dark/light themes. Real-time data visualization and automated plant growth management. The system provides accurate charts for both real-time and historical data, with convenient parameter customization and continuous monitoring of key indicators.',
     liveHref: 'https://next-weather-amber.vercel.ap',
 
     repoHref: 'https://github/Olena457/next-weather.git',
