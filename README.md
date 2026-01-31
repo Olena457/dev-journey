@@ -54,15 +54,15 @@ This project was built using a modern stack:
 
 ## Landing Page Structure
 - Header with navigation  
-- 11 sections with project information, skills, and contacts  
-- Footer with additional information  
-- Mobile menu for smartphone users  
+- 11 sections with  information  
+- Footer with contacts     
+- Mobile menu  
 
 ---
 
 ## Purpose
 This landing page was created as a demonstration of my skills in web development, design, and modern tooling.  
-It combines technical expertise (Next.js, React, TypeScript) with creativity (CSS, Canvas, and 3D animations).
+It combines technical expertise (Next.js, React, TypeScript) with  (CSS, Canvas, and 3D animations).
 
 First, run the development server:
 
