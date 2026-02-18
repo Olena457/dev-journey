@@ -227,8 +227,7 @@ const toggleSpeech = (project: PetProgectsData) => {
           <h3 className={styles.dialogTitle}>Project Information</h3>
           <hr className={styles.dialogLine} />
           <p className={styles.dialogText}>
-            This project is currently unavailable. The live demo will be
-            available soon.
+            You can see a presentation of this progect.(deployment is prohibited)
           </p>
         </div>
       </dialog>
