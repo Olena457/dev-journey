@@ -22,9 +22,9 @@ export const optionsItems: HeaderMenuItem[] = [
     link: 'services',
   },
   {
-    id: 'sertificates',
-    item: 'Sertificates',
-    link: 'sertificates',
+    id: 'certificates',
+    item: 'Certificates',
+    link: 'certificates',
   },
 
   {
