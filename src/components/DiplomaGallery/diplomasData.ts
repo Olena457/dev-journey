@@ -7,6 +7,7 @@ export const diplomas: Diploma[] = [
     image: '/certifs/goit.jpg',
   },
   { id: 11, title: 'English IT', image: '/certifs/interview.jpg' },
+  { id: 13, title: 'Internship Tetalab', image: '/certifs/internship.png' },
   { id: 12, title: 'English B2', image: '/certifs/b2.jpg' },
   { id: 2, title: 'React,Redux Certificate', image: '/certifs/react-sert.jpg' },
   { id: 4, title: 'English Intermediate', image: '/certifs/english.jpg' },
