@@ -6,25 +6,25 @@ The project was created with a focus on modern design, interactivity, and respon
 ---
 
 ## Key Features
-- *Responsive design*: optimized for mobile, tablet, and desktop.  
-- *11 sections*: including header, footer, and mobile menu.  
-- *CSS animations*: smooth transitions and effects to enhance UX.  
-- *Canvas effects*: used for visual elements and interactivity.  
-- *3D animation*: adds style and modern aesthetics.  
-- *Mobile menu*: convenient navigation for smartphone users.  
+&#8900; *Responsive design*: optimized for mobile, tablet, and desktop.  
+&#8900; *11 sections*: including header, footer, and mobile menu.  
+&#8900; *CSS animations*: smooth transitions and effects to enhance UX.  
+&#8900; *Canvas effects*: used for visual elements and interactivity.  
+&#8900; *3D animation*: adds style and modern aesthetics.  
+&#8900; *Mobile menu*: convenient navigation for smartphone users.  
 
 ---
 
 ## Technologies and Tools
-This project was built using a modern stack:
+*This project was built using a modern stack:*
 
-- *Next.js* - framework for React with SSR and SSG support  
-- *React* - library for building UI  
-- *React DOM* - rendering components in the browser  
-- *TypeScript* - type-safe scalable code  
-- *clsx* - conditional class   
-- *ESLint + Prettier* - code quality and formatting tools   
-- *Baseline Browser Mapping* - browser compatibility support  
+&#11034; *Next.js* - framework for React with SSR and SSG support  
+&#11034; *React* - library for building UI  
+&#11034; *React DOM* - rendering components in the browser  
+&#11034; *TypeScript* - type-safe scalable code  
+&#11034; *clsx* - conditional class   
+&#11034; *ESLint + Prettier* - code quality and formatting tools   
+&#11034; *Baseline Browser Mapping* - browser compatibility support  
 
 ---
 
@@ -45,24 +45,24 @@ This project was built using a modern stack:
 ---
 
 ## Scripts
-- `npm run dev` - run in development mode  
-- `npm run build` - build the project  
-- `npm run start` - run in production mode  
-- `npm run lint` - check code with ESLint  
+&#8862; `npm run dev` - run in development mode  
+&#8862; `npm run build` - build the project  
+&#8862; `npm run start` - run in production mode  
+&#8862; `npm run lint` - check code with ESLint  
 
 ---
 
 ## Landing Page Structure
-- Header with navigation  
-- 11 sections with  information  
-- Footer with contacts     
-- Mobile menu  
+&#10697; Header with navigation  
+&#10697; 11 sections with  information  
+&#10697; Footer with contacts     
+&#10697; Mobile convenient menu  
 
 ---
 
 ## Purpose
-This landing page was created as a demonstration of my skills in web development, design, and modern tooling.  
-It combines technical expertise (Next.js, React, TypeScript) with  (CSS, Canvas, and 3D animations).
+*This landing page was created as a demonstration of my skills in web development, design, and modern tooling.  
+It combines technical expertise (Next.js, React, TypeScript) with  (CSS, Canvas, and 3D animations).*
 
 First, run the development server:
 
