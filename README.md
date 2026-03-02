@@ -5,7 +5,7 @@ The project was created with a focus on modern design, interactivity, and respon
 
 ---
 
-## Key Features
+## *Key Features*
 &#8900; *Responsive design*: optimized for mobile, tablet, and desktop.  
 &#8900; *11 sections*: including header, footer, and mobile menu.  
 &#8900; *CSS animations*: smooth transitions and effects to enhance UX.  
@@ -15,7 +15,7 @@ The project was created with a focus on modern design, interactivity, and respon
 
 ---
 
-## Technologies and Tools
+## *Technologies and Tools*
 *This project was built using a modern stack:*
 
 &#11034; *Next.js* - framework for React with SSR and SSG support  
@@ -28,7 +28,7 @@ The project was created with a focus on modern design, interactivity, and respon
 
 ---
 
-## Screenshots
+## *Screenshots*
 
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px;">
@@ -44,7 +44,7 @@ The project was created with a focus on modern design, interactivity, and respon
 
 ---
 
-## Scripts
+## *Scripts*
 &#8862; `npm run dev` - run in development mode  
 &#8862; `npm run build` - build the project  
 &#8862; `npm run start` - run in production mode  
@@ -52,7 +52,7 @@ The project was created with a focus on modern design, interactivity, and respon
 
 ---
 
-## Landing Page Structure
+## *Landing Page Structure*
 &#10697; Header with navigation  
 &#10697; 11 sections with  information  
 &#10697; Footer with contacts     
@@ -60,7 +60,7 @@ The project was created with a focus on modern design, interactivity, and respon
 
 ---
 
-## Purpose
+## *Purpose*
 *This landing page was created as a demonstration of my skills in web development, design, and modern tooling.  
 It combines technical expertise (Next.js, React, TypeScript) with  (CSS, Canvas, and 3D animations).*
 
