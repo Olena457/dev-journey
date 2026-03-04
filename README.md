@@ -16,7 +16,7 @@ The project was created with a focus on modern design, interactivity, and respon
 ---
 
 ## *Technologies and Tools*
-*This project was built using a modern stack:*
+*This project is leveraging a modern technology stack:*
 
 &#11034; *Next.js* - framework for React with SSR and SSG support  
 &#11034; *React* - library for building UI  
