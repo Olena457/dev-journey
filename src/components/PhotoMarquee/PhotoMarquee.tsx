@@ -7,7 +7,7 @@ const PhotoMarquee = () => {
     <div   className={`${styles.marqueeInner} ${speedClass}`}>
       {[...images, ...images, ...images].map((item, index) => (
         <div key={`${item.id}-${index}`} className={styles.photoCard}>
-          <img src={item.imageProgect} alt="Project" className={styles.image} />
+          <img src={item.imageProject} alt="Project" className={styles.image} />
         </div>
       ))}
     </div>

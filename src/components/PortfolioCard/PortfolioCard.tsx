@@ -133,7 +133,7 @@ const toggleSpeech = (project: PetProgectsData) => {
                 <img
                   className={styles.image}
                   alt={project.title}
-                  src={project.imageProgect}
+                  src={project.imageProject}
                 />
               </div>
 

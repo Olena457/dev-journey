@@ -45,7 +45,7 @@ export type PetProgectsData = {
   title: string;
   role: string;
   skills: string;
-  imageProgect: string;
+  imageProject: string;
   description: string;
   liveHref: string;
   repoHref: string;
@@ -55,7 +55,7 @@ export type PetProgectsProps = PetProgectsData;
 
 export interface MarqueeItem {
   id: number;
-  imageProgect: string;
+  imageProject: string;
 }
 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
