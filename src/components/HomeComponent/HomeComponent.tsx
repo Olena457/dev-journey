@@ -42,7 +42,7 @@ export const HomeComponent: React.FC = () => {
             <div className={styles.topContent}>
               <h2 className={styles.title}>
                 Hi, I'm a 
-                <span className={styles.accent}> Frontend </span>Developer
+                <span className={styles.accent}> Full-Stack </span>Developer
               </h2>
               <p className={styles.description}>
                 Transforming ideas into interactive and seamless digital
