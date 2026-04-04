@@ -10,7 +10,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     imageProject: '/img/application.jpg',
     isMaintenance: false,
     description:
-      'The full-stack project includes AI integration, registration and login, responsive design and swagger documentation.It features real-time data visualization. Users can join events, create their own, edit or delete. A personal calendar makes tracking easy, while AI assistant support helps with event-related questions.',
+      'The full-stack project (mono-repo) includes AI integration, registration and login, responsive design and swagger documentation.It features real-time data visualization. Users can join events, create their own, edit or delete. A personal calendar makes tracking easy, while AI assistant support helps with event-related questions.',
     liveHref: 'https://application-six-ruby.vercel.app/',
     repoHref: 'https://github.com/Olena457/application.git',
   },
