@@ -2,6 +2,19 @@ import { PetProgectsData } from '../../types/types';
 
 export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
+    id: 16,
+    title: 'Delivery Application',
+    skills:
+      ' React, TypeScript, RTK Query, Material UI, NestJS, Prisma, PostgreSQL, Swagger,Faker',
+    role: 'Full-Stack Developer',
+    imageProject: '/img/delivery.jpg',
+    isMaintenance: false,
+    description:
+      'The full-stack project (mono-repo) includes product order and reorder forms, order history. It also includes filtering and sorting by category and rating, responsive design, and Swagger documentation. Users can create, edit, or delete their own orders.',
+    liveHref: 'https://delivery-app-tan-rho.vercel.app/',
+    repoHref: 'https://github.com/Olena457/delivery-app.git',
+  },
+  {
     id: 15,
     title: 'Events platform with AI Assistant',
     skills:
