@@ -41,7 +41,7 @@ const technologiesData: {
   { id: 15, name: 'Git', icon: GitIcon },
   { id: 14, name: 'Firebase', icon: FirebaseIcon },
   { id: 16, name: 'MongoDB', icon: MongoIcon },
-  { id: 17, name: 'MySQL', icon: MysqlIcon },
+  { id: 17, name: 'PostgreSQL', icon: MysqlIcon },
   { id: 18, name: 'Radix UI', icon: RadixIcon },
 ];
 
