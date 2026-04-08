@@ -7,7 +7,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     skills:
       ' React, TypeScript, RTK Query, Material UI, NestJS, Prisma, PostgreSQL, Swagger,Faker',
     role: 'Full-Stack Developer',
-    imageProject: '/img/delivery.jpg',
+    imageProject: '/img/deli.jpg',
     isMaintenance: false,
     description:
       'The full-stack project (mono-repo) includes product order and reorder forms, order history. It also includes filtering and sorting by category and rating, responsive design, and Swagger documentation. Users can create, edit, or delete their own orders.',
