@@ -10,7 +10,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     imageProject: '/img/deli.jpg',
     isMaintenance: false,
     description:
-      'The full-stack project (mono-repo) includes product order and reorder forms, order history. It also includes filtering and sorting by category and rating, responsive design, and Swagger documentation. Users can create, edit, or delete their own orders.Authentication is implemented using JWT, and email notifications are sent via Resend.',
+      'The full-stack project (mono-repo) includes product order and reorder forms. It also includes filtering and sorting by category and rating, responsive design, and Swagger documentation. Users can create, edit, or delete their own orders.Authentication is implemented using JWT, and email notifications are sent via Resend to access history of orders.',
     liveHref: 'https://delivery-app-tan-rho.vercel.app/',
     repoHref: 'https://github.com/Olena457/delivery-app.git',
   },
