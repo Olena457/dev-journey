@@ -21,32 +21,34 @@ import MysqlIcon from '@/public/icons/MysqlIcon';
 import RadixIcon from '@/public/icons/RadixIcon';
 import DockerIcon from '@/public/icons/DockerIcon';
 import PostgreIcon from '@/public/icons/PostgreIcon';
+import NestIcon from '@/public/icons/NestIcon';
 
 const technologiesData: {
   id: number;
   name: string;
   icon: React.FC<IconProps>;
 }[] = [
-  { id: 1, name: 'HTML5', icon: HtmlIcon },
-  { id: 2, name: 'CSS3', icon: CssIcon },
-  { id: 3, name: 'SCSS', icon: StyleIcon },
-  { id: 12, name: 'Material UI', icon: MuiIcon },
-  { id: 8, name: 'Next.js', icon: NextIcon },
-  { id: 5, name: 'Redux', icon: ReduxIcon },
   { id: 4, name: 'React', icon: ReactIcon },
+  { id: 5, name: 'Redux', icon: ReduxIcon },
+  { id: 8, name: 'Next.js', icon: NextIcon },
+  { id: 19, name: 'Docker', icon: DockerIcon },
+  { id: 21, name: 'Nest.js', icon: NestIcon },
   { id: 6, name: 'JavaScript', icon: JsIcon },
-  { id: 9, name: 'Vue.js', icon: VueIcon },
   { id: 7, name: 'TypeScript', icon: TypeScriptIcon },
-  { id: 10, name: 'Node.js', icon: NodeIcon },
+  { id: 10, name: 'NodeJS', icon: NodeIcon },
+  { id: 12, name: 'Material UI', icon: MuiIcon },
   { id: 11, name: 'Tailwind', icon: TailwindIcon },
   { id: 13, name: 'Figma', icon: FigmaIcon },
   { id: 15, name: 'Git', icon: GitIcon },
   { id: 14, name: 'Firebase', icon: FirebaseIcon },
-  { id: 16, name: 'MongoDB', icon: MongoIcon },
   { id: 17, name: 'MySQL', icon: MysqlIcon },
-  { id: 18, name: 'Radix UI', icon: RadixIcon },
-  { id: 19, name: 'Docker', icon: DockerIcon },
   { id: 20, name: 'PostgreSQL', icon: PostgreIcon },
+  { id: 16, name: 'MongoDB', icon: MongoIcon },
+  { id: 18, name: 'Radix UI', icon: RadixIcon },
+  { id: 9, name: 'Vue.js', icon: VueIcon },
+  { id: 1, name: 'HTML5', icon: HtmlIcon },
+  { id: 2, name: 'CSS3', icon: CssIcon },
+  { id: 3, name: 'SCSS', icon: StyleIcon },
 ];
 
 const TechnologyStack = () => {
