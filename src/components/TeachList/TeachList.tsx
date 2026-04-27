@@ -19,6 +19,8 @@ import GitIcon from '@/public/icons/GitIcon';
 import MongoIcon from '@/public/icons/MongoIcon';
 import MysqlIcon from '@/public/icons/MysqlIcon';
 import RadixIcon from '@/public/icons/RadixIcon';
+import DockerIcon from '@/public/icons/DockerIcon';
+import PostgreIcon from '@/public/icons/PostgreIcon';
 
 const technologiesData: {
   id: number;
@@ -28,7 +30,7 @@ const technologiesData: {
   { id: 1, name: 'HTML5', icon: HtmlIcon },
   { id: 2, name: 'CSS3', icon: CssIcon },
   { id: 3, name: 'SCSS', icon: StyleIcon },
-  { id: 12, name: 'Material UI', icon: MuiIcon }, 
+  { id: 12, name: 'Material UI', icon: MuiIcon },
   { id: 8, name: 'Next.js', icon: NextIcon },
   { id: 5, name: 'Redux', icon: ReduxIcon },
   { id: 4, name: 'React', icon: ReactIcon },
@@ -41,8 +43,10 @@ const technologiesData: {
   { id: 15, name: 'Git', icon: GitIcon },
   { id: 14, name: 'Firebase', icon: FirebaseIcon },
   { id: 16, name: 'MongoDB', icon: MongoIcon },
-  { id: 17, name: 'PostgreSQL', icon: MysqlIcon },
+  { id: 17, name: 'MySQL', icon: MysqlIcon },
   { id: 18, name: 'Radix UI', icon: RadixIcon },
+  { id: 19, name: 'Docker', icon: DockerIcon },
+  { id: 20, name: 'PostgreSQL', icon: PostgreIcon },
 ];
 
 const TechnologyStack = () => {
