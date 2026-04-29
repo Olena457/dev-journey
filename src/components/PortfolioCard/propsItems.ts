@@ -5,9 +5,9 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 16,
     title: 'Delivery Application',
     skills:
-      ' React, TypeScript, RTK Query, Material UI, NestJS, Prisma, PostgreSQL, Swagger, Faker, JWT, Resend',
+      ' React, TypeScript, RTK Query, Material UI, NestJS, Prisma, PostgreSQL, Swagger, Faker, JWT, Resend, AI integration, Telegram',
     role: 'Full-Stack Developer',
-    imageProject: '/img/deli.jpg',
+    imageProject: '/img/bot.jpg',
     isMaintenance: false,
     description:
       'The full-stack project (mono-repo) includes product order and reorder forms. It also includes filtering and sorting by category and rating, responsive design, and Swagger documentation. Users can create, edit, or delete their own orders.Authentication is implemented using JWT, and email notifications are sent via Resend to access history of orders.',
@@ -18,7 +18,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 15,
     title: 'Events platform with AI Assistant',
     skills:
-      'Docker, React, TypeScript, RTK Query, Material UI, React Big Calendar, Mistral, NestJS, Prisma, PostgreSQL, Swagger',
+      'Docker, React, TypeScript, RTK Query, Material UI, React Big Calendar,AI Mistral, NestJS, Prisma, PostgreSQL, Swagger',
     role: 'Full-Stack Developer',
     imageProject: '/img/application.jpg',
     isMaintenance: false,
