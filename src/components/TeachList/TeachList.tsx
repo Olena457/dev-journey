@@ -22,6 +22,7 @@ import RadixIcon from '@/public/icons/RadixIcon';
 import DockerIcon from '@/public/icons/DockerIcon';
 import PostgreIcon from '@/public/icons/PostgreIcon';
 import NestIcon from '@/public/icons/NestIcon';
+import BrainIcon from '@/public/icons/BrainIcon';
 
 const technologiesData: {
   id: number;
@@ -30,6 +31,7 @@ const technologiesData: {
 }[] = [
   { id: 4, name: 'React', icon: ReactIcon },
   { id: 5, name: 'Redux', icon: ReduxIcon },
+  { id: 21, name: 'AI', icon: BrainIcon },
   { id: 8, name: 'Next.js', icon: NextIcon },
   { id: 19, name: 'Docker', icon: DockerIcon },
   { id: 21, name: 'Nest.js', icon: NestIcon },
