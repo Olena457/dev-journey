@@ -20,8 +20,8 @@ const PrismaIcon: React.FC<IconProps> = ({
     >
       <defs>
         <linearGradient id="prismaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#2396ED" />
-          <stop offset="100%" stopColor="#00C6FB" />
+          <stop offset="0%" stopColor="#820f84" />
+          <stop offset="100%" stopColor="#6de8f5" />
         </linearGradient>
       </defs>
 

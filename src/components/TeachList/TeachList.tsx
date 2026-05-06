@@ -23,6 +23,7 @@ import DockerIcon from '@/public/icons/DockerIcon';
 import PostgreIcon from '@/public/icons/PostgreIcon';
 import NestIcon from '@/public/icons/NestIcon';
 import BrainIcon from '@/public/icons/BrainIcon';
+import PrismaIcon from '@/public/icons/PrismaIcon';
 
 const technologiesData: {
   id: number;
@@ -34,6 +35,7 @@ const technologiesData: {
   { id: 21, name: 'AI', icon: BrainIcon },
   { id: 8, name: 'Next.js', icon: NextIcon },
   { id: 19, name: 'Docker', icon: DockerIcon },
+  { id: 22, name: 'Prisma', icon: PrismaIcon },
   { id: 21, name: 'Nest.js', icon: NestIcon },
   { id: 6, name: 'JavaScript', icon: JsIcon },
   { id: 7, name: 'TypeScript', icon: TypeScriptIcon },
