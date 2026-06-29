@@ -17,12 +17,12 @@ export const faqData: FAQItem[] = [
     id: '04',
     question: 'Do you provide advice or support?',
     answer:
-      'Yes, I can suggest effective design solutions and reliable technical approaches for yourproject. Additionally, I offer post-launch support and maintenance services to ensure your project remains up-to-date and functions smoothly.',
+      'Yes, I can suggest effective design solutions and reliable technical approaches for your project. Additionally, I offer post-launch support and maintenance services to ensure your project remains up-to-date and functions smoothly.',
   },
   {
     id: '03',
     question: 'What payment methods do you accept?',
     answer:
-      'Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.',
+      'Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin and others.',
   },
 ];
