@@ -2,6 +2,20 @@ import { PetProgectsData } from '../../types/types';
 
 export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
+    id: 17,
+    title: 'Logistics AI CRM Platform',
+    skills:
+      'NextJS, TypeScript, Zustand, NestJS, Prisma, PostgreSQL, Swagger, AWS, LangGraph, LangChain, LangSmith, Socket.io, Storybook, Material UI,',
+    role: 'Full-Stack Developer',
+    imageProject: '/img/crm-ai.jpg',
+    isMaintenance: true,
+    description:
+      'An enterprise-grade CRM platform designed to streamline logistics and shipment operations through AI-powered email data parsing and automated invoice generation. The system integrates advanced data grids, scheduled cron operations, and structured workflows to simplify overall platform administration.',
+    liveHref:
+              'https://gamma.app/docs/Copy-of-GrowBox-data-management-system-hh2xc9a83l2sve5',
+    repoHref: 'https://github.com/eliftech-school-2026-1/logistics-ai-crm',
+  },
+  {
     id: 16,
     title: 'Delivery Application',
     skills:
