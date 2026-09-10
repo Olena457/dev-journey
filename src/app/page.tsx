@@ -3,6 +3,7 @@ import { HeroComponent } from '../components/HeroComponent/HeroComponent';
 import {CarouselCard}from '../components/CarouselCard/CarouselCard'
 import HeaderComponent from '../components/HeaderContainer/HeaderContainer';
 import PortfolioCard from '../components/PortfolioCard/PortfolioCard';
+import { InternshipProjects } from '../components/InternshipProjects/InternshipProjects';
 import TeachList from '../components/TeachList/TeachList';
 import TeamList from '../components/TeamList/TeamList';
 import { AccordionText } from '../components/AccordionText/AccordionText';
@@ -10,15 +11,27 @@ import { ServicesList } from '../components/ServiceList/ServiceList';
 import { DiplomaGallery } from '../components/DiplomaGallery/DiplomaGallery';
 import PhotoMarquee from '../components/PhotoMarquee/PhotoMarquee';
 import { BenefitLists } from '../components/BenefitLists/BenefitLists';
+import { PORTFOLIO_PROJECTS } from '../components/PortfolioCard/propsItems';
+import styles from '../components/PortfolioCard/PortfolioCard.module.scss';
 
 export default function Home() {
   return (
     <div>
       <main>
-        <HomeComponent/>
+        <HomeComponent />
         <CarouselCard />
         <HeaderComponent />
-        <PortfolioCard />
+        <PortfolioCard
+          sectionId="projects"
+          title={
+            <>
+              My<span className={styles.accent}> Projects</span>
+            </>
+          }
+          projects={PORTFOLIO_PROJECTS}
+          initialVisibleCount={3}
+        />
+        <InternshipProjects />
         <TeachList />
         <TeamList />
         <ServicesList />
@@ -26,7 +39,7 @@ export default function Home() {
         <AccordionText />
         <PhotoMarquee />
         <HeroComponent />
-        <BenefitLists/>
+        <BenefitLists />
       </main>
     </div>
   );

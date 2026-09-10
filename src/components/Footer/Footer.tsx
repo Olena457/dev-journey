@@ -31,7 +31,8 @@ export const Footer = () => {
     'projects',
     'skills',
     'services',
-    'certificates',
+    'diplomas',
+    'internship',
     'contacts',
   ];
 

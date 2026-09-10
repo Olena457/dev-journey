@@ -462,3 +462,13 @@
   gap: 6px; 
   flex-wrap: wrap; 
 }
+// section internship
+.internshipList {
+   background: linear-gradient(
+     to left,
+     #000000 0%,
+     #000000 45%,
+     rgba(72, 24, 63, 0.4) 65%,
+     #860580 100%
+   );
+}

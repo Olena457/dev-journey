@@ -2,18 +2,17 @@ import { PetProgectsData } from '../../types/types';
 
 export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
-    id: 17,
-    title: 'Logistics AI CRM Platform',
+    id: 18,
+    title: 'Alter Ego E-Commerce',
     skills:
-      'NextJS, TypeScript, Zustand, NestJS, Prisma, PostgreSQL, Swagger, AWS, LangGraph, LangChain, LangSmith, Socket.io, Storybook, Material UI,',
+      'Next.js, TypeScript, Zustand, Material UI, NestJS, Prisma, PostgreSQL, Swagger, JWT, Stripe API, Nova Poshta API, AI integration, Framer Motion',
     role: 'Full-Stack Developer',
-    imageProject: '/img/crm-ai.jpg',
-    isMaintenance: true,
+    imageProject: '/img/alterego-1.jpg',
+    isMaintenance: false,
     description:
-      'An enterprise-grade CRM platform designed to streamline logistics and shipment operations through AI-powered email data parsing and automated invoice generation. The system integrates advanced data grids, scheduled cron operations, and structured workflows to simplify overall platform administration.',
-    liveHref:
-              'https://gamma.app/docs/Copy-of-GrowBox-data-management-system-hh2xc9a83l2sve5',
-    repoHref: 'https://github.com/eliftech-school-2026-1/logistics-ai-crm',
+      'A full-stack e-commerce platform for a clothing brand featuring a comprehensive shopping flow with user authentication, wishlist, and order history. It includes a secure Admin Dashboard (CRM) for managing products, orders, and users. The application seamlessly integrates the Stripe API for secure checkout, the Nova Poshta API for accurate shipping details, and a built-in AI assistant for product recommendations. It features a fully responsive design with dark/light themes and interactive Swagger API documentation.',
+    liveHref: 'https://fullstack-core-swart.vercel.app',
+    repoHref: 'https://github.com/Olena457/fullstack-core.git',
   },
   {
     id: 16,
@@ -40,32 +39,6 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
       'The full-stack project (mono-repo) includes AI integration, registration and login, responsive design and swagger documentation.It features real-time data visualization. Users can join events, create their own, edit or delete. A personal calendar makes tracking easy, while AI assistant support helps with event-related questions.',
     liveHref: 'https://application-six-ruby.vercel.app/',
     repoHref: 'https://github.com/Olena457/application.git',
-  },
-  {
-    id: 14,
-    title: 'GrowBox-smart box',
-    skills:
-      'Next.js 16, TypeScript, Radix-ui, Recharts, Context API, Firebase, FireStore',
-    role: 'Full-Stack Developer',
-    imageProject: '/img/grow.png',
-    isMaintenance: true,
-    description:
-      'The commercial project includes 23 pages, responsive design, and supports dark/light themes. Real-time data visualization and automated plant growth management. The system provides accurate charts for both real-time and historical data, with convenient parameter customization and continuous monitoring of key indicators.',
-    liveHref: 'https://gamma.app/docs/GrowBox--sj46abc1da94p9u',
-    repoHref: 'https://github.com/JulianaMitkevych/WEB-Internship-2025.git',
-  },
-  {
-    id: 13,
-    title: 'GrowBox API Service',
-    skills:
-      'NestJS, TypeScript, PostgreSQL, TypeORM, Swagger, Socket.io, firebase-admin',
-    role: 'Full-Stack Developer (Backend Focus)',
-    imageProject: '/img/farm.jpeg',
-    isMaintenance: true,
-    description:
-      'Robust backend architecture featuring a secure RESTful API. Implemented Role-Based Access Control (RBAC) with double verification for enhanced data protection. The system supports full CRUD operations, complex data filtering, multi-parameter sorting, and full-text search. Integrated TypeORM for efficient PostgreSQL database management and Swagger for interactive API documentation.',
-    liveHref: 'https://gamma.app/docs/GrowBox--ssq9alxahcugau7',
-    repoHref: 'https://github.com/Olena457/nest-project.git',
   },
   {
     id: 1,
@@ -213,3 +186,4 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     repoHref: 'https://github.com/Olena457/learn-easy.git',
   },
 ];
+

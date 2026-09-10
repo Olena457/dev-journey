@@ -27,7 +27,7 @@ export const DiplomaGallery: React.FC = () => {
   });
 
   return (
-    <div id="certificates" className={styles.section}>
+    <div id="diplomas" className={styles.section}>
       <h2 className={styles.title}>
         Skills & <span className={styles.accent}>Certificates </span>
         <span

@@ -1,8 +1,8 @@
+
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 import clsx from 'clsx';
 
-import { PORTFOLIO_PROJECTS } from './propsItems';
 import { PetProgectsData } from '../../types/types';
 import ExpandDescription from '../ExpandDescription/EpandDescription';
 import InfoIcon from '@/public/icons/InfoIcon';
@@ -13,27 +13,43 @@ import styles from './PortfolioCard.module.scss';
 import VolumeStartIcon from '@/public/icons/VolumeStartIcon';
 import VolumeStopIcon from '@/public/icons/VolumeStopIcon';
 
-const PortfolioCard: React.FC = () => {
-  const PROJECTS_PER_PAGE = 3;
+interface PortfolioCardProps {
+  title: React.ReactNode;
+  projects: PetProgectsData[];
+  initialVisibleCount?: number;
+  loadMoreCount?: number;
+  sectionId?: string;
+  listClassName?: string;
+}
 
-  const [visibleCount, setVisibleCount] = useState(PROJECTS_PER_PAGE);
-  const [speakingProjectId, setSpeakingProjectId] = useState<number | null>(null);
+const PortfolioCard: React.FC<PortfolioCardProps> = ({
+  title,
+  projects,
+  initialVisibleCount = 3,
+  loadMoreCount = 3,
+  sectionId,
+  listClassName,
+}) => {
+  const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
+  const [speakingProjectId, setSpeakingProjectId] = useState<number | null>(
+    null
+  );
 
+  const dialogRef = useRef<HTMLDialogElement | null>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const boundsRef = useRef<DOMRect | null>(null);
 
   useEffect(() => {
     return () => {
       window.speechSynthesis.cancel();
     };
   }, []);
-  
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const boundsRef = useRef<DOMRect | null>(null);
 
   const handleLoadMore = () => {
-    setVisibleCount(prevCount => prevCount + PROJECTS_PER_PAGE);
+    setVisibleCount(prevCount => prevCount + loadMoreCount);
   };
 
-  const visibleProjects = PORTFOLIO_PROJECTS.slice(0, visibleCount);
+  const visibleProjects = projects.slice(0, visibleCount);
 
   const handleMouseEnter = (index: number) => {
     const card = cardRefs.current[index];
@@ -62,16 +78,11 @@ const PortfolioCard: React.FC = () => {
   };
 
   const openDialog = (e: React.MouseEvent) => {
-    e.preventDefault(); 
+    e.preventDefault();
+    if (dialogRef.current) {
+      dialogRef.current.showModal();
 
-    const dialog = document.getElementById(
-      'project-info-dialog'
-    ) as HTMLDialogElement;
-
-    if (dialog) {
-      dialog.showModal();
-
-      const closeBtn = dialog.querySelector(
+      const closeBtn = dialogRef.current.querySelector(
         `.${styles.dialogCloseBtn}`
       ) as HTMLElement;
       closeBtn?.focus({ preventScroll: true });
@@ -79,45 +90,37 @@ const PortfolioCard: React.FC = () => {
   };
 
   const closeDialog = () => {
-    const dialog = document.getElementById(
-      'project-info-dialog'
-    ) as HTMLDialogElement;
-    dialog?.close();
+    dialogRef.current?.close();
   };
+
   // _______________speech _______________________
-const toggleSpeech = (project: PetProgectsData) => {
-  if (speakingProjectId === project.id) {
+  const toggleSpeech = (project: PetProgectsData) => {
+    if (speakingProjectId === project.id) {
+      window.speechSynthesis.cancel();
+      setSpeakingProjectId(null);
+      return;
+    }
+
     window.speechSynthesis.cancel();
-    setSpeakingProjectId(null);
-    return;
-  }
 
-  
-  window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(project.description);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
 
-  const utterance = new SpeechSynthesisUtterance(project.description);
-  utterance.lang = 'en-US'; 
-  utterance.rate = 0.9;
+    utterance.onend = () => setSpeakingProjectId(null);
+    utterance.onerror = () => setSpeakingProjectId(null);
 
-  utterance.onend = () => setSpeakingProjectId(null);
-  utterance.onerror = () => setSpeakingProjectId(null);
-
-  setSpeakingProjectId(project.id);
-  window.speechSynthesis.speak(utterance);
-};
-
-
-
+    setSpeakingProjectId(project.id);
+    window.speechSynthesis.speak(utterance);
+  };
 
   return (
-    <section id="projects" className={styles.sectionProjects}>
+    <section id={sectionId} className={styles.sectionProjects}>
       <div className={styles.wraper}>
-        <h2 className={styles.mainTitle}>
-          My<span className={styles.accent}> Projects</span>
-        </h2>
+        <h2 className={styles.mainTitle}>{title}</h2>
       </div>
 
-      <ul className={styles.list}>
+      <ul className={clsx(styles.list, listClassName)}>
         {visibleProjects.map((project: PetProgectsData, index: number) => (
           <li key={project.id} className={clsx(styles.item, styles.visible)}>
             <div className={styles.itemWrapper}>
@@ -209,7 +212,7 @@ const toggleSpeech = (project: PetProgectsData) => {
           </li>
         ))}
 
-        {visibleCount < PORTFOLIO_PROJECTS.length && (
+        {visibleCount < projects.length && (
           <div className={styles.btnContainer}>
             <button onClick={handleLoadMore} className={styles.loadMoreBtn}>
               Load More
@@ -218,8 +221,7 @@ const toggleSpeech = (project: PetProgectsData) => {
         )}
       </ul>
 
-      {/* Структура діалогового вікна */}
-      <dialog id="project-info-dialog" className={styles.dialog}>
+      <dialog ref={dialogRef} className={styles.dialog}>
         <div className={styles.dialogContent}>
           <button onClick={closeDialog} className={styles.dialogCloseBtn}>
             &times;
@@ -227,11 +229,13 @@ const toggleSpeech = (project: PetProgectsData) => {
           <h3 className={styles.dialogTitle}>Project Information</h3>
           <hr className={styles.dialogLine} />
           <p className={styles.dialogText}>
-            You can see a presentation of this progect.(deployment is prohibited)
+            You can see a presentation of this project. (deployment is
+            prohibited)
           </p>
         </div>
       </dialog>
     </section>
   );
 };
-  export default PortfolioCard;
+
+export default PortfolioCard;
