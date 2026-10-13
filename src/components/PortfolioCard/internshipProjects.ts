@@ -5,7 +5,7 @@ export const INTERNSHIP_PROJECTS: PetProgectsData[] = [
     id: 17,
     title: 'Logistics AI CRM Platform.',
     skills:
-      'NextJS, TypeScript, Zustand, NestJS, Prisma, PostgreSQL, Swagger, AWS, LangGraph, LangChain, LangSmith, Socket.io, Storybook, Material UI,',
+      'LangGraph, LangChain, LangSmith, Socket.io, AWS, Storybook, NextJS, TypeScript, Zustand, NestJS, Prisma, PostgreSQL, Swagger, Material UI,',
     role: '[ElifTech] Full-Stack Developer',
     imageProject: '/img/crm-ai.jpg',
     isMaintenance: true,

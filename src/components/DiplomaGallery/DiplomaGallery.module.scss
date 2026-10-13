@@ -45,15 +45,14 @@
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   opacity: 0.85;
 
-  @media (min-width: 768px) {
-    height: 90vh;
-    min-height: 700px;
+@media (min-width: 768px) {
+    height: 120vh;      
+    min-height: 850px; 
     gap: 20px;
   }
-
   @media (max-width: 767px) {
     flex-direction: column;
     height: auto;

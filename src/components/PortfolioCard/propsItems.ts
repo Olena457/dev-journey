@@ -2,10 +2,36 @@ import { PetProgectsData } from '../../types/types';
 
 export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
+    id: 20,
+    title: 'AI Smart Apply',
+    skills:
+      'LangGraph, LangChain, OpenAI API, Tavily, Google GenAI, NestJS, TypeScript, Zod, PDF Parse, Google Sheets API, Jest',
+    role: 'Full-Stack Developer',
+    imageProject: '/img/apply.jpg',
+    isMaintenance: false,
+    description:
+      'An automated job application AI assistant built with NestJS that reduces application prep time by 90%. It parses resumes, analyzes job descriptions to calculate match scores, and performs instant company research using Tavily Search API. Powered by LangGraph and LangChain workflows with built-in LLM fallback engines (Gemini Flash & Mistral), it automatically generates tailored cover letters, builds customized PDF resumes, and logs application details directly into Google Sheets.',
+    liveHref: 'https://ai-job-apply-olive.vercel.app',
+    repoHref: 'https://github.com/Olena457/ai-job-apply.git',
+  },
+  {
+    id: 19,
+    title: 'AI Video Guide Generator',
+    skills:
+      'Python, FastAPI, OpenCV, Groq Whisper, Google GenAI SDK, OpenRouter,Next.js, TypeScript, Tailwind CSS, Lucide React',
+    role: 'Full-Stack Developer',
+    imageProject: '/img/video.jpg',
+    isMaintenance: false,
+    description:
+      'An intelligent full-stack web application automatically generate step-by-step visual instructional guides from video screen recordings. The system extracts key video frames using OpenCV and transcribes audio via Groq Whisper API. Leveraging advanced AI models (Google Gemini and Mistral Pixtral via OpenRouter fallback), it processes user actions, handles edge-case scenarios, and creates structured "How-To" tutorials with precise metrics on processing time and API cost.',
+    liveHref: 'https://frontend-seven-sable-65.vercel.app',
+    repoHref: 'https://github.com/Olena457/ai-video-guide.git',
+  },
+  {
     id: 18,
     title: 'Alter Ego E-Commerce',
     skills:
-      'Next.js, TypeScript, Zustand, Material UI, NestJS, Prisma, PostgreSQL, Swagger, JWT, Stripe API, Nova Poshta API, AI integration, Framer Motion',
+      'Stripe API, JWT, Nova Poshta API, AI integration, Next.js, TypeScript, Zustand, Material UI, NestJS, Prisma, PostgreSQL, Swagger, Framer Motion',
     role: 'Full-Stack Developer',
     imageProject: '/img/alterego-1.jpg',
     isMaintenance: false,
@@ -18,7 +44,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 16,
     title: 'Delivery Application',
     skills:
-      ' React, TypeScript, RTK Query, Material UI, NestJS, Prisma, PostgreSQL, Swagger, Faker, JWT, Resend, AI integration, Telegram',
+      ' RTK Query, Prisma, PostgreSQL, JWT, Resend, AI integration, Telegram, React, TypeScript, Material UI, NestJS,  Swagger, Faker,',
     role: 'Full-Stack Developer',
     imageProject: '/img/bot.jpg',
     isMaintenance: false,
@@ -31,7 +57,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 15,
     title: 'Events platform with AI Assistant',
     skills:
-      'Docker, React, TypeScript, RTK Query, Material UI, React Big Calendar,AI Mistral, NestJS, Prisma, PostgreSQL, Swagger',
+      'Docker, AI Mistral, RTK Query, Prisma, PostgreSQL, React, TypeScript, Material UI, React Big Calendar, NestJS,Swagger',
     role: 'Full-Stack Developer',
     imageProject: '/img/application.jpg',
     isMaintenance: false,
@@ -43,7 +69,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 1,
     title: 'Weather Forecast',
-    skills: 'Next.js 16, TypeScript, Jotai, React Query, Tailwind,Geolocation',
+    skills: 'Geolocation, Jotai, Next.js 16, TypeScript, React Query, Tailwind',
     role: 'Frontend Developer & UI/UX Design',
     imageProject: '/img/weather.jpg',
     description:
@@ -56,7 +82,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 2,
     title: 'AI Smart Chat',
     skills:
-      'React, TypeScript, Mistral-tiny, Material UI, GSAP, Netlify Functions',
+      'GSAP, Mistral-tiny, Netlify Function, React, TypeScript, Material UI',
     role: 'Frontend Developer & UI/UX Design',
     imageProject: '/img/smart.jpg',
     description:
@@ -69,7 +95,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 3,
     title: 'AI Photo Interpreter',
     skills:
-      'React, Material UI, TensorFlow.js, Text-to-Speech API, AI integration,',
+      ' Tensflow, Text-to-Speech API, AI integration, React, Material UI',
     role: 'Frontend Developer & UI/UX Design',
     imageProject: '/img/reader.jpg',
     description:
@@ -82,7 +108,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 4,
     title: 'Wacanda Flow',
     skills:
-      'React, GSAP, ScrollTrigger, HTML, CSS/Tailwind, JavaScript, Animations',
+      ' GSAP, ScrollingTrigger, React,Tailwind, JavaScript, Animations',
     role: 'Frontend Developer & UI/UX Design',
     imageProject: '/img/wacanda.jpg',
     description:
@@ -94,7 +120,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 5,
     title: 'IT Traveler',
-    skills: 'Vuejs 3, Tailwind CSS, Mapbox, JavaScript, HTML, CSS, Routing',
+    skills: 'Mapbox, Vuejs 3, Tailwind CSS, JavaScript, HTML, CSS, Routing',
     role: 'Frontend Developer',
     imageProject: '/img/travel.jpg',
     description:
@@ -120,7 +146,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 7,
     title: 'AIDE - Landing Page',
     skills:
-      'Redux Toolkit, Material UI, Framer Motion, React Slick, TypeScript, 3D Animation',
+      '3D Animation, Redux Toolkit, Material UI, Framer Motion, React Slick, TypeScript',
     role: 'Frontend Developer & UI/UX Design',
     imageProject: '/img/aide.jpg',
     description:
@@ -131,7 +157,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 8,
     title: 'Interspace',
-    skills: 'React, TypeScript, SCSS, AOS, HTML, JavaScript, Responsive Design',
+    skills: 'AOS,SCSS, React, TypeScript, HTML, JavaScript, Responsive Design',
     role: 'Frontend Developer & UI/UX Design',
     imageProject: '/img/inter.jpg',
     description:
@@ -143,7 +169,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
     id: 9,
     title: 'Quizlet Game',
     skills:
-      'React, Redux, Firebase, JavaScript, API Integration, Responsive Design',
+      'Firebase, React, Redux, JavaScript, API Integration, Responsive Design',
     role: 'Full-Stack Developer & UI/UX Design',
     imageProject: '/img/quizlet.jpg',
     description:
@@ -166,7 +192,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 11,
     title: 'Events Board',
-    skills: 'HTML, CSS, JavaScript, React-router, Redux, Firebase',
+    skills: 'Firebase, Redux, React-router, HTML, CSS, JavaScript',
     role: 'Full-Stack Developer & UI/UX Design',
     imageProject: '/img/event.jpg',
     description:
@@ -177,7 +203,7 @@ export const PORTFOLIO_PROJECTS: PetProgectsData[] = [
   {
     id: 12,
     title: 'Learn-easy',
-    skills: 'JavaScript, React, Redux, React-router, React-modal, Firebase',
+    skills: 'Firebase, React-modal, JavaScript, React, Redux, React-router',
     role: 'Frontend Developer',
     imageProject: '/img/learn.jpg',
     description:

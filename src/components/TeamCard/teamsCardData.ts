@@ -15,7 +15,7 @@ export const projectsData: teamsCardsData[] = [
     title: 'Aqua Track',
     role: 'Frontend Developer, Scrum Master',
     description:
-      'Technical stack: HTML, CSS, JavaScript, React, Node.js, Mongodb, Redux, Cloud Services, Adaptive layout.',
+      'Technical stack: Mongodb, Cloude Services, HTML, CSS, JavaScript, React, Node.js, Redux, Adaptive layout.',
     imageMobile: '/img/water.jpg',
     imageDesktop: '/img/water.jpg',
     href: 'https://aqua-front-nine.vercel.app/',

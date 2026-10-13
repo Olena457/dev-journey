@@ -20,6 +20,7 @@ import MongoIcon from '@/public/icons/MongoIcon';
 import MysqlIcon from '@/public/icons/MysqlIcon';
 import RadixIcon from '@/public/icons/RadixIcon';
 import DockerIcon from '@/public/icons/DockerIcon';
+import PythonIcon from '@/public/icons/PythonIcon';
 import PostgreIcon from '@/public/icons/PostgreIcon';
 import NestIcon from '@/public/icons/NestIcon';
 import BrainIcon from '@/public/icons/BrainIcon';
@@ -41,6 +42,7 @@ const technologiesData: {
   { id: 22, name: 'Prisma', icon: PrismaIcon },
   { id: 23, name: 'Storybook', icon: StorybookIcon },
   { id: 21, name: 'Nest.js', icon: NestIcon },
+  { id: 25, name: 'Python', icon: PythonIcon },
   { id: 6, name: 'JavaScript', icon: JsIcon },
   { id: 7, name: 'TypeScript', icon: TypeScriptIcon },
   { id: 10, name: 'NodeJS', icon: NodeIcon },
